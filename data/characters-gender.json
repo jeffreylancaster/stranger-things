@@ -1,0 +1,16 @@
+{
+	"gender":[
+		{
+			"gender":"male",
+			"characters":[
+				"string"
+			]
+		},
+		{
+			"gender":"female",
+			"characters":[
+				"string"
+			]
+		}
+	]
+}		

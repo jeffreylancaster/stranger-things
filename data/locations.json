@@ -1,0 +1,9 @@
+{
+	"regions": [{
+			"location": "string",
+			"subLocation": [
+				"string"
+			]
+		}
+	]
+}
