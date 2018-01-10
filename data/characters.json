@@ -1,22 +1,6 @@
 {
    "characters": [
       {
-         "killedBy": "string",
-         "killed": [
-            "string"
-         ],
-         "parents": [
-            "string"
-         ],
-         "parentOf": [
-            "string"
-         ],
-         "siblings": [
-            "string"
-         ],
-         "nickname": "string"
-      },
-      {
          "characterName": "80's Townfolk",
          "credited": false,
          "actorName": "Rio Montana-Grey Donnally",
@@ -47,7 +31,10 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2MDA2MzU5Nl5BMl5BanBnXkFtZTgwMzY1ODc1ODE@._V1.jpg"
       },
       {
-         "characterName": "Agent / ...",
+         "characterName": "Agent",
+         "characterNameAlt": [
+            "Special Agent"
+         ],
          "credited": false,
          "actorName": "Stephen M. LaBar Jr.",
          "actorLink": "/name/nm7897114/",
@@ -98,7 +85,11 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjFlMzhkM2UtNjJiYS00OTMxLTlhODctNTYyNGIyZGJjZTY0XkEyXkFqcGdeQXVyMzMwMjg0Mzc@._V1.jpg"
       },
       {
-         "characterName": "Arcade Gamer / ...",
+         "characterName": "Arcade Gamer",
+         "characterNameAlt": [
+            "Middle School Student",
+            "Middle School Arcade Gamer"
+         ],
          "credited": false,
          "actorName": "Melissa Collazo",
          "actorLink": "/name/nm7148362/",
@@ -115,11 +106,22 @@
       },
       {
          "characterName": "Barbara Holland",
+         "characterNameAlt": [
+            "Barb Holland"
+         ],
+         "nickname": "Barb",
          "characterLink": "/title/tt4574334/characters/nm7684864",
          "actorName": "Shannon Purser",
          "actorLink": "/name/nm7684864/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3NDIwNjUzMV5BMl5BanBnXkFtZTgwMjExMDYyMDI@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3NDIwNjUzMV5BMl5BanBnXkFtZTgwMjExMDYyMDI@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3NDIwNjUzMV5BMl5BanBnXkFtZTgwMjExMDYyMDI@._V1.jpg",
+         "parents": [
+            "Marsha Holland",
+            "Mr. Holland"
+         ],
+         "killedBy": [
+            ""
+         ]
       },
       {
          "characterName": "Basketball Player",
@@ -135,7 +137,10 @@
          "actorName": "Amy Seimetz",
          "actorLink": "/name/nm1541272/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcxNzQyNTkyOV5BMl5BanBnXkFtZTgwMTcwMTEyMDE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcxNzQyNTkyOV5BMl5BanBnXkFtZTgwMTcwMTEyMDE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcxNzQyNTkyOV5BMl5BanBnXkFtZTgwMTcwMTEyMDE@._V1.jpg",
+         "siblings": [
+            "Terry Ives"
+         ]
       },
       {
          "characterName": "Benny Hammond",
@@ -150,7 +155,14 @@
          "actorName": "Dacre Montgomery",
          "actorLink": "/name/nm4223882/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTM4ODlhMTEtMmEyNy00M2RhLWE3MDQtY2RhMGVmNjllM2VjXkEyXkFqcGdeQXVyMjQ0NDA5NDM@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTM4ODlhMTEtMmEyNy00M2RhLWE3MDQtY2RhMGVmNjllM2VjXkEyXkFqcGdeQXVyMjQ0NDA5NDM@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTM4ODlhMTEtMmEyNy00M2RhLWE3MDQtY2RhMGVmNjllM2VjXkEyXkFqcGdeQXVyMjQ0NDA5NDM@._V1.jpg",
+         "siblings": [
+            "Max Mayfield"
+         ],
+         "parents": [
+            "Susan Hargrove",
+            "Neil Hargrove"
+         ]
       },
       {
          "characterName": "Bob Newby",
@@ -158,7 +170,10 @@
          "actorName": "Sean Astin",
          "actorLink": "/name/nm0000276/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjczOTQ1NF5BMl5BanBnXkFtZTcwMzI2NzYyMQ@@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjczOTQ1NF5BMl5BanBnXkFtZTcwMzI2NzYyMQ@@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjczOTQ1NF5BMl5BanBnXkFtZTcwMzI2NzYyMQ@@._V1.jpg",
+         "killedBy": [
+            "Demodogs"
+         ]
       },
       {
          "characterName": "Cafeteria Worker",
@@ -177,7 +192,11 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWY0YmU4N2MtMTdmNC00MDEwLThkZWEtZmI1ZWE0MmJlOGYwL2ltYWdlXkEyXkFqcGdeQXVyMjEyNzA5NTE@._V1.jpg"
       },
       {
-         "characterName": "Chaperone / ...",
+         "characterName": "Chaperone",
+         "characterNameAlt": [
+            "Teacher",
+            "Pedestrian"
+         ],
          "credited": false,
          "actorName": "Erin Bradley Dangar",
          "actorLink": "/name/nm8734180/",
@@ -194,11 +213,31 @@
       },
       {
          "characterName": "Claudia Henderson",
-         "characterLink": "/title/tt4574334/characters/nm0193160",
-         "actorName": "Catherine Curtin",
-         "actorLink": "/name/nm0193160/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmE5NDEyYTYtMWQyZi00MzFjLTkyOWQtMDE2YTU0ZDAyZGViXkEyXkFqcGdeQXVyMTQ0ODQ3OTA@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmE5NDEyYTYtMWQyZi00MzFjLTkyOWQtMDE2YTU0ZDAyZGViXkEyXkFqcGdeQXVyMTQ0ODQ3OTA@._V1.jpg"
+         "characterNameAlt": [
+            "Mrs. Henderson"
+         ],
+         "actors": [
+            {
+               "characterLink": "/title/tt4574334/characters/nm0193160",
+               "actorName": "Catherine Curtin",
+               "actorLink": "/name/nm0193160/",
+               "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmE5NDEyYTYtMWQyZi00MzFjLTkyOWQtMDE2YTU0ZDAyZGViXkEyXkFqcGdeQXVyMTQ0ODQ3OTA@._V1._SX100_SY140_.jpg",
+               "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmE5NDEyYTYtMWQyZi00MzFjLTkyOWQtMDE2YTU0ZDAyZGViXkEyXkFqcGdeQXVyMTQ0ODQ3OTA@._V1.jpg",
+               "seasonsActive": [
+                  2
+               ]
+            },
+            {
+               "credited": false,
+               "actorName": "Tabitha Kilgore",
+               "actorLink": "/name/nm4232297/",
+               "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDBlOWU1YWYtZDIyMy00NGZlLTgwMzctMGU2NjFjNzlhNDQ0L2ltYWdlXkEyXkFqcGdeQXVyMjM0OTUwMTg@._V1._SX100_SY140_.jpg",
+               "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDBlOWU1YWYtZDIyMy00NGZlLTgwMzctMGU2NjFjNzlhNDQ0L2ltYWdlXkEyXkFqcGdeQXVyMjM0OTUwMTg@._V1.jpg",
+               "seasonsActive": [
+                  1
+               ]
+            }
+         ]
       },
       {
          "characterName": "Cop #1",
@@ -240,7 +279,13 @@
          "actorName": "Jerri Tubbs",
          "actorLink": "/name/nm2424977/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNTQ1NDg2NF5BMl5BanBnXkFtZTgwMDc3MDQyMDI@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNTQ1NDg2NF5BMl5BanBnXkFtZTgwMDc3MDQyMDI@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNTQ1NDg2NF5BMl5BanBnXkFtZTgwMDc3MDQyMDI@._V1.jpg",
+         "parentOf": [
+            "Sara Hopper"
+         ],
+         "marriedEngaged": [
+            "Jim Hopper"
+         ]
       },
       {
          "characterName": "Doctor",
@@ -279,11 +324,18 @@
       },
       {
          "characterName": "Dr. Martin Brenner",
+         "nickname": "Papa",
          "characterLink": "/title/tt4574334/characters/nm0000546",
          "actorName": "Matthew Modine",
          "actorLink": "/name/nm0000546/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3MzQyOTM5MF5BMl5BanBnXkFtZTgwNDg2Njk2OTE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3MzQyOTM5MF5BMl5BanBnXkFtZTgwNDg2Njk2OTE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3MzQyOTM5MF5BMl5BanBnXkFtZTgwNDg2Njk2OTE@._V1.jpg",
+         "parentOf": [
+            "Eleven"
+         ],
+         "killedBy": [
+            ""
+         ]
       },
       {
          "characterName": "Dr. Owens' Assistant",
@@ -313,7 +365,11 @@
          "actorName": "Gaten Matarazzo",
          "actorLink": "/name/nm7140802/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWY4NTlhYzAtMGIwNy00ZDAzLTg0ZWMtNzYwNzZmNDI4MTgyXkEyXkFqcGdeQXVyNjI4MDU4OTQ@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWY4NTlhYzAtMGIwNy00ZDAzLTg0ZWMtNzYwNzZmNDI4MTgyXkEyXkFqcGdeQXVyNjI4MDU4OTQ@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWY4NTlhYzAtMGIwNy00ZDAzLTg0ZWMtNzYwNzZmNDI4MTgyXkEyXkFqcGdeQXVyNjI4MDU4OTQ@._V1.jpg",
+         "parents": [
+            "Claudia Henderson",
+            "Mr. Henderson"
+         ]
       },
       {
          "characterName": "Earl",
@@ -343,11 +399,19 @@
       },
       {
          "characterName": "Eleven",
+         "nickname": "El",
          "characterLink": "/title/tt4574334/characters/nm5611121",
          "actorName": "Millie Bobby Brown",
          "actorLink": "/name/nm5611121/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzA3Nzk3MTUwOV5BMl5BanBnXkFtZTgwNDAyNzAzMDI@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzA3Nzk3MTUwOV5BMl5BanBnXkFtZTgwNDAyNzAzMDI@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzA3Nzk3MTUwOV5BMl5BanBnXkFtZTgwNDAyNzAzMDI@._V1.jpg",
+         "parents": [
+            "Dr. Martin Brenner",
+            "Terry Ives"
+         ],
+         "killed": [
+            ""
+         ]
       },
       {
          "characterName": "English Teacher",
@@ -369,7 +433,14 @@
          "actorName": "Priah Ferguson",
          "actorLink": "/name/nm7394207/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmJkMmI0YTktZDRjNC00ZDU3LTljOTktNzExNzNlNTNkODQ0XkEyXkFqcGdeQXVyNjMzNjM4MDA@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmJkMmI0YTktZDRjNC00ZDU3LTljOTktNzExNzNlNTNkODQ0XkEyXkFqcGdeQXVyNjMzNjM4MDA@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmJkMmI0YTktZDRjNC00ZDU3LTljOTktNzExNzNlNTNkODQ0XkEyXkFqcGdeQXVyNjMzNjM4MDA@._V1.jpg",
+         "siblings": [
+            "Lucas Sinclair"
+         ],
+         "parents": [
+            "Mrs. Sinclair",
+            "Mr. Sinclair"
+         ]
       },
       {
          "characterName": "Eugene",
@@ -555,7 +626,10 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BODQxOTQxNjU0MF5BMl5BanBnXkFtZTgwMDY1MTIyMDI@._V1.jpg"
       },
       {
-         "characterName": "Hawkins Police Officer / ...",
+         "characterName": "Hawkins Police Officer",
+         "characterNameAlt": [
+            "Deputy"
+         ],
          "credited": false,
          "actorName": "Stephen Dean",
          "actorLink": "/name/nm7008538/",
@@ -625,19 +699,30 @@
       },
       {
          "characterName": "Holly Wheeler",
-         "characterLink": "/title/tt4574334/characters/nm6018251",
-         "actorName": "Tinsley Price",
-         "actorLink": "/name/nm6018251/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmYTBkYzAtZjFmNC00OTdiLThmNGYtMTJmYTk4NmM0MmE2XkEyXkFqcGdeQXVyNDczNDY5MDk@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmYTBkYzAtZjFmNC00OTdiLThmNGYtMTJmYTk4NmM0MmE2XkEyXkFqcGdeQXVyNDczNDY5MDk@._V1.jpg"
-      },
-      {
-         "characterName": "Holly Wheeler",
-         "characterLink": "/title/tt4574334/characters/nm7635825",
-         "actorName": "Anniston Price",
-         "actorLink": "/name/nm7635825/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWNlYzQyNmMtNzgzNC00Nzc0LThiYjItMjJiODg4NGQ5ZGJmXkEyXkFqcGdeQXVyNjM1MDc0MDE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWNlYzQyNmMtNzgzNC00Nzc0LThiYjItMjJiODg4NGQ5ZGJmXkEyXkFqcGdeQXVyNjM1MDc0MDE@._V1.jpg"
+         "actors": [
+            {
+               "characterLink": "/title/tt4574334/characters/nm6018251",
+               "actorName": "Tinsley Price",
+               "actorLink": "/name/nm6018251/",
+               "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmYTBkYzAtZjFmNC00OTdiLThmNGYtMTJmYTk4NmM0MmE2XkEyXkFqcGdeQXVyNDczNDY5MDk@._V1._SX100_SY140_.jpg",
+               "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmYTBkYzAtZjFmNC00OTdiLThmNGYtMTJmYTk4NmM0MmE2XkEyXkFqcGdeQXVyNDczNDY5MDk@._V1.jpg"
+            },
+            {
+               "characterLink": "/title/tt4574334/characters/nm7635825",
+               "actorName": "Anniston Price",
+               "actorLink": "/name/nm7635825/",
+               "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWNlYzQyNmMtNzgzNC00Nzc0LThiYjItMjJiODg4NGQ5ZGJmXkEyXkFqcGdeQXVyNjM1MDc0MDE@._V1._SX100_SY140_.jpg",
+               "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWNlYzQyNmMtNzgzNC00Nzc0LThiYjItMjJiODg4NGQ5ZGJmXkEyXkFqcGdeQXVyNjM1MDc0MDE@._V1.jpg"
+            }
+         ],
+         "siblings": [
+            "Nancy Wheeler",
+            "Mike Wheeler"
+         ],
+         "parents": [
+            "Karen Wheeler",
+            "Ted Wheeler"
+         ]
       },
       {
          "characterName": "Homeless Person",
@@ -692,7 +777,13 @@
          "actorName": "David Harbour",
          "actorLink": "/name/nm1092086/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM1MDkxMTY2N15BMl5BanBnXkFtZTcwNTcxMjAyMg@@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM1MDkxMTY2N15BMl5BanBnXkFtZTcwNTcxMjAyMg@@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM1MDkxMTY2N15BMl5BanBnXkFtZTcwNTcxMjAyMg@@._V1.jpg",
+         "parentOf": [
+            "Sara Hopper"
+         ],
+         "marriedEngaged": [
+            "Diane Hopper"
+         ]
       },
       {
          "characterName": "Jonathan Byers",
@@ -700,7 +791,14 @@
          "actorName": "Charlie Heaton",
          "actorLink": "/name/nm6390427/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNDUxOTAzNF5BMl5BanBnXkFtZTgwMjc3OTIxMjE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNDUxOTAzNF5BMl5BanBnXkFtZTgwMjc3OTIxMjE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNDUxOTAzNF5BMl5BanBnXkFtZTgwMjc3OTIxMjE@._V1.jpg",
+         "siblings": [
+            "Will Byers"
+         ],
+         "parents": [
+            "Joyce Byers",
+            "Lonnie Byers"
+         ]
       },
       {
          "characterName": "Joyce Byers",
@@ -708,7 +806,14 @@
          "actorName": "Winona Ryder",
          "actorLink": "/name/nm0000213/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ3NzM3MTc2NF5BMl5BanBnXkFtZTcwODMxNjA0NA@@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ3NzM3MTc2NF5BMl5BanBnXkFtZTcwODMxNjA0NA@@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ3NzM3MTc2NF5BMl5BanBnXkFtZTcwODMxNjA0NA@@._V1.jpg",
+         "parentOf": [
+            "Jonathan Byers",
+            "Will Byers"
+         ],
+         "marriedEngaged": [
+            "Lonnie Byers"
+         ]
       },
       {
          "characterName": "Kali",
@@ -724,7 +829,15 @@
          "actorName": "Cara Buono",
          "actorLink": "/name/nm0120648/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzYyODUzMTMzN15BMl5BanBnXkFtZTgwMzc5NDg1NjE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzYyODUzMTMzN15BMl5BanBnXkFtZTgwMzc5NDg1NjE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzYyODUzMTMzN15BMl5BanBnXkFtZTgwMzc5NDg1NjE@._V1.jpg",
+         "parentOf": [
+            "Nancy Wheeler",
+            "Mike Wheeler",
+            "Holly Wheeler"
+         ],
+         "marriedEngaged": [
+            "Ted Wheeler"
+         ]
       },
       {
          "characterName": "Keith",
@@ -735,7 +848,10 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BYzkyYjYzZDUtZjk3MC00MWM3LTlkYmItNDMzYzU3MjJkNDJkXkEyXkFqcGdeQXVyNDA1MjU4NA@@._V1.jpg"
       },
       {
-         "characterName": "Kid at Funeral / ...",
+         "characterName": "Kid at Funeral",
+         "characterNameAlt": [
+            "Middle School Student"
+         ],
          "credited": false,
          "actorName": "Ashley Windham",
          "actorLink": "/name/nm6314337/"
@@ -786,7 +902,14 @@
          "actorName": "Ross Partridge",
          "actorLink": "/name/nm0664061/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQxMjk2MTA5Ml5BMl5BanBnXkFtZTgwNTU0ODYyNzE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQxMjk2MTA5Ml5BMl5BanBnXkFtZTgwNTU0ODYyNzE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQxMjk2MTA5Ml5BMl5BanBnXkFtZTgwNTU0ODYyNzE@._V1.jpg",
+         "parentOf": [
+            "Jonathan Byers",
+            "Will Byers"
+         ],
+         "marriedEngaged": [
+            "Joyce Byers"
+         ]
       },
       {
          "characterName": "Lucas Sinclair",
@@ -794,7 +917,14 @@
          "actorName": "Caleb McLaughlin",
          "actorLink": "/name/nm5160895/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzNTczMjY3MV5BMl5BanBnXkFtZTgwMzI4MjQ1OTE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzNTczMjY3MV5BMl5BanBnXkFtZTgwMzI4MjQ1OTE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzNTczMjY3MV5BMl5BanBnXkFtZTgwMzI4MjQ1OTE@._V1.jpg",
+         "siblings": [
+            "Erica Sinclair"
+         ],
+         "parents": [
+            "Mrs. Sinclair",
+            "Mr. Sinclair"
+         ]
       },
       {
          "characterName": "M.P. Guard #1",
@@ -840,11 +970,20 @@
       },
       {
          "characterName": "Marsha Holland",
+         "characterNameAlt": [
+            "Mrs. Holland"
+         ],
          "characterLink": "/title/tt4574334/characters/nm3797855",
          "actorName": "Cynthia Barrett",
          "actorLink": "/name/nm3797855/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcwNzcxNTgyOF5BMl5BanBnXkFtZTgwNzM1ODYxOTE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcwNzcxNTgyOF5BMl5BanBnXkFtZTgwNzM1ODYxOTE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcwNzcxNTgyOF5BMl5BanBnXkFtZTgwNzM1ODYxOTE@._V1.jpg",
+         "parentOf": [
+            "Barbara Holland"
+         ],
+         "marriedEngaged": [
+            "Mr. Holland"
+         ]
       },
       {
          "characterName": "Mary Mack Girl #1",
@@ -862,7 +1001,14 @@
          "actorName": "Sadie Sink",
          "actorLink": "/name/nm5584750/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjgzNjJiMjgtMzllZS00NGRjLTgyOWEtYzVhNzgxODE0ZDA3XkEyXkFqcGdeQXVyNTU0OTE5MjA@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjgzNjJiMjgtMzllZS00NGRjLTgyOWEtYzVhNzgxODE0ZDA3XkEyXkFqcGdeQXVyNTU0OTE5MjA@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjgzNjJiMjgtMzllZS00NGRjLTgyOWEtYzVhNzgxODE0ZDA3XkEyXkFqcGdeQXVyNTU0OTE5MjA@._V1.jpg",
+         "siblings": [
+            "Billy Hargrove"
+         ],
+         "parents": [
+            "Susan Hargrove",
+            "Neil Hargrove"
+         ]
       },
       {
          "characterName": "Mentally Ill Man",
@@ -895,7 +1041,10 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWIxZDY5NTAtYTkwOS00Yzg1LWFmY2EtNGYyYzk5MGNiYzhkXkEyXkFqcGdeQXVyODYwOTUwNw@@._V1.jpg"
       },
       {
-         "characterName": "Middle School Child / ...",
+         "characterName": "Middle School Child",
+         "characterNameAlt": [
+            "Middle School Student"
+         ],
          "credited": false,
          "actorName": "J. Gaven Wilde",
          "actorLink": "/name/nm8493387/",
@@ -903,7 +1052,10 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzg2MzMzYTQtMGY4Yi00NDc5LTllOTMtNWRkYTVjM2I2NzVlXkEyXkFqcGdeQXVyNjkzNjk4ODA@._V1.jpg"
       },
       {
-         "characterName": "Middle School Child / ...",
+         "characterName": "Middle School Child",
+         "characterNameAlt": [
+            "Middle School Student"
+         ],
          "credited": false,
          "actorName": "Anna Swiney",
          "actorLink": "/name/nm8139489/",
@@ -1057,7 +1209,10 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjc5OGE2MDctY2I3Zi00MGYyLWEzYzAtYTZmMTVhOGVmZmUxXkEyXkFqcGdeQXVyNjMyNzQzODM@._V1.jpg"
       },
       {
-         "characterName": "Middle School Student / ...",
+         "characterName": "Middle School Student",
+         "characterNameAlt": [
+            "Middle School Girl"
+         ],
          "credited": false,
          "actorName": "Camden Ella Brown",
          "actorLink": "/name/nm7624750/",
@@ -1065,7 +1220,12 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjFlYzZkMmItMWIwNS00N2E4LWI5NTItZGQwYWU0NDk5NDZkXkEyXkFqcGdeQXVyNjI5NjAzOTg@._V1.jpg"
       },
       {
-         "characterName": "Middle School Student / ...",
+         "characterName": "Middle School Student",
+         "characterNameAlt": [
+            "Arcade Gamer",
+            "School Bus Kid",
+            "Middle School Kid"
+         ],
          "credited": false,
          "actorName": "Warren Quandt",
          "actorLink": "/name/nm7722970/",
@@ -1086,7 +1246,15 @@
          "actorName": "Finn Wolfhard",
          "actorLink": "/name/nm6016511/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzhiM2QxODUtZGQzNi00ZDRhLThjZTktMjBmZDRiZTcxNjBjL2ltYWdlXkEyXkFqcGdeQXVyNjY0NDUwODM@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzhiM2QxODUtZGQzNi00ZDRhLThjZTktMjBmZDRiZTcxNjBjL2ltYWdlXkEyXkFqcGdeQXVyNjY0NDUwODM@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzhiM2QxODUtZGQzNi00ZDRhLThjZTktMjBmZDRiZTcxNjBjL2ltYWdlXkEyXkFqcGdeQXVyNjY0NDUwODM@._V1.jpg",
+         "siblings": [
+            "Nancy Wheeler",
+            "Holly Wheeler"
+         ],
+         "parents": [
+            "Karen Wheeler",
+            "Ted Wheeler"
+         ]
       },
       {
          "characterName": "Military Police #4",
@@ -1095,7 +1263,10 @@
          "actorLink": "/name/nm3675340/"
       },
       {
-         "characterName": "Military Truck Driver / ...",
+         "characterName": "Military Truck Driver",
+         "characterNameAlt": [
+            "Soldier"
+         ],
          "actorName": "Andrew Ward",
          "actorLink": "/name/nm8125560/"
       },
@@ -1119,7 +1290,10 @@
          "actorName": "Bethany DeZelle",
          "actorLink": "/name/nm6554508/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWQyYzQ1MWEtMWFlYS00ZWNjLTg4NzktNWJkNjE0YTgyODkwXkEyXkFqcGdeQXVyNjAzODg2MTY@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWQyYzQ1MWEtMWFlYS00ZWNjLTg4NzktNWJkNjE0YTgyODkwXkEyXkFqcGdeQXVyNjAzODg2MTY@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWQyYzQ1MWEtMWFlYS00ZWNjLTg4NzktNWJkNjE0YTgyODkwXkEyXkFqcGdeQXVyNjAzODg2MTY@._V1.jpg",
+         "parentOf": [
+            "Young Girl (Swingset)"
+         ]
       },
       {
          "characterName": "Movie Theatre Manager",
@@ -1142,7 +1316,13 @@
          "actorName": "Daniel Guttenberg",
          "actorLink": "/name/nm4641612/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BY2JhYTA3NzQtZWE0MS00NGJkLTgwNGYtMDc0NmViMjNlODRiXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BY2JhYTA3NzQtZWE0MS00NGJkLTgwNGYtMDc0NmViMjNlODRiXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BY2JhYTA3NzQtZWE0MS00NGJkLTgwNGYtMDc0NmViMjNlODRiXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1.jpg",
+         "parentOf": [
+            "Dustin Henderson"
+         ],
+         "marriedEngaged": [
+            "Claudia Henderson"
+         ]
       },
       {
          "characterName": "Mr. Holland",
@@ -1150,7 +1330,13 @@
          "actorName": "Aaron Munoz",
          "actorLink": "/name/nm3177287/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWM2ZjdhODEtMjc0Yi00MDg3LWFhMzAtYjg4OTYzYWJkMzZmXkEyXkFqcGdeQXVyMTk5ODAzODE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWM2ZjdhODEtMjc0Yi00MDg3LWFhMzAtYjg4OTYzYWJkMzZmXkEyXkFqcGdeQXVyMTk5ODAzODE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWM2ZjdhODEtMjc0Yi00MDg3LWFhMzAtYjg4OTYzYWJkMzZmXkEyXkFqcGdeQXVyMTk5ODAzODE@._V1.jpg",
+         "parentOf": [
+            "Barbara Holland"
+         ],
+         "marriedEngaged": [
+            "Marsha Holland"
+         ]
       },
       {
          "characterName": "Mr. Melvald",
@@ -1159,41 +1345,65 @@
       },
       {
          "characterName": "Mr. Sinclair",
-         "characterLink": "/title/tt4574334/characters/nm1663776",
-         "actorName": "Arnell Powell",
-         "actorLink": "/name/nm1663776/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3MjY5MTU3OV5BMl5BanBnXkFtZTgwMzAwMzU1MjE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3MjY5MTU3OV5BMl5BanBnXkFtZTgwMzAwMzU1MjE@._V1.jpg"
-      },
-      {
-         "characterName": "Mr. Sinclair",
-         "credited": false,
-         "actorName": "Bradford Haynes",
-         "actorLink": "/name/nm4356874/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjZkZTI5NDAtYTliNy00NTAyLTliMDAtNWQxY2NiY2MwOTRjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjZkZTI5NDAtYTliNy00NTAyLTliMDAtNWQxY2NiY2MwOTRjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1.jpg"
-      },
-      {
-         "characterName": "Mrs. Henderson",
-         "credited": false,
-         "actorName": "Tabitha Kilgore",
-         "actorLink": "/name/nm4232297/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDBlOWU1YWYtZDIyMy00NGZlLTgwMzctMGU2NjFjNzlhNDQ0L2ltYWdlXkEyXkFqcGdeQXVyMjM0OTUwMTg@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDBlOWU1YWYtZDIyMy00NGZlLTgwMzctMGU2NjFjNzlhNDQ0L2ltYWdlXkEyXkFqcGdeQXVyMjM0OTUwMTg@._V1.jpg"
+         "actors": [
+            {
+               "characterLink": "/title/tt4574334/characters/nm1663776",
+               "actorName": "Arnell Powell",
+               "actorLink": "/name/nm1663776/",
+               "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3MjY5MTU3OV5BMl5BanBnXkFtZTgwMzAwMzU1MjE@._V1._SX100_SY140_.jpg",
+               "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3MjY5MTU3OV5BMl5BanBnXkFtZTgwMzAwMzU1MjE@._V1.jpg",
+               "seasonsActive":[
+                  2
+               ]
+            },
+            {
+               "credited": false,
+               "actorName": "Bradford Haynes",
+               "actorLink": "/name/nm4356874/",
+               "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjZkZTI5NDAtYTliNy00NTAyLTliMDAtNWQxY2NiY2MwOTRjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1._SX100_SY140_.jpg",
+               "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjZkZTI5NDAtYTliNy00NTAyLTliMDAtNWQxY2NiY2MwOTRjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1.jpg",
+               "seasonsActive":[
+                  1
+               ]
+            }
+         ],
+         "parentOf": [
+            "Lucas Sinclair",
+            "Erica Sinclair"
+         ],
+         "marriedEngaged": [
+            "Mrs. Sinclair"
+         ]
       },
       {
          "characterName": "Mrs. Sinclair",
-         "characterLink": "/title/tt4574334/characters/nm1957798",
-         "actorName": "Karen Ceesay",
-         "actorLink": "/name/nm1957798/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTQ4MDE4N15BMl5BanBnXkFtZTcwNDMyODk1OQ@@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTQ4MDE4N15BMl5BanBnXkFtZTcwNDMyODk1OQ@@._V1.jpg"
-      },
-      {
-         "characterName": "Mrs. Sinclair",
-         "credited": false,
-         "actorName": "Tara Wescott",
-         "actorLink": "/name/nm5372985/"
+         "actors": [
+            {
+               "characterLink": "/title/tt4574334/characters/nm1957798",
+               "actorName": "Karen Ceesay",
+               "actorLink": "/name/nm1957798/",
+               "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTQ4MDE4N15BMl5BanBnXkFtZTcwNDMyODk1OQ@@._V1._SX100_SY140_.jpg",
+               "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTQ4MDE4N15BMl5BanBnXkFtZTcwNDMyODk1OQ@@._V1.jpg",
+               "seasonsActive":[
+                  2
+               ]
+            },
+            {
+               "credited": false,
+               "actorName": "Tara Wescott",
+               "actorLink": "/name/nm5372985/",
+               "seasonsActive":[
+                  1
+               ]
+            }
+         ],
+         "parentOf": [
+            "Lucas Sinclair",
+            "Erica Sinclair"
+         ],
+         "marriedEngaged": [
+            "Mr. Sinclair"
+         ]
       },
       {
          "characterName": "Murray Bauman",
@@ -1209,7 +1419,15 @@
          "actorName": "Natalia Dyer",
          "actorLink": "/name/nm3034501/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTg5NTgwNF5BMl5BanBnXkFtZTgwMjQ4MTE2NDE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTg5NTgwNF5BMl5BanBnXkFtZTgwMjQ4MTE2NDE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTg5NTgwNF5BMl5BanBnXkFtZTgwMjQ4MTE2NDE@._V1.jpg",
+         "siblings": [
+            "Mike Wheeler",
+            "Holly Wheeler"
+         ],
+         "parents": [
+            "Karen Wheeler",
+            "Ted Wheeler"
+         ]
       },
       {
          "characterName": "Neil Hargrove",
@@ -1217,7 +1435,14 @@
          "actorName": "Will Chase",
          "actorLink": "/name/nm0153855/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAzNTE3NDUwMl5BMl5BanBnXkFtZTgwNTk2ODMzNjE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAzNTE3NDUwMl5BMl5BanBnXkFtZTgwNTk2ODMzNjE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAzNTE3NDUwMl5BMl5BanBnXkFtZTgwNTk2ODMzNjE@._V1.jpg",
+         "parentOf": [
+            "Max Mayfield",
+            "Billy Hargrove"
+         ],
+         "marriedEngaged": [
+            "Susan Hargrove"
+         ]
       },
       {
          "characterName": "Nerdy Tech",
@@ -1387,7 +1612,11 @@
          "actorName": "Elle Graham",
          "actorLink": "/name/nm6285328/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BYThlMGU2NzAtZTkzZS00YTQ0LWJjOGItYTllYmY4ZjlhZmVlXkEyXkFqcGdeQXVyNTg1NjU5MzA@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BYThlMGU2NzAtZTkzZS00YTQ0LWJjOGItYTllYmY4ZjlhZmVlXkEyXkFqcGdeQXVyNTg1NjU5MzA@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BYThlMGU2NzAtZTkzZS00YTQ0LWJjOGItYTllYmY4ZjlhZmVlXkEyXkFqcGdeQXVyNTg1NjU5MzA@._V1.jpg",
+         "parents": [
+            "Jim Hopper",
+            "Diane Hopper"
+         ]
       },
       {
          "characterName": "Scary Clown",
@@ -1425,7 +1654,11 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk5MDc1MDQ0Ml5BMl5BanBnXkFtZTgwNTk1OTgzMzE@._V1.jpg"
       },
       {
-         "characterName": "Search Party / ...",
+         "characterName": "Search Party",
+         "characterNameAlt": [
+            "Homeless Person",
+            "Winky's Patron"
+         ],
          "credited": false,
          "actorName": "John Archer Lundgren",
          "actorLink": "/name/nm1739959/",
@@ -1529,7 +1762,14 @@
          "actorName": "Jennifer Marshall",
          "actorLink": "/name/nm1351148/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDNjOTlkZmItOGM3Yy00M2YyLWFjODItOTZjMjFmMzNkZTU0XkEyXkFqcGdeQXVyNjM4MTUzMQ@@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDNjOTlkZmItOGM3Yy00M2YyLWFjODItOTZjMjFmMzNkZTU0XkEyXkFqcGdeQXVyNjM4MTUzMQ@@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDNjOTlkZmItOGM3Yy00M2YyLWFjODItOTZjMjFmMzNkZTU0XkEyXkFqcGdeQXVyNjM4MTUzMQ@@._V1.jpg",
+         "parentOf": [
+            "Max Mayfield",
+            "Billy Hargrove"
+         ],
+         "marriedEngaged": [
+            "Neil Hargrove"
+         ]
       },
       {
          "characterName": "Swat Member #1",
@@ -1545,6 +1785,9 @@
       },
       {
          "characterName": "Sweaty Teen Boy",
+         "characterNameAlt": [
+            "Drunk Teen #2"
+         ],
          "characterLink": "/title/tt4574334/characters/nm5902264",
          "actorName": "Drew Scheid",
          "actorLink": "/name/nm5902264/",
@@ -1564,7 +1807,15 @@
          "actorName": "Joe Chrest",
          "actorLink": "/name/nm0159609/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0OTQ4NDQ5M15BMl5BanBnXkFtZTgwMzU5ODY3NTE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0OTQ4NDQ5M15BMl5BanBnXkFtZTgwMzU5ODY3NTE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0OTQ4NDQ5M15BMl5BanBnXkFtZTgwMzU5ODY3NTE@._V1.jpg",
+         "parentOf": [
+            "Nancy Wheeler",
+            "Mike Wheeler",
+            "Holly Wheeler"
+         ],
+         "marriedEngaged": [
+            "Karen Wheeler"
+         ]
       },
       {
          "characterName": "Teen in Lunchroom",
@@ -1578,7 +1829,13 @@
          "actorName": "Aimee Mullins",
          "actorLink": "/name/nm1190429/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkzNjQyMzMwMF5BMl5BanBnXkFtZTgwMjUwODcyMDE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkzNjQyMzMwMF5BMl5BanBnXkFtZTgwMjUwODcyMDE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkzNjQyMzMwMF5BMl5BanBnXkFtZTgwMjUwODcyMDE@._V1.jpg",
+         "parentOf": [
+            "Eleven"
+         ],
+         "siblings": [
+            "Becky Ives"
+         ]
       },
       {
          "characterName": "Test Pilot Shepard",
@@ -1594,6 +1851,9 @@
       },
       {
          "characterName": "The Monster",
+         "characterNameAlt": [
+            "Demogorgon"
+         ],
          "characterLink": "/title/tt4574334/characters/nm0825209",
          "actorName": "Mark Steger",
          "actorLink": "/name/nm0825209/",
@@ -1682,19 +1942,28 @@
          "actorName": "Noah Schnapp",
          "actorLink": "/name/nm6907855/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMThjZDM2NjYtOTdkOC00OTFjLWE1YWYtODgxZWVkOTE3YjIxXkEyXkFqcGdeQXVyNTY0NDQwODU@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMThjZDM2NjYtOTdkOC00OTFjLWE1YWYtODgxZWVkOTE3YjIxXkEyXkFqcGdeQXVyNTY0NDQwODU@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMThjZDM2NjYtOTdkOC00OTFjLWE1YWYtODgxZWVkOTE3YjIxXkEyXkFqcGdeQXVyNTY0NDQwODU@._V1.jpg",
+         "siblings": [
+            "Jonathan Byers"
+         ],
+         "parents": [
+            "Joyce Byers",
+            "Lonnie Byers"
+         ]
       },
       {
          "characterName": "Young Girl (Swingset)",
          "characterLink": "/title/tt4574334/characters/nm9374999",
          "actorName": "Harper Cavanaugh",
-         "actorLink": "/name/nm9374999/"
+         "actorLink": "/name/nm9374999/",
+         "parents": [
+            "Mother (Swingset)"
+         ]
       },
       {
          "characterName": "Young Kali",
          "actorName": "Vanathi Parthiban",
          "actorLink": "/name/nm6342663/"
       }
-
    ]
 }
