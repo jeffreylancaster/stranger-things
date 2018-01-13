@@ -1304,6 +1304,9 @@
       },
       {
          "characterName": "Mr. Clarke",
+         "characterNameAlt": [
+            "Scott Clarke"
+         ],
          "characterLink": "/title/tt4574334/characters/nm1670129",
          "actorName": "Randy Havens",
          "actorLink": "/name/nm1670129/",
@@ -1340,6 +1343,9 @@
       },
       {
          "characterName": "Mr. Melvald",
+         "characterNameAlt": [
+            "Donald Melvald"
+         ],
          "actorName": "Charles Lawlor",
          "actorLink": "/name/nm0442107/"
       },
