@@ -2520,25 +2520,1408 @@
          "episodeDescription":"An increasingly concerned Nancy looks for Barb and finds out what Jonathan's been up to. Joyce is convinced Will is trying to talk to her.",
          "scenes":[
             {
-               "sceneStart":"0:00:00",
-               "sceneEnd":"0:00:00",
-               "location":"Hawkins, Indiana",
-               "subLocation":"",
+               "sceneStart":"0:51:41",
+               "sceneEnd":"0:51:10",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
                "date":"1983-11-08",
                "characters":[
-                  {"name":""},
-                  {"name":""}
+                  {"name":"Barbara Holland"},
+                  {"name":"The Monster"}
                ]
             },
             {
-               "sceneStart":"0:00:00",
-               "sceneEnd":"0:00:00",
+               "sceneStart":"0:51:10",
+               "sceneEnd":"0:51:04",
                "location":"Hawkins, Indiana",
-               "subLocation":"",
+               "subLocation":"Harrington Home",
                "date":"1983-11-08",
                "characters":[
-                  {"name":""},
-                  {"name":""}
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:51:04",
+               "sceneEnd":"0:51:01",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:51:01",
+               "sceneEnd":"0:50:58",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:58",
+               "sceneEnd":"0:50:52",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:52",
+               "sceneEnd":"0:50:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:50:50",
+               "sceneEnd":"0:50:44",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:44",
+               "sceneEnd":"0:50:38",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:38",
+               "sceneEnd":"0:50:36",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:36",
+               "sceneEnd":"0:50:29",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:29",
+               "sceneEnd":"0:50:23",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:23",
+               "sceneEnd":"0:50:20",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:20",
+               "sceneEnd":"0:50:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:18",
+               "sceneEnd":"0:50:17",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:17",
+               "sceneEnd":"0:50:13",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:13",
+               "sceneEnd":"0:50:11",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:11",
+               "sceneEnd":"0:50:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:09",
+               "sceneEnd":"0:50:08",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:08",
+               "sceneEnd":"0:50:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:07",
+               "sceneEnd":"0:49:52",
+               "location":"Upside Down",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-08",
+               "characters":[
+                  {"name":"Barbara Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:48",
+               "sceneEnd":"0:48:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:00",
+               "sceneEnd":"0:47:42",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:47:42",
+               "sceneEnd":"0:46:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Karen Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:46:21",
+               "sceneEnd":"0:46:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:46:09",
+               "sceneEnd":"0:45:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:45:55",
+               "sceneEnd":"0:44:14",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:14",
+               "sceneEnd":"0:44:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:09",
+               "sceneEnd":"0:42:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:30",
+               "sceneEnd":"0:41:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:50",
+               "sceneEnd":"0:41:34",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:34",
+               "sceneEnd":"0:40:34",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:34",
+               "sceneEnd":"0:40:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Ally"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:12",
+               "sceneEnd":"0:40:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Officer Callahan"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:06",
+               "sceneEnd":"0:39:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Officer Callahan"},
+                  {"name":"M.P. Officer Patrick"}
+               ]
+            },
+            {
+               "sceneStart":"0:39:10",
+               "sceneEnd":"0:37:27",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:27",
+               "sceneEnd":"0:36:38",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Dr. Martin Brenner"},
+                  {"name":"Scientist"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:38",
+               "sceneEnd":"0:36:24",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:24",
+               "sceneEnd":"0:35:29",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:35:29",
+               "sceneEnd":"0:35:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Downtown Hawkins",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Mr. Melvald"}
+               ]
+            },
+            {
+               "sceneStart":"0:35:12",
+               "sceneEnd":"0:34:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Officer Callahan"},
+                  {"name":"Hawkins Head of Security"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:50",
+               "sceneEnd":"0:34:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Officer Callahan"},
+                  {"name":"Hawkins Head of Security"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:32",
+               "sceneEnd":"0:34:05",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Officer Callahan"},
+                  {"name":"Hawkins Head of Security"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:05",
+               "sceneEnd":"0:33:47",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Officer Callahan"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:47",
+               "sceneEnd":"0:33:35",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:33:35",
+               "sceneEnd":"0:33:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:33:12",
+               "sceneEnd":"0:32:57",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:57",
+               "sceneEnd":"0:32:52",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:32:52",
+               "sceneEnd":"0:31:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:31:07",
+               "sceneEnd":"0:31:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:31:00",
+               "sceneEnd":"0:30:03",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Tommy H."},
+                  {"name":"Carol"}
+               ]
+            },
+            {
+               "sceneStart":"0:30:03",
+               "sceneEnd":"0:30:01",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:30:01",
+               "sceneEnd":"0:29:59",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Tommy H."},
+                  {"name":"Carol"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:59",
+               "sceneEnd":"0:29:57",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:57",
+               "sceneEnd":"0:29:54",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Tommy H."},
+                  {"name":"Carol"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:54",
+               "sceneEnd":"0:29:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Middle School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:18",
+               "sceneEnd":"0:28:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Middle School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Troy"},
+                  {"name":"James"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:51",
+               "sceneEnd":"0:28:29",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Middle School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:29",
+               "sceneEnd":"0:28:03",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:03",
+               "sceneEnd":"0:27:48",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nicole"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:48",
+               "sceneEnd":"0:27:43",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:27:43",
+               "sceneEnd":"0:27:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:21",
+               "sceneEnd":"0:27:03",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Karen Wheeler"},
+                  {"name":"Holly Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:03",
+               "sceneEnd":"0:26:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Downtown Hawkins",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"}
+               ]
+            },
+            {
+               "sceneStart":"0:26:51",
+               "sceneEnd":"0:26:15",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Library",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Marissa"}
+               ]
+            },
+            {
+               "sceneStart":"0:26:15",
+               "sceneEnd":"0:25:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Library",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Marissa"}
+               ]
+            },
+            {
+               "sceneStart":"0:25:40",
+               "sceneEnd":"0:25:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Library",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"}
+               ]
+            },
+            {
+               "sceneStart":"0:25:19",
+               "sceneEnd":"0:25:05",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Library",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:25:05",
+               "sceneEnd":"0:25:02",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Library",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:25:02",
+               "sceneEnd":"0:24:13",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Karen Wheeler"},
+                  {"name":"Holly Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:13",
+               "sceneEnd":"0:23:23",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Holly Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:23",
+               "sceneEnd":"0:23:15",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Karen Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:15",
+               "sceneEnd":"0:23:02",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Holly Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:02",
+               "sceneEnd":"0:22:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Holly Wheeler"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Karen Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:40",
+               "sceneEnd":"0:22:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:32",
+               "sceneEnd":"0:22:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Holland Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Marsha Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:30",
+               "sceneEnd":"0:22:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:21",
+               "sceneEnd":"0:22:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Holland Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Marsha Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:18",
+               "sceneEnd":"0:22:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:07",
+               "sceneEnd":"0:22:04",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Holland Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Marsha Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:04",
+               "sceneEnd":"0:22:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:00",
+               "sceneEnd":"0:21:56",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Holland Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Marsha Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:56",
+               "sceneEnd":"0:21:48",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:48",
+               "sceneEnd":"0:21:41",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:41",
+               "sceneEnd":"0:21:01",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Tommy H."},
+                  {"name":"Carol"},
+                  {"name":"Nicole"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:01",
+               "sceneEnd":"0:19:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Tommy H."},
+                  {"name":"Carol"},
+                  {"name":"Nicole"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:55",
+               "sceneEnd":"0:19:42",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:42",
+               "sceneEnd":"0:19:36",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Tommy H."},
+                  {"name":"Carol"},
+                  {"name":"Nicole"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:36",
+               "sceneEnd":"0:19:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:30",
+               "sceneEnd":"0:18:59",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:59",
+               "sceneEnd":"0:18:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:50",
+               "sceneEnd":"0:18:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Dr. Martin Brenner"},
+                  {"name":"Scientist"},
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:10",
+               "sceneEnd":"0:17:57",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Dr. Martin Brenner"},
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:57",
+               "sceneEnd":"0:17:39",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:39",
+               "sceneEnd":"0:16:13",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Dr. Martin Brenner"},
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:13",
+               "sceneEnd":"0:15:49",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:49",
+               "sceneEnd":"0:15:17",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Tommy H."},
+                  {"name":"Carol"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:17",
+               "sceneEnd":"0:15:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins High School",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Tommy H."},
+                  {"name":"Carol"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:07",
+               "sceneEnd":"0:14:36",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:36",
+               "sceneEnd":"0:14:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:32",
+               "sceneEnd":"0:14:13",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:13",
+               "sceneEnd":"0:14:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:09",
+               "sceneEnd":"0:13:49",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Barb's Car",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:13:49",
+               "sceneEnd":"0:12:49",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Harrington Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:12:49",
+               "sceneEnd":"0:12:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:12:45",
+               "sceneEnd":"0:10:26",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:26",
+               "sceneEnd":"0:10:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:09",
+               "sceneEnd":"0:09:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Karen Wheeler"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:45",
+               "sceneEnd":"0:08:28",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Library",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:28",
+               "sceneEnd":"0:08:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Downtown Hawkins",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:00",
+               "sceneEnd":"0:06:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:50",
+               "sceneEnd":"0:05:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:50",
+               "sceneEnd":"0:05:42",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"The Monster"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:42",
+               "sceneEnd":"0:05:36",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:36",
+               "sceneEnd":"0:05:29",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:05:29",
+               "sceneEnd":"0:05:17",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:17",
+               "sceneEnd":"0:05:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:07",
+               "sceneEnd":"0:05:01",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:05:01",
+               "sceneEnd":"0:04:47",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Officer Callahan"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:47",
+               "sceneEnd":"0:04:38",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:38",
+               "sceneEnd":"0:04:31",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:04:31",
+               "sceneEnd":"0:04:20",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Officer Powell"},
+                  {"name":"Officer Callahan"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:20",
+               "sceneEnd":"0:04:14",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:14",
+               "sceneEnd":"0:04:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:04:10",
+               "sceneEnd":"0:03:24",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:24",
+               "sceneEnd":"0:03:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:21",
+               "sceneEnd":"0:03:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:06",
+               "sceneEnd":"0:02:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Karen Wheeler"},
+                  {"name":"Ted Wheeler"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Marsha Holland"}
+               ]
+            },
+            {
+               "sceneStart":"0:02:40",
+               "sceneEnd":"0:02:27",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Jonathan Byers"}
                ]
             }
          ]
@@ -2551,7 +3934,17 @@
          "episodeAirDate":"2016-06-15",
          "episodeDescription":"Refusing to believe Will is dead, Joyce tries to connect with her son. The boys give Eleven a makeover. Jonathan and Nancy form an unlikely alliance.",
          "scenes":[
-            
+            {
+               "sceneStart":"0:00:00",
+               "sceneEnd":"0:00:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"",
+               "date":"1983-11-09",
+               "characters":[
+                  {"name":""},
+                  {"name":""}
+               ]
+            }
          ]
       },
       {
