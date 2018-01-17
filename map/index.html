@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stranger Things Narrative Chart</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Stranger Things: Narrative Chart">
+	<meta name="keywords" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
+	<meta name="author" content="Jeffrey Lancaster">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+	<style>
+		body{
+			font-family: "Helvetica Neue";
+		}
+		header{
+			margin: 15px;
+		}
+		header img{
+			height: 60px;
+			vertical-align: middle;
+			margin-top: -25px;
+		}
+		header span{
+			font-weight: 300;
+			font-size: 50px;
+		}
+		#cta{
+			color: #999;
+			font-style: italic;
+			font-size: 0.8em;
+		}
+		svg{
+			border: 2px solid #444;
+			margin: 15px 15px 5px;
+			padding: 25px;
+		}
+		.season1, .season3, .season5, .season7{
+			fill: rgba(200, 200, 200, 0.2);
+		}
+		.season2, .season4, .season6, .season8{
+			fill: rgba(200, 200, 255, 0.2);
+		}
+		.episode{
+			stroke: #DDD;
+			stroke-width: 0.5px;
+			stroke-dasharray: 2,4;
+		}
+		.episode:hover{
+			display: block;
+		}
+		.episodeTitle{
+			font-size: 0.8em;
+			fill: #BBB;
+			display: none;
+		}
+		.episode:nth-child(even){
+
+		}
+		.episode:nth-child(odd){
+
+		}
+		circle.dead{
+			fill: #CC0000;
+			opacity: 0.2;
+			r: 10;
+
+			animation-name: dead;
+			animation-duration: 3s;
+		    animation-iteration-count: 3;
+		    animation-timing-function: ease-out;
+			
+			/* Safari 4.0 - 8.0 */
+			-webkit-animation-name: dead;
+			-webkit-animation-duration: 3s; 
+		    -webkit-animation-iteration-count: 3;
+		    -webkit-animation-timing-function: ease-out;
+		}
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes dead {
+		    0% {r: 10; opacity: 0.2;}
+		    1% {r: 0; opacity: 0.5;}
+		    100% {r: 10; opacity: 0.2;}
+		}
+		@-webkit-keyframes offset {
+		    100% {opacity: 1;}
+		}
+
+		/* Standard syntax */
+		@keyframes dead {
+			0% {r: 10; opacity: 0.2;}
+		    33% {r: 15; opacity: 0;}
+		    34% {r: 0; opacity: 0.5;}
+		    100% {r: 10; opacity: 0.2;}
+		}
+		@keyframes offset {
+		    100% {opacity: 1;}
+		}
+
+		rect.region{
+			fill: none;
+			stroke: #BBB;
+			stroke-width: 0.2px;
+		}
+		text.region{
+			font-weight: 400;
+			fill: rgb(230,230,230);
+		}
+		.titleLine{
+			fill: none;
+		}
+		.king, .khal, .khaleesi{
+			/*stroke: #E21836;*/
+			stroke: gold;
+			stroke-width: 3px;
+		}
+		.hand{
+			stroke: #84B817;
+			stroke-width: 3px;
+			stroke-dasharray: 1, 8;
+			stroke-linecap: round;
+		}
+		.line {
+		  fill: none;
+		  stroke: #CCC;
+		  stroke-width: 0.5px;
+		}
+		.rect{
+			fill: #CCC;
+		}
+		text.character{
+			display: none;
+		}
+		.include .line{
+			stroke-width: 1px;
+		}
+		.include .rect{
+			stroke-width: 1px;
+		}
+		.include:hover .line{
+			stroke-width: 3px;
+		}
+		.include:hover .rect{
+			stroke-width: 3px;
+		}
+		g:hover text{ /* show all names */
+		/*.include:hover text{*/ /* show only .include names */
+			display: inline-block;
+			cursor: default;
+		}
+		.keyLabel{
+			font-family: "Helvetica Neue";
+			font-size: 0.8em;
+			fill: #777;
+		}
+		#key g:hover text{
+			fill: #333;
+			cursor: default;
+		}
+		#description{
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 15px 80px;
+			color: #999;
+			font-size: 0.8em;
+		}
+		#description a{
+			text-decoration: none;
+		}
+		#loading path{
+			fill: none;
+			stroke: #888;
+			stroke-width: 0.5px;
+		}
+		#key{
+			display: inline-block;
+			/*display: none;*/
+		}
+		#ui{
+			width: 410px;
+			/*height: calc(410px * 9/16);*/
+			border: 2px solid #444;
+			margin: 15px 15px;
+			padding: 25px;
+			display: inline-block;
+			/*display: none;*/
+			vertical-align: top;
+			font-size: 12px;
+		}
+		#ui h1{
+			font-size: 30px;
+			margin-top: -5px;
+			margin-bottom: 0;
+			font-weight: 400;
+			color: rgb(230, 230, 230);
+		}
+		#ui h2{
+			font-size: 20px;
+			margin: 5px 0 0 0;
+			font-weight: 400;
+			color: rgb(230, 230, 230);
+		}
+		.hide{
+			display: none;
+			opacity: 0;
+			stroke: none;
+			fill: none;
+		}
+		input[type=radio]{
+			margin-right: 5px;
+		}
+		input[type=radio]:nth-child(3n), input[type=radio]:nth-child(3n+1){
+			margin-left: 10px;
+		}
+		.characterThumb{
+			width: 75px;
+			height: 75px;
+			border-radius: 50px;
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+			display: none;
+			border: 3px solid white;
+			box-shadow: 3px 3px 3px #AAAAAA;
+		}
+		.subLocation{
+			font-family: "Helvetica Neue";
+			font-weight: 200;
+			font-size: 1.4em;
+			fill: rgb(80,80,80);
+		}
+
+		footer{
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+		    left: 0;
+		}
+		.toggle-footer{
+			width: 100px;
+			background-color: white;
+			bottom: 0px;
+			left: calc(50% - 5% - 4px);
+			height: calc(50px - 15px);
+			/*border: 2px solid #444;*/
+			border-bottom: none;
+			text-align: center;
+			font-size: 1.3em;
+			font-weight: 500;
+			color: #444;
+			line-height: 30px;
+			border-top-left-radius: 50px;
+			border-top-right-radius: 50px; 
+			padding-top: 15px;
+			box-shadow: 0px -1px 8px #AAAAAA;
+			cursor: pointer;
+			margin: 0 auto -2px;
+		}
+		#footer-content {
+			display: none;
+			background-color: white;
+		    padding: 30px;
+		    /*border-top: 2px solid #444;*/
+		    /*box-shadow: 0px -1px 8px #AAAAAA;*/
+		}
+		.footer-container{
+			margin: 0 auto;
+			min-width: 50%;
+			width: 1000px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>
+			<img src="../img/Stranger-Things_logo.png">
+			<span> - A Narrative Chart</span>
+		</h1>
+		<p id="cta">Hover over the map below to view character journeys, episode names, and more. <span style="color: red; font-size: inherit; font-weight: bold;">Note: map contains spoilers.</span></p>
+	</header>
+	<div id="map">
+		<svg version="1.1" id="loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 	 width="900px" height="500px" viewBox="800 -89.5 900 500" enable-background="new 800 -89.5 900 500" xml:space="preserve"></svg>
+	</div>
+	<div id="description">
+		<p>Code for this narrative chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
+	</div>
+	
+	<footer>
+		<div class="toggle-footer">
+			<i class="zmdi zmdi-info-outline zmdi-hc-lg"></i>&nbsp; <i class="zmdi zmdi-search zmdi-hc-lg"></i>
+		</div>
+    	<div id="footer-content">
+    		<div class="footer-container">
+	    		<div id="key"></div>
+				<div id="ui">
+					<h1>Select</h1>
+					<form>
+						<div id="gender-select">
+							<h2>Gender</h2>
+						</div>
+						<div id="house-select">
+							<h2>House</h2>
+							<select>
+								<option disabled selected>Select a House</option>
+							</select>
+						</div>
+						<div id="character-select">
+							<h2>Character</h2>
+							<select>
+								<option disabled selected>Select a Character</option>
+							</select>
+						</div>
+						<div id="title-select">
+							<h2>Title</h2>
+							<select>
+								<option disabled selected>Select a Title</option>
+							</select>
+						</div>
+						<div id="life-select">
+							<h2>Alive</h2>
+							<input type="radio" value="alive" name="alive">Alive
+							<input type="radio" value="dead" name="alive">Dead
+							<input type="radio" value="characters" name="alive">Both
+						</div>
+					</form>	
+				</div>
+			</div>
+    	</div>
+	</footer>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+	<!-- for local development -->
+	<!-- <script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/d3.min.js"></script> -->
+	<script src="../js/map.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $(".toggle-footer").click(function(){
+		        $("#footer-content").slideToggle("fast");
+		    });
+
+		    $("#map, header").click(function(){
+		        $("#footer-content").slideUp("fast");
+		    });
+		});
+	</script>
+</body>
+</html>

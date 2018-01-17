@@ -1,8 +1,69 @@
 {
-	"regions": [{
-			"location": "string",
+	"regions": [
+		{
+			"location": "Big City",
 			"subLocation": [
-				"string"
+				"Hospital",
+				"Park"
+			]
+		},
+		{
+			"location": "Indianapolis, Indiana",
+			"subLocation": [
+				"Lonnie's Home"
+			]
+		},
+		{
+			"location": "515 Larrabee Road, Indiana",
+			"subLocation": [
+				"Ives Home"
+			]
+		},
+		{
+			"location": "Hawkins, Indiana",
+			"subLocation": [
+				"Leaving Hawkins",
+				"Car Junkyard",
+				"Hopper Home",
+				"Quarry",
+				"Fair Mart",
+				"Hideaway",
+				"Cemetery",
+				"Clarke Home",
+				"Funeral Home",
+				"Road",
+				"Holland Home",
+				"Sinclair Home",
+				"Steve's Car",
+				"Wheeler Home",
+				"Hospital",
+				"Hunting Store",
+				"Roane County Coroner",
+				"Grocery Store",
+				"Downtown Hawkins",
+				"Police Station",
+				"Hawkins High School",
+				"Hawkins Library",
+				"Hawkins Middle School",
+				"Barb's Car",
+				"Harrington Home",
+				"Benny's Burgers",
+				"Castle Byers",
+				"Byers Home",
+				"Woods",
+				"Woods Outside Hawkins National Lab",
+				"Hawkins National Lab"
+			]
+		},
+		{
+			"location": "Upside Down",
+			"subLocation": [
+				"Byers Home",
+				"Castle Byers",
+				"Harrington Home",
+				"Woods",
+				"Hawkins Library",
+				"Downtown Hawkins"
 			]
 		}
 	]
