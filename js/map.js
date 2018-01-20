@@ -1,14 +1,4 @@
-var subLocation = true;
-var keyValues;
-
-var xscale = 20; // higher numbers squish the visualization more
-var yscale = 2; // higher numbers spread out the visualization more
-
-if(subLocation){
-	keyValues = "keyValues.json";
-} else {
-	keyValues = "keyValues-locations.json";
-}
+/* HELPFUL FUNCTIONS */
 
 function isolate(className){
 	className = className.toLowerCase().replace(/([^A-Z0-9])/gi,"");
@@ -28,19 +18,107 @@ function toTitleCase(str){
     });
 }
 
+
+/* VARIABLES AND CONFIGURATION */
+
+var config = {
+	subLocation: true,
+	xscale: 20, // higher numbers squish the visualization more
+	yscale: 2 // higher numbers spread out the visualization more
+}
+
+
+// variable containers for imported data
+var charactersData,
+  locationsData,
+  locationsAltData,
+  episodesData,
+  charactersIncludeData,
+  charactersGenderData,
+  keyValue,
+  keyValuesFile,
+  episodeLengths,
+  locations,
+  subLocations;
+
+
+/* IMPORT DATA */
+
+if(config.subLocation){
+	keyValuesFile = "keyValues.json";
+} else {
+	keyValuesFile = "keyValues-locations.json";
+}
+
+$.when(
+  // $.getJSON("../data/characters.json", function(data) {
+  //   charactersData = data.characters;
+  //   console.log("characters.json loaded");
+  // })
+  // .fail(function() {console.error("characters.json not loaded");}),
+      
+  // $.getJSON("../data/locations.json", function(data) {
+  //   locationsData = data.regions;
+  //   console.log("locations.json loaded");
+  // })
+  // .fail(function() {console.error("locations.json not loaded");}),
+
+  // $.getJSON("../data/locations-alt.json", function(data) {
+  //   locationsAltData = data.sceneLocSorted;
+  //   console.log("locations-alt.json loaded");
+  // })
+  // .fail(function() {console.error("locations-alt.json not loaded");}),
+
+  // $.getJSON("../data/episodes.json", function(data) {
+  //   episodesData = data.episodes;
+  //   console.log("episodes.json loaded");
+  // })
+  // .fail(function() {console.error("episodes.json not loaded");}),
+
+  // $.getJSON("../data/characters-include.json", function(data) {
+  //   charactersIncludeData = data.include;
+  //   console.log("characters-include.json loaded");
+  // })
+  // .fail(function() {console.error("characters-include.json not loaded");}),
+
+  // $.getJSON("../data/characters-gender.json", function(data) {
+  //   charactersGenderData = data.gender;
+  //   console.log("characters-gender.json loaded");
+  // })
+  // .fail(function() {console.error("characters-gender.json not loaded");}),
+
+  $.getJSON("../data/keyValues.json", function(data) {
+    keyValues = data.keyValues;
+	episodeLengths = data.episodeLengths;
+    locations = data.sceneLocSorted;
+    subLocations = data.sceneSubLocSorted;
+    console.log("keyValues.json loaded");
+  })
+  .fail(function() {console.error("keyValues.json not loaded");})
+
+
+/* DO STUFF WITH THE DATA */
+
+).then(function() {
+    console.log("now that the files are loaded... do magic.");
+});
+
+
+/* START TO MOVE CODE BELOW INTO .then() and uncomment data files as needed */
+
 // hide the UI box until everything is loaded
 $("#ui, footer").toggle();
 
-$.getJSON("../data/"+keyValues, function( data ) {
+$.getJSON("../data/"+keyValuesFile, function( data ) {
 
 	var keyValues = data.keyValues;
 	var episodeLengths = data.episodeLengths;
 	var locations = data.sceneLocSorted;
-	if(subLocation){
+	if(config.subLocation){
 		var subLocations = data.sceneSubLocSorted;
 	}
-	const width = episodeLengths[episodeLengths.length-1].episodes[episodeLengths[episodeLengths.length-1].episodes.length-1].shift/xscale;
-	const height = yscale*(2*locations[locations.length-1].middle + locations[locations.length-1].max);
+	const width = episodeLengths[episodeLengths.length-1].episodes[episodeLengths[episodeLengths.length-1].episodes.length-1].shift/config.xscale;
+	const height = config.yscale*(2*locations[locations.length-1].middle + locations[locations.length-1].max);
 
 	const svg = d3.select("#map").append("svg")
 		.attr("width", width)
@@ -84,8 +162,8 @@ $.getJSON("../data/"+keyValues, function( data ) {
 			
 			// additional variables: title (t), alive (a), born (b), greensight (g), flashback (f), warg (w)
 			
-			// ignore flashbacks, greensight, warging, not yet born
-			if(keyValues[i].values[j].f || keyValues[i].values[j].g || keyValues[i].values[j].w || keyValues[i].values[j].b == false){}
+			// ignore flashbacks, greensight, warging, not yet born, mindpalace
+			if(keyValues[i].values[j].f || keyValues[i].values[j].g || keyValues[i].values[j].w || keyValues[i].values[j].m || keyValues[i].values[j].b == false){}
 			// for everything else
 			else {
 				var objStart = {};
@@ -154,14 +232,14 @@ $.getJSON("../data/"+keyValues, function( data ) {
 	// if two types of titles, then split into separate objects
 
 	var lineFunction = d3.line()
-		.x(function(d) { return d.x/xscale; })
-		.y(function(d) { return 2*yscale*d.y; })
+		.x(function(d) { return d.x/config.xscale; })
+		.y(function(d) { return 2*config.yscale*d.y; })
 		.curve(d3.curveMonotoneX);
 
 	var discontinuousLineFunction = d3.line()
 		.defined(function(d) { return d; })
-		.x(function(d) { return d.x/xscale; })
-		.y(function(d) { return 2*yscale*d.y; })
+		.x(function(d) { return d.x/config.xscale; })
+		.y(function(d) { return 2*config.yscale*d.y; })
 		.curve(d3.curveMonotoneX);
 
 	// add rectangles representing each region
@@ -169,10 +247,10 @@ $.getJSON("../data/"+keyValues, function( data ) {
 		var regionName = d.name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
 		svg.append("rect")
 			.attr("class", "region "+regionName)
-			.attr("height", 2*yscale*d.max)
+			.attr("height", 2*config.yscale*d.max)
 			.attr("width", width)
 			.attr("x", 0)
-			.attr("y", yscale*(2*d.middle)-d.max*yscale);
+			.attr("y", config.yscale*(2*d.middle)-d.max*config.yscale);
 		svg.append("text")
 			.attr("class", "region")
             .text(d.name.replace("#",""))
@@ -181,11 +259,11 @@ $.getJSON("../data/"+keyValues, function( data ) {
             	if(2*d.max > threshold){
             		return threshold;
             	} else {
-            		return 2*d.max*yscale;
+            		return 2*d.max*config.yscale;
             	}
             })
             .attr("x", 10)
-            .attr("y", 2*yscale*d.middle+2*yscale)
+            .attr("y", 2*config.yscale*d.middle+2*config.yscale)
             .attr("dominant-baseline", "middle")
             .attr("text-anchor", "start");
         svg.append("text")
@@ -196,11 +274,11 @@ $.getJSON("../data/"+keyValues, function( data ) {
             	if(2*d.max > threshold){
             		return threshold;
             	} else {
-            		return 2*d.max*yscale;
+            		return 2*d.max*config.yscale;
             	}
             })
             .attr("x", width-10)
-            .attr("y", 2*yscale*d.middle+2)
+            .attr("y", 2*config.yscale*d.middle+2)
             .attr("dominant-baseline", "middle")
             .attr("text-anchor", "end");
 	});
@@ -216,8 +294,8 @@ $.getJSON("../data/"+keyValues, function( data ) {
 				.append("rect")
 				.attr("class", "episode season"+episodeLengths[i].seasonNum)
 				.attr("height", height+10)
-				.attr("width", e.length/xscale)
-				.attr("x", e.shift/xscale)
+				.attr("width", e.length/config.xscale)
+				.attr("x", e.shift/config.xscale)
 				.attr("y", -5);
 		});
 		episodeLengths[i].episodes.forEach(function(e,j){
@@ -229,13 +307,13 @@ $.getJSON("../data/"+keyValues, function( data ) {
 	            .text("\"" + e.episodeTitle + "\" (S"+ d.seasonNum + ":E" + e.episodeNum + ")")
 	            .attr("x", function(){
 	            	if(d.seasonNum == 1 && e.episodeNum < 4){
-	            		return e.shift/xscale;
+	            		return e.shift/config.xscale;
 	            	}
 	            	else if(d.seasonNum == 1 && e.episodeNum > 4){
-	            		return (e.shift + e.length)/xscale;
+	            		return (e.shift + e.length)/config.xscale;
 	            	}
 	            	else {
-	            		return (e.shift + e.length/2)/xscale;
+	            		return (e.shift + e.length/2)/config.xscale;
 	            	}
 	            })
 	            .attr("y", -5)
@@ -261,10 +339,10 @@ $.getJSON("../data/"+keyValues, function( data ) {
 	            		return e.shift/100;
 	            	}
 	            	else if(d.seasonNum == 1 && e.episodeNum > 4){
-	            		return (e.shift + e.length)/xscale;
+	            		return (e.shift + e.length)/config.xscale;
 	            	}
 	            	else {
-	            		return (e.shift + e.length/2)/xscale;
+	            		return (e.shift + e.length/2)/config.xscale;
 	            	}
 	            })
 	            .attr("y", height + 5)
@@ -300,8 +378,8 @@ $.getJSON("../data/"+keyValues, function( data ) {
 			if(e.a == false){
 				svg.select("g."+className)
 					.append("circle")
-					.attr("cx", function(){return e.e/xscale;})
-					.attr("cy", function(){return 2*yscale*e.y;})
+					.attr("cx", function(){return e.e/config.xscale;})
+					.attr("cy", function(){return 2*config.yscale*e.y;})
 					.attr("class", "dead");
 			}
 		});
@@ -335,12 +413,12 @@ $.getJSON("../data/"+keyValues, function( data ) {
 	keyValues.forEach(function(d,i){
 		var className = d.key.toLowerCase().replace(/([^A-Z0-9])/gi,"");
 		keyValues[i].values.forEach(function(e,j){
-			var width = (keyValues[i].values[j].e - keyValues[i].values[j].s)/xscale;
+			var width = (keyValues[i].values[j].e - keyValues[i].values[j].s)/config.xscale;
 			var height = 4;
 			svg.select("g."+className)
 				.append("rect")
-		        .attr("x", keyValues[i].values[j].s/xscale)
-		        .attr("y", 2*yscale*keyValues[i].values[j].y-(height/2))
+		        .attr("x", keyValues[i].values[j].s/config.xscale)
+		        .attr("y", 2*config.yscale*keyValues[i].values[j].y-(height/2))
 		        .attr("width", width)
 		        .attr("height", 3)
 		        .attr("class", "rect");
@@ -354,7 +432,7 @@ $.getJSON("../data/"+keyValues, function( data ) {
             .attr("text-anchor", "end");
 	});
 
-	if(subLocation){
+	if(config.subLocation){
 		// add a single text box for all subLocation
 		svg.append("text")
 			.attr("x", 0)
@@ -391,13 +469,13 @@ $.getJSON("../data/"+keyValues, function( data ) {
     		}
     		$(".subLocation").show();
             for(i=0; i<subLocations.length; i++){
-            	if(d3.mouse(this)[1]/(2*yscale) > subLocations[i].middle - subLocations[i].max/(2*yscale) && d3.mouse(this)[1]/(2*yscale) < subLocations[i].middle + subLocations[i].max/(2*yscale)){
+            	if(d3.mouse(this)[1]/(2*config.yscale) > subLocations[i].middle - subLocations[i].max/(2*config.yscale) && d3.mouse(this)[1]/(2*config.yscale) < subLocations[i].middle + subLocations[i].max/(2*config.yscale)){
             		d3.selectAll(".subLocation")
 		            	.attr("x", function(){
 		            		return window.pageXOffset + 20;
 		            	})
 		            	.attr("y", function(){
-		            		return 2*yscale*subLocations[i].middle;
+		            		return 2*config.yscale*subLocations[i].middle;
 		            	})
 		            	.text(function(){
 		            		return subLocations[i].name;

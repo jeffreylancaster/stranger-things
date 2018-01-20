@@ -235,6 +235,12 @@
                   1
                ]
             }
+         ],
+         "parentOf":[
+            "Dustin Henderson"
+         ],
+         "marriedEngaged":[
+            "Mr. Henderson"
          ]
       },
       {
@@ -1014,7 +1020,7 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTFlZDI1MTEtNzQ4OS00N2M5LWEzYzgtMDg4ZDlhZGNiMDY0XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1.jpg"
       },
       {
-         "characterName": "Merril",
+         "characterName": "Merrill",
          "characterLink": "/title/tt4574334/characters/nm0492507",
          "actorName": "Fenton Lawless",
          "actorLink": "/name/nm0492507/",

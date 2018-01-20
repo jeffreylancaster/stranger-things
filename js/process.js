@@ -70,7 +70,7 @@ $.when(
     charactersIncludeData = data.include;
     console.log("characters-include.json loaded");
   })
-  .fail(function() {console.error("characters-include.json not loaded");}),
+  .fail(function() {console.error("characters-include.json not loaded");})
 
   // $.getJSON("../data/characters-gender.json", function(data) {
   //   charactersGenderData = data.gender;
@@ -88,9 +88,6 @@ $.when(
     /* for (var i in charactersData) {
        console.log(charactersData[i].characterName);
     } */
-
-    // object for characters to include
-
 
     // build array of characters to include from characters-include.json
     /* var charactersInclude = [];
