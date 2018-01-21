@@ -279,6 +279,10 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTYzN2IyNWYtZjJiZi00OWZiLTgwYTAtMzYwY2Q4MWViNzcyXkEyXkFqcGdeQXVyMTMwNDczNzI@._V1.jpg"
       },
       {
+         "characterName": "D'Artagnan",
+         "nickname": "Dart"
+      },
+      {
          "characterName": "Diane Hopper",
          "actorName": "Jerri Tubbs",
          "actorLink": "/name/nm2424977/",
@@ -1856,6 +1860,9 @@
          "actorLink": "/name/nm1151921/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTIzNzQ3MzY5M15BMl5BanBnXkFtZTgwNjYwMzI0NDE@._V1._SX100_SY140_.jpg",
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTIzNzQ3MzY5M15BMl5BanBnXkFtZTgwNjYwMzI0NDE@._V1.jpg"
+      },
+      {
+         "characterName": "The Mind Flayer"
       },
       {
          "characterName": "The Monster",
