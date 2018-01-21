@@ -1862,7 +1862,10 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTIzNzQ3MzY5M15BMl5BanBnXkFtZTgwNjYwMzI0NDE@._V1.jpg"
       },
       {
-         "characterName": "The Mind Flayer"
+         "characterName": "The Mind Flayer",
+         "characterNameAlt": [
+            "The Shadow Monster"
+         ]
       },
       {
          "characterName": "The Monster",
