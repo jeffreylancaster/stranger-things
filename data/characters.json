@@ -407,6 +407,9 @@
       },
       {
          "characterName": "Eleven",
+         "characterNameAlt": [
+            "Jane"
+         ],
          "nickname": "El",
          "characterLink": "/title/tt4574334/characters/nm5611121",
          "actorName": "Millie Bobby Brown",
@@ -418,7 +421,7 @@
             "Terry Ives"
          ],
          "killed": [
-            ""
+            "The Monster"
          ]
       },
       {
@@ -1876,7 +1879,8 @@
          "actorName": "Mark Steger",
          "actorLink": "/name/nm0825209/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjIwMTcwNl5BMl5BanBnXkFtZTgwMjQ5MjE5NTE@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjIwMTcwNl5BMl5BanBnXkFtZTgwMjQ5MjE5NTE@._V1.jpg"
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjIwMTcwNl5BMl5BanBnXkFtZTgwMjQ5MjE5NTE@._V1.jpg",
+         "killedBy":"Eleven"
       },
       {
          "characterName": "Tina",

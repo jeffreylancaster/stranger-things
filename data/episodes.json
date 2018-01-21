@@ -16060,14 +16060,1554 @@
          "episodeDescription":"Nancy and Jonathan swap conspiracy theories with a new ally as Eleven searches for someone from her past. \"Bob the Brain\" tackles a difficult problem.",
          "scenes":[
             {
-               "sceneStart":"0:00:00",
-               "sceneEnd":"0:00:00",
+               "sceneStart":"0:57:36",
+               "sceneEnd":"0:57:25",
                "location":"Hawkins, Indiana",
-               "subLocation":"",
+               "subLocation":"Byers Home",
                "date":"1984-11-02",
                "characters":[
-                  {"name":""},
-                  {"name":""}
+               ]
+            },
+            {
+               "sceneStart":"0:57:25",
+               "sceneEnd":"0:56:25",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-02",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:56:25",
+               "sceneEnd":"0:54:42",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-02",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:54:42",
+               "sceneEnd":"0:53:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-02",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:52:05",
+               "sceneEnd":"0:51:51",
+               "location":"to Sesser, Illinois",
+               "subLocation":"Motel",
+               "date":"1984-11-02",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:51:51",
+               "sceneEnd":"0:51:19",
+               "location":"to Sesser, Illinois",
+               "subLocation":"Motel",
+               "date":"1984-11-02",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Motel Owner"}
+               ]
+            },
+            {
+               "sceneStart":"0:51:19",
+               "sceneEnd":"0:49:04",
+               "location":"to Sesser, Illinois",
+               "subLocation":"Motel",
+               "date":"1984-11-02",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:49:04",
+               "sceneEnd":"0:48:54",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:54",
+               "sceneEnd":"0:48:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:50",
+               "sceneEnd":"0:48:39",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:39",
+               "sceneEnd":"0:48:23",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Will Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:23",
+               "sceneEnd":"0:46:41",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:46:41",
+               "sceneEnd":"0:45:59",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Erica Sinclair"},
+                  {"name":"Mrs. Sinclair"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Mr. Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:45:59",
+               "sceneEnd":"0:45:53",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Erica Sinclair"},
+                  {"name":"Mrs. Sinclair"},
+                  {"name":"Mr. Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:45:53",
+               "sceneEnd":"0:45:41",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:45:41",
+               "sceneEnd":"0:45:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Claudia Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:45:32",
+               "sceneEnd":"0:44:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Claudia Henderson"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:40",
+               "sceneEnd":"0:43:34",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:34",
+               "sceneEnd":"0:43:27",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"D'Artagnan"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:27",
+               "sceneEnd":"0:43:25",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:25",
+               "sceneEnd":"0:43:20",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"D'Artagnan"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:20",
+               "sceneEnd":"0:43:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:18",
+               "sceneEnd":"0:43:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"D'Artagnan"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:10",
+               "sceneEnd":"0:43:08",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:08",
+               "sceneEnd":"0:43:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"D'Artagnan"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:06",
+               "sceneEnd":"0:42:59",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:59",
+               "sceneEnd":"0:42:58",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"D'Artagnan"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:58",
+               "sceneEnd":"0:42:54",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:54",
+               "sceneEnd":"0:42:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"D'Artagnan"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:51",
+               "sceneEnd":"0:42:47",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:47",
+               "sceneEnd":"0:42:37",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"D'Artagnan"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:37",
+               "sceneEnd":"0:42:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:32",
+               "sceneEnd":"0:42:25",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:42:25",
+               "sceneEnd":"0:41:58",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Friendly Trucker"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:58",
+               "sceneEnd":"0:41:10",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:10",
+               "sceneEnd":"0:40:35",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:35",
+               "sceneEnd":"0:39:33",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:39:33",
+               "sceneEnd":"0:39:18",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:39:18",
+               "sceneEnd":"0:38:40",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:40",
+               "sceneEnd":"0:37:13",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Murray Bauman"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:13",
+               "sceneEnd":"0:37:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Billy Hargrove"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:00",
+               "sceneEnd":"0:36:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:55",
+               "sceneEnd":"0:36:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:50",
+               "sceneEnd":"0:36:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Keith"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:30",
+               "sceneEnd":"0:36:11",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Keith"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:11",
+               "sceneEnd":"0:35:14",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:35:14",
+               "sceneEnd":"0:34:54",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:54",
+               "sceneEnd":"0:34:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:19",
+               "sceneEnd":"0:34:14",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:19",
+               "sceneEnd":"0:34:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:12",
+               "sceneEnd":"0:33:23",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:33:23",
+               "sceneEnd":"0:32:33",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:33",
+               "sceneEnd":"0:31:37",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:31:37",
+               "sceneEnd":"0:30:58",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:30:58",
+               "sceneEnd":"0:29:35",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:35",
+               "sceneEnd":"0:29:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:09",
+               "sceneEnd":"0:29:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Erica Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:07",
+               "sceneEnd":"0:29:05",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:05",
+               "sceneEnd":"0:29:02",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Erica Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:02",
+               "sceneEnd":"0:29:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:00",
+               "sceneEnd":"0:28:57",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Erica Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:57",
+               "sceneEnd":"0:28:53",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:53",
+               "sceneEnd":"0:28:52",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Erica Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:53",
+               "sceneEnd":"0:28:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:50",
+               "sceneEnd":"0:28:43",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Erica Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:43",
+               "sceneEnd":"0:28:39",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:39",
+               "sceneEnd":"0:28:36",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:28:36",
+               "sceneEnd":"0:28:29",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:29",
+               "sceneEnd":"0:28:13",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:13",
+               "sceneEnd":"0:28:11",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:11",
+               "sceneEnd":"0:27:45",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:45",
+               "sceneEnd":"0:27:38",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:38",
+               "sceneEnd":"0:27:15",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:15",
+               "sceneEnd":"0:25:25",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:25:25",
+               "sceneEnd":"0:24:31",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:31",
+               "sceneEnd":"0:23:28",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:28",
+               "sceneEnd":"0:23:22",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:22",
+               "sceneEnd":"0:23:05",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Karen Wheeler"},
+                  {"name":"Ted Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:05",
+               "sceneEnd":"0:22:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Ted Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:51",
+               "sceneEnd":"0:22:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Karen Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:50",
+               "sceneEnd":"0:22:44",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Ted Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:44",
+               "sceneEnd":"0:22:43",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Karen Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:43",
+               "sceneEnd":"0:22:31",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Ted Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:31",
+               "sceneEnd":"0:22:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:19",
+               "sceneEnd":"0:21:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:51",
+               "sceneEnd":"0:20:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:30",
+               "sceneEnd":"0:20:17",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:20:17",
+               "sceneEnd":"0:19:14",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:14",
+               "sceneEnd":"0:18:48",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"},
+                  {"name":"Keith"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:48",
+               "sceneEnd":"0:17:48",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:48",
+               "sceneEnd":"0:17:42",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"},
+                  {"name":"Billy Hargrove"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:42",
+               "sceneEnd":"0:17:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Billy Hargrove"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:19",
+               "sceneEnd":"0:17:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Arcade",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"},
+                  {"name":"Billy Hargrove"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:07",
+               "sceneEnd":"0:13:08",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Murray Bauman"}
+               ]
+            },
+            {
+               "sceneStart":"0:13:08",
+               "sceneEnd":"0:13:04",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:13:04",
+               "sceneEnd":"0:12:23",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Lab Technician"}
+               ]
+            },
+            {
+               "sceneStart":"0:12:23",
+               "sceneEnd":"0:12:13",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:12:13",
+               "sceneEnd":"0:11:40",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:11:40",
+               "sceneEnd":"0:11:07",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "mindPalace":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:11:07",
+               "sceneEnd":"0:10:43",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "mindPalace":true,
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:43",
+               "sceneEnd":"0:10:33",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"},
+                  {"name":"Staff Nurse Caitlin"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:33",
+               "sceneEnd":"0:10:24",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:24",
+               "sceneEnd":"0:10:11",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:11",
+               "sceneEnd":"0:10:08",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:10:08",
+               "sceneEnd":"0:09:46",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:46",
+               "sceneEnd":"0:09:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"},
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:45",
+               "sceneEnd":"0:09:36",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:36",
+               "sceneEnd":"0:09:24",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Ives Home",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:24",
+               "sceneEnd":"0:09:13",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:13",
+               "sceneEnd":"0:08:59",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Security Guard"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:59",
+               "sceneEnd":"0:08:56",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:08:56",
+               "sceneEnd":"0:08:34",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:34",
+               "sceneEnd":"0:08:31",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:08:31",
+               "sceneEnd":"0:08:03",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Dr. Martin Brenner"},
+                  {"name":"Ray"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:03",
+               "sceneEnd":"0:08:01",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:01",
+               "sceneEnd":"0:07:57",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:57",
+               "sceneEnd":"0:07:56",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:56",
+               "sceneEnd":"0:07:54",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:54",
+               "sceneEnd":"0:07:53",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Security Guard"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:53",
+               "sceneEnd":"0:07:52",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Security Guard"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:52",
+               "sceneEnd":"0:07:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:51",
+               "sceneEnd":"0:07:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:50",
+               "sceneEnd":"0:07:49",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Security Guard"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:49",
+               "sceneEnd":"0:07:46",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:46",
+               "sceneEnd":"0:07:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:45",
+               "sceneEnd":"0:07:44",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:45",
+               "sceneEnd":"0:07:44",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:44",
+               "sceneEnd":"0:07:36",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Dr. Martin Brenner"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:36",
+               "sceneEnd":"0:07:25",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:25",
+               "sceneEnd":"0:07:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:07:21",
+               "sceneEnd":"0:06:35",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:35",
+               "sceneEnd":"0:06:04",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:04",
+               "sceneEnd":"0:05:46",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:46",
+               "sceneEnd":"0:04:59",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:59",
+               "sceneEnd":"0:04:35",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:35",
+               "sceneEnd":"0:04:20",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:20",
+               "sceneEnd":"0:03:34",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:34",
+               "sceneEnd":"0:03:24",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:24",
+               "sceneEnd":"0:03:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:21",
+               "sceneEnd":"0:03:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:03:19",
+               "sceneEnd":"0:03:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:16",
+               "sceneEnd":"0:03:14",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:03:14",
+               "sceneEnd":"0:03:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:12",
+               "sceneEnd":"0:03:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:03:10",
+               "sceneEnd":"0:02:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Will Byers"}
                ]
             }
          ]
@@ -16080,7 +17620,17 @@
          "episodeAirDate":"2017-10-27",
          "episodeDescription":"Will's connection to a shadowy evil grows stronger but no one's quite sure how to stop it. Elsewhere, Dustin and Steve forge an unlikely bond.",
          "scenes":[
-            
+            {
+               "sceneStart":"0:00:00",
+               "sceneEnd":"0:00:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":""},
+                  {"name":""}
+               ]
+            }
          ]
       },
       {
