@@ -19745,6 +19745,2087 @@
          "episodeDescription":"Psychic visions draw Eleven to a band of violent outcasts and an angry girl with a shadowy past.",
          "scenes":[
             {
+               "sceneStart":"0:45:11",
+               "sceneEnd":"0:44:59",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "mindPalace":true,
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:45:59",
+               "sceneEnd":"0:45:56",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"},
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:45:56",
+               "sceneEnd":"0:44:54",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Security Guard"}
+               ]
+            },
+            {
+               "sceneStart":"0:45:54",
+               "sceneEnd":"0:44:53",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Young Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:53",
+               "sceneEnd":"0:44:52",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hospital",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:52",
+               "sceneEnd":"0:44:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Ray"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:50",
+               "sceneEnd":"0:44:43",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"},
+                  {"name":"Ray"},
+                  {"name":"Dr. Martin Brenner"},
+                  {"name":"Young Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:43",
+               "sceneEnd":"0:44:27",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Terry Ives"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:27",
+               "sceneEnd":"0:44:13",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:13",
+               "sceneEnd":"0:44:11",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:44:11",
+               "sceneEnd":"0:44:08",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:08",
+               "sceneEnd":"0:44:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Young Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:06",
+               "sceneEnd":"0:43:50",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:50",
+               "sceneEnd":"0:43:47",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:47",
+               "sceneEnd":"0:43:42",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:43:42",
+               "sceneEnd":"0:42:47",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:47",
+               "sceneEnd":"0:42:22",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:42:22",
+               "sceneEnd":"0:42:13",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:42:13",
+               "sceneEnd":"0:41:53",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:53",
+               "sceneEnd":"0:41:52",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Young Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:52",
+               "sceneEnd":"0:41:48",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:48",
+               "sceneEnd":"0:41:21",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "mindPalace":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:21",
+               "sceneEnd":"0:41:06",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:06",
+               "sceneEnd":"0:40:50",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:50",
+               "sceneEnd":"0:40:25",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Becky Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:25",
+               "sceneEnd":"0:40:11",
+               "location":"515 Larrabee Road, Indiana",
+               "subLocation":"Ives Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Becky Ives"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:39:08",
+               "sceneEnd":"0:38:51",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Bus",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:51",
+               "sceneEnd":"0:38:50",
+               "location":"Chicago, Illinois",
+               "subLocation":"Alley",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:50",
+               "sceneEnd":"0:38:48",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Bus",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:48",
+               "sceneEnd":"0:38:47",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Funshine"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:47",
+               "sceneEnd":"0:38:40",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Bus",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:40",
+               "sceneEnd":"0:38:35",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Bus",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:38:35",
+               "sceneEnd":"0:38:21",
+               "location":"Chicago, Illinois",
+               "subLocation":"Bus Station",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:21",
+               "sceneEnd":"0:38:01",
+               "location":"Chicago, Illinois",
+               "subLocation":"Chicago Streets",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:01",
+               "sceneEnd":"0:37:58",
+               "location":"Chicago, Illinois",
+               "subLocation":"Chicago Streets",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Man on Street"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:58",
+               "sceneEnd":"0:37:48",
+               "location":"Chicago, Illinois",
+               "subLocation":"Chicago Streets",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:48",
+               "sceneEnd":"0:37:34",
+               "location":"Chicago, Illinois",
+               "subLocation":"Chicago Streets",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:34",
+               "sceneEnd":"0:37:17",
+               "location":"Chicago, Illinois",
+               "subLocation":"Alley",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:17",
+               "sceneEnd":"0:37:06",
+               "location":"Chicago, Illinois",
+               "subLocation":"Alley",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mentally Ill Man"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:06",
+               "sceneEnd":"0:36:48",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:48",
+               "sceneEnd":"0:36:33",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:33",
+               "sceneEnd":"0:35:14",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Funshine"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:35:14",
+               "sceneEnd":"0:33:57",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Funshine"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:33:57",
+               "sceneEnd":"0:32:02",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:02",
+               "sceneEnd":"0:31:59",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:31:59",
+               "sceneEnd":"0:31:06",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:31:06",
+               "sceneEnd":"0:30:54",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Funshine"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:30:54",
+               "sceneEnd":"0:29:49",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Funshine"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:49",
+               "sceneEnd":"0:29:40",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:29:40",
+               "sceneEnd":"0:29:04",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-03",
+               "mindPalace":true,
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:04",
+               "sceneEnd":"0:28:47",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:47",
+               "sceneEnd":"0:28:43",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:43",
+               "sceneEnd":"0:27:36",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:36",
+               "sceneEnd":"0:27:22",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:22",
+               "sceneEnd":"0:27:19",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "flashback":true,
+               "characters":[
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:19",
+               "sceneEnd":"0:27:16",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "flashback":true,
+               "characters":[
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:16",
+               "sceneEnd":"0:27:11",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:11",
+               "sceneEnd":"0:27:07",
+               "location":"Pittsburgh, Pennsylvania",
+               "subLocation":"Tunnel",
+               "flashback":true,
+               "characters":[
+                  {"name":"Kali"},
+                  {"name":"Adams"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:07",
+               "sceneEnd":"0:26:58",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:26:58",
+               "sceneEnd":"0:26:56",
+               "location":"Hawkins, Illinois",
+               "subLocation":"Hawkins Middle School",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:26:56",
+               "sceneEnd":"0:26:49",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:26:49",
+               "sceneEnd":"0:26:48",
+               "location":"Hawkins, Illinois",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:26:48",
+               "sceneEnd":"0:26:39",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:26:39",
+               "sceneEnd":"0:25:23",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:25:23",
+               "sceneEnd":"0:25:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Road",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:25:21",
+               "sceneEnd":"0:25:18",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:25:18",
+               "sceneEnd":"0:25:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:25:16",
+               "sceneEnd":"0:24:56",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:56",
+               "sceneEnd":"0:24:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Middle School",
+               "flashback":true,
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:55",
+               "sceneEnd":"0:24:48",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:48",
+               "sceneEnd":"0:24:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hopper Cabin",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:45",
+               "sceneEnd":"0:24:41",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:41",
+               "sceneEnd":"0:24:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:40",
+               "sceneEnd":"0:24:37",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hopper Cabin",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:37",
+               "sceneEnd":"0:24:31",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:31",
+               "sceneEnd":"0:24:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:30",
+               "sceneEnd":"0:24:28",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:28",
+               "sceneEnd":"0:24:27",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:27",
+               "sceneEnd":"0:24:24",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:24",
+               "sceneEnd":"0:24:22",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:22",
+               "sceneEnd":"0:24:19",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:19",
+               "sceneEnd":"0:24:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Dr. Martin Brenner"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:18",
+               "sceneEnd":"0:24:17",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "mindPalace":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"The Monster"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:17",
+               "sceneEnd":"0:24:03",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:17",
+               "sceneEnd":"0:24:03",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:24:03",
+               "sceneEnd":"0:23:58",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:58",
+               "sceneEnd":"0:23:49",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:49",
+               "sceneEnd":"0:23:27",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:27",
+               "sceneEnd":"0:23:26",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:26",
+               "sceneEnd":"0:23:17",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:17",
+               "sceneEnd":"0:23:15",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Young Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:15",
+               "sceneEnd":"0:23:05",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:05",
+               "sceneEnd":"0:21:51",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:51",
+               "sceneEnd":"0:21:38",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Dottie"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:38",
+               "sceneEnd":"0:21:15",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:15",
+               "sceneEnd":"0:21:08",
+               "location":"Chicago, Illinois",
+               "subLocation":"Alley",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:08",
+               "sceneEnd":"0:21:05",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Road",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:21:05",
+               "sceneEnd":"0:20:42",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Road",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:42",
+               "sceneEnd":"0:20:28",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Oscar's Gas n' Go",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:20:28",
+               "sceneEnd":"0:20:18",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Oscar's Gas n' Go",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:18",
+               "sceneEnd":"0:20:04",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Oscar's Gas n' Go",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"},
+                  {"name":"Gas Station Clerk"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:04",
+               "sceneEnd":"0:19:38",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Oscar's Gas n' Go",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:38",
+               "sceneEnd":"0:18:59",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Oscar's Gas n' Go",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"},
+                  {"name":"Gas Station Clerk"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:59",
+               "sceneEnd":"0:18:50",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Oscar's Gas n' Go",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:50",
+               "sceneEnd":"0:18:43",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Oscar's Gas n' Go",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:18:43",
+               "sceneEnd":"0:18:29",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:18:29",
+               "sceneEnd":"0:17:48",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Mick"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:48",
+               "sceneEnd":"0:17:37",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:17:37",
+               "sceneEnd":"0:17:18",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Ray"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:18",
+               "sceneEnd":"0:16:46",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:46",
+               "sceneEnd":"0:16:40",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Axel"},
+                  {"name":"Dottie"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:40",
+               "sceneEnd":"0:16:15",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:15",
+               "sceneEnd":"0:16:11",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Young Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:11",
+               "sceneEnd":"0:15:05",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:05",
+               "sceneEnd":"0:15:03",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Terry Ives"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:03",
+               "sceneEnd":"0:14:34",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:34",
+               "sceneEnd":"0:14:28",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Axel"},
+                  {"name":"Dottie"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:28",
+               "sceneEnd":"0:14:18",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:18",
+               "sceneEnd":"0:13:41",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Ray"},
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"}
+               ]
+            },
+            {
+               "sceneStart":"0:13:41",
+               "sceneEnd":"0:13:37",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:13:37",
+               "sceneEnd":"0:13:24",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"}
+               ]
+            },
+            {
+               "sceneStart":"0:13:24",
+               "sceneEnd":"0:13:10",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Ray's Apartment",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:13:10",
+               "sceneEnd":"0:13:07",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:13:07",
+               "sceneEnd":"0:12:47",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:12:47",
+               "sceneEnd":"0:12:31",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:12:31",
+               "sceneEnd":"0:12:26",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:12:26",
+               "sceneEnd":"0:10:47",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:47",
+               "sceneEnd":"0:09:53",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {
+                     "name":"Dr. Martin Brenner",
+                     "figment":true
+                  }
+               ]
+            },
+            {
+               "sceneStart":"0:09:53",
+               "sceneEnd":"0:09:22",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:22",
+               "sceneEnd":"0:09:14",
+               "location":"Chicago, Illinois",
+               "subLocation":"Alley",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:09:14",
+               "sceneEnd":"0:08:46",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Funshine"},
+                  {"name":"Dottie"},
+                  {"name":"Axel"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:46",
+               "sceneEnd":"0:08:42",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:08:42",
+               "sceneEnd":"0:08:23",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:23",
+               "sceneEnd":"0:08:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Wheeler Home",
+               "flashback":true,
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:19",
+               "sceneEnd":"0:08:17",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:17",
+               "sceneEnd":"0:08:15",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "flashback":true,
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:15",
+               "sceneEnd":"0:08:13",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:13",
+               "sceneEnd":"0:08:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "flashback":true,
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:09",
+               "sceneEnd":"0:08:07",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:07",
+               "sceneEnd":"0:08:03",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hopper Cabin",
+               "flashback":true,
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:03",
+               "sceneEnd":"0:08:01",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:01",
+               "sceneEnd":"0:07:57",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hopper Cabin",
+               "flashback":true,
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:57",
+               "sceneEnd":"0:07:56",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:56",
+               "sceneEnd":"0:07:30",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "mindPalace":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:30",
+               "sceneEnd":"0:07:20",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "mindPalace":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:20",
+               "sceneEnd":"0:07:01",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "mindPalace":true,
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:07:01",
+               "sceneEnd":"0:06:59",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Swat Member #1"},
+                  {"name":"Swat Member #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:59",
+               "sceneEnd":"0:06:56",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:56",
+               "sceneEnd":"0:06:54",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Swat Member #1"},
+                  {"name":"Swat Member #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:54",
+               "sceneEnd":"0:06:51",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:51",
+               "sceneEnd":"0:06:50",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Swat Member #1"},
+                  {"name":"Swat Member #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:50",
+               "sceneEnd":"0:06:47",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:47",
+               "sceneEnd":"0:06:42",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:42",
+               "sceneEnd":"0:06:07",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:07",
+               "sceneEnd":"0:06:01",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:01",
+               "sceneEnd":"0:05:38",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"},
+                  {"name":"Swat Member #1"},
+                  {"name":"Swat Member #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:38",
+               "sceneEnd":"0:05:25",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"},
+                  {"name":"Swat Member #1"},
+                  {"name":"Swat Member #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:25",
+               "sceneEnd":"0:05:17",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:17",
+               "sceneEnd":"0:05:12",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "mindPalace":true,
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Jim Hopper"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:12",
+               "sceneEnd":"0:05:02",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:02",
+               "sceneEnd":"0:05:00",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:05:00",
+               "sceneEnd":"0:04:50",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:50",
+               "sceneEnd":"0:04:48",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:48",
+               "sceneEnd":"0:04:45",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:45",
+               "sceneEnd":"0:04:42",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Quarry",
+               "flashback":true,
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:42",
+               "sceneEnd":"0:04:39",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Kali"},
+                  {"name":"Axel"},
+                  {"name":"Dottie"},
+                  {"name":"Funshine"},
+                  {"name":"Mick"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:39",
+               "sceneEnd":"0:04:37",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:04:37",
+               "sceneEnd":"0:04:36",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:36",
+               "sceneEnd":"0:04:35",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:35",
+               "sceneEnd":"0:04:34",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:04:34",
+               "sceneEnd":"0:04:32",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Kali"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:32",
+               "sceneEnd":"0:04:30",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:30",
+               "sceneEnd":"0:04:25",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:04:25",
+               "sceneEnd":"0:04:21",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:21",
+               "sceneEnd":"0:04:04",
+               "location":"Chicago, Illinois",
+               "subLocation":"Kali's Hideout",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Kali"},
+                  {"name":"Axel"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:04",
+               "sceneEnd":"0:03:52",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Bus",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:52",
+               "sceneEnd":"0:03:06",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Bus",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Elderly Woman"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:06",
+               "sceneEnd":"0:03:02",
+               "location":"outside Chicago, Illinois",
+               "subLocation":"Bus",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Eleven"},
+                  {"name":"Elderly Woman"}
+               ]
+            }
+         ]
+      },
+      {
+         "seasonNum":2,
+         "episodeNum":8,
+         "episodeTitle":"Chapter Eight: The Mind Flayer",
+         "episodeLink":"/title/tt6020812/",
+         "episodeAirDate":"2017-10-27",
+         "episodeDescription":"An unlikely hero steps forward when a deadly development puts the Hawkins lab on lockdown, trapping Will and several others inside.",
+         "scenes":[
+            {
                "sceneStart":"0:00:00",
                "sceneEnd":"0:00:00",
                "location":"Hawkins, Indiana",
@@ -19766,17 +21847,6 @@
                   {"name":""}
                ]
             }
-         ]
-      },
-      {
-         "seasonNum":2,
-         "episodeNum":8,
-         "episodeTitle":"Chapter Eight: The Mind Flayer",
-         "episodeLink":"/title/tt6020812/",
-         "episodeAirDate":"2017-10-27",
-         "episodeDescription":"An unlikely hero steps forward when a deadly development puts the Hawkins lab on lockdown, trapping Will and several others inside.",
-         "scenes":[
-            
          ]
       },
       {
