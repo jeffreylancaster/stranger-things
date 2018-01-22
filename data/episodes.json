@@ -17621,14 +17621,2117 @@
          "episodeDescription":"Will's connection to a shadowy evil grows stronger but no one's quite sure how to stop it. Elsewhere, Dustin and Steve forge an unlikely bond.",
          "scenes":[
             {
-               "sceneStart":"0:00:00",
-               "sceneEnd":"0:00:00",
+               "sceneStart":"0:51:23",
+               "sceneEnd":"0:51:14",
                "location":"Hawkins, Indiana",
-               "subLocation":"",
+               "subLocation":"Hawkins National Lab",
                "date":"1984-11-03",
                "characters":[
-                  {"name":""},
-                  {"name":""}
+               ]
+            },
+            {
+               "sceneStart":"0:51:14",
+               "sceneEnd":"0:51:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:51:07",
+               "sceneEnd":"0:51:02",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:51:02",
+               "sceneEnd":"0:50:38",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"ER Doctor"},
+                  {"name":"Exam Room Nurse"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:38",
+               "sceneEnd":"0:50:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Road",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:50:32",
+               "sceneEnd":"0:50:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Road",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:50:06",
+               "sceneEnd":"0:49:56",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:49:56",
+               "sceneEnd":"0:49:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:49:16",
+               "sceneEnd":"0:48:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:51",
+               "sceneEnd":"0:48:17",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:17",
+               "sceneEnd":"0:48:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:48:10",
+               "sceneEnd":"0:47:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Henderson Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:47:45",
+               "sceneEnd":"0:47:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:47:40",
+               "sceneEnd":"0:47:28",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:46:25",
+               "sceneEnd":"0:46:05",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:46:05",
+               "sceneEnd":"0:45:54",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:45:54",
+               "sceneEnd":"0:45:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:45:45",
+               "sceneEnd":"0:44:41",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Doctor #1"},
+                  {"name":"Doctor #2"},
+                  {"name":"Neurologist"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:41",
+               "sceneEnd":"0:44:34",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:44:34",
+               "sceneEnd":"0:44:13",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Murray Bauman"}
+               ]
+            },
+            {
+               "sceneStart":"0:44:13",
+               "sceneEnd":"0:41:42",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Murray Bauman"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:42",
+               "sceneEnd":"0:41:39",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:39",
+               "sceneEnd":"0:41:34",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:34",
+               "sceneEnd":"0:41:30",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:30",
+               "sceneEnd":"0:41:27",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:27",
+               "sceneEnd":"0:41:23",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:23",
+               "sceneEnd":"0:41:17",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:17",
+               "sceneEnd":"0:41:14",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:41:14",
+               "sceneEnd":"0:40:15",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:15",
+               "sceneEnd":"0:40:07",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:07",
+               "sceneEnd":"0:40:00",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:40:00",
+               "sceneEnd":"0:39:34",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:39:34",
+               "sceneEnd":"0:39:26",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Erica Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:39:26",
+               "sceneEnd":"0:38:57",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Erica Sinclair"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:57",
+               "sceneEnd":"0:38:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:50",
+               "sceneEnd":"0:38:44",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:44",
+               "sceneEnd":"0:38:41",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:41",
+               "sceneEnd":"0:38:39",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:39",
+               "sceneEnd":"0:38:35",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:35",
+               "sceneEnd":"0:38:33",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:33",
+               "sceneEnd":"0:38:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:32",
+               "sceneEnd":"0:38:28",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:28",
+               "sceneEnd":"0:38:26",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:26",
+               "sceneEnd":"0:38:25",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:25",
+               "sceneEnd":"0:38:20",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Sinclair Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:38:20",
+               "sceneEnd":"0:37:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:55",
+               "sceneEnd":"0:37:31",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:37:31",
+               "sceneEnd":"0:36:36",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:36",
+               "sceneEnd":"0:36:22",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:22",
+               "sceneEnd":"0:36:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Bob Newby"},
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:36:06",
+               "sceneEnd":"0:35:57",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Bob Newby"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:35:57",
+               "sceneEnd":"0:35:08",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Bob Newby"},
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:35:08",
+               "sceneEnd":"0:35:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Bob Newby"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:35:06",
+               "sceneEnd":"0:35:03",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Bob Newby"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:35:03",
+               "sceneEnd":"0:34:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Bob Newby"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Will Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:32",
+               "sceneEnd":"0:34:25",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Murray Bauman"}
+               ]
+            },
+            {
+               "sceneStart":"0:34:25",
+               "sceneEnd":"0:33:38",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Murray Bauman"}
+               ]
+            },
+            {
+               "sceneStart":"0:33:38",
+               "sceneEnd":"0:33:24",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:33:24",
+               "sceneEnd":"0:33:07",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:33:07",
+               "sceneEnd":"0:32:41",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"},
+                  {"name":"Murray Bauman"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:41",
+               "sceneEnd":"0:32:39",
+               "location":"Sesser, Illinois",
+               "subLocation":"Bauman Home",
+               "date":"1984-11-03",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:39",
+               "sceneEnd":"0:32:25",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:25",
+               "sceneEnd":"0:32:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Billy Hargrove"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:18",
+               "sceneEnd":"0:32:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:16",
+               "sceneEnd":"0:32:11",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Billy Hargrove"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:11",
+               "sceneEnd":"0:32:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:07",
+               "sceneEnd":"0:32:02",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Billy Hargrove"}
+               ]
+            },
+            {
+               "sceneStart":"0:32:02",
+               "sceneEnd":"0:31:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Billy Hargrove"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:31:55",
+               "sceneEnd":"0:31:48",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:31:48",
+               "sceneEnd":"0:31:26",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Billy Hargrove"}
+               ]
+            },
+            {
+               "sceneStart":"0:31:26",
+               "sceneEnd":"0:31:05",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Billy Hargrove"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:31:05",
+               "sceneEnd":"0:30:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Billy Hargrove"}
+               ]
+            },
+            {
+               "sceneStart":"0:30:55",
+               "sceneEnd":"0:30:37",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hargrove Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Max Mayfield"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:30:37",
+               "sceneEnd":"0:30:22",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:30:22",
+               "sceneEnd":"0:30:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Jim Hopper"},
+                  {"name":"Doctor #1"},
+                  {"name":"Doctor #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:30:16",
+               "sceneEnd":"0:30:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:30:09",
+               "sceneEnd":"0:29:28",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Jim Hopper"},
+                  {"name":"Doctor #1"},
+                  {"name":"Doctor #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:28",
+               "sceneEnd":"0:29:26",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "flashback":true,
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:26",
+               "sceneEnd":"0:29:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:29:19",
+               "sceneEnd":"0:29:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "flashback":true,
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:29:18",
+               "sceneEnd":"0:28:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:28:45",
+               "sceneEnd":"0:27:46",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:46",
+               "sceneEnd":"0:27:34",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:34",
+               "sceneEnd":"0:27:33",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "flashback":true,
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:33",
+               "sceneEnd":"0:27:25",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:25",
+               "sceneEnd":"0:27:23",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins Middle School",
+               "flashback":true,
+               "hallucination":true,
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"The Mind Flayer"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:23",
+               "sceneEnd":"0:27:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:12",
+               "sceneEnd":"0:27:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "flashback":true,
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:10",
+               "sceneEnd":"0:27:04",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:04",
+               "sceneEnd":"0:27:02",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "flashback":true,
+               "characters":[
+                  {"name":"The Mind Flayer"},
+                  {"name":"D'Artagnan"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:02",
+               "sceneEnd":"0:27:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:27:00",
+               "sceneEnd":"0:26:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:26:55",
+               "sceneEnd":"0:26:38",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:26:38",
+               "sceneEnd":"0:23:50",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Woods - Railroad Tracks",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:50",
+               "sceneEnd":"0:23:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:23:21",
+               "sceneEnd":"0:23:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hopper Cabin",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:23:10",
+               "sceneEnd":"0:22:56",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:56",
+               "sceneEnd":"0:22:43",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hopper Cabin",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:22:43",
+               "sceneEnd":"0:22:22",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:22:22",
+               "sceneEnd":"0:21:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Neurologist"},
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Doctor #1"},
+                  {"name":"Doctor #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:12",
+               "sceneEnd":"0:21:05",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"}
+               ]
+            },
+            {
+               "sceneStart":"0:21:05",
+               "sceneEnd":"0:20:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:40",
+               "sceneEnd":"0:20:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"M.P. Guard #1"},
+                  {"name":"M.P. Guard #2"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:30",
+               "sceneEnd":"0:20:26",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:26",
+               "sceneEnd":"0:20:24",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"M.P. Guard #1"},
+                  {"name":"M.P. Guard #2"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:24",
+               "sceneEnd":"0:20:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:19",
+               "sceneEnd":"0:20:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "flashback":true,
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:20:18",
+               "sceneEnd":"0:20:17",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:17",
+               "sceneEnd":"0:20:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "flashback":true,
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:20:16",
+               "sceneEnd":"0:20:14",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:14",
+               "sceneEnd":"0:20:13",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Merrill's Farm",
+               "flashback":true,
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:13",
+               "sceneEnd":"0:20:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:12",
+               "sceneEnd":"0:20:11",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "flashback":true,
+               "characters":[
+                  {"name":"The Mind Flayer"}
+               ]
+            },
+            {
+               "sceneStart":"0:20:11",
+               "sceneEnd":"0:19:47",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Mike Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:47",
+               "sceneEnd":"0:19:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:16",
+               "sceneEnd":"0:19:01",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:19:01",
+               "sceneEnd":"0:18:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:30",
+               "sceneEnd":"0:18:27",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:27",
+               "sceneEnd":"0:18:17",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:17",
+               "sceneEnd":"0:18:08",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:18:08",
+               "sceneEnd":"0:17:52",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:52",
+               "sceneEnd":"0:17:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:40",
+               "sceneEnd":"0:17:11",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jonathan Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:17:11",
+               "sceneEnd":"0:16:59",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Byers Home",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jonathan Byers"},
+                  {"name":"Nancy Wheeler"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:59",
+               "sceneEnd":"0:16:45",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:45",
+               "sceneEnd":"0:16:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Will Byers"},
+                  {"name":"Joyce Byers"},
+                  {"name":"Bob Newby"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Jim Hopper"},
+                  {"name":"Doctor #1"},
+                  {"name":"Doctor #2"},
+                  {"name":"Neurologist"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:09",
+               "sceneEnd":"0:16:01",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:16:01",
+               "sceneEnd":"0:15:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Steve Harrington"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:51",
+               "sceneEnd":"0:15:42",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"},
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:42",
+               "sceneEnd":"0:15:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:40",
+               "sceneEnd":"0:15:23",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:23",
+               "sceneEnd":"0:15:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:15:10",
+               "sceneEnd":"0:14:55",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Nerdy Tech"},
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:55",
+               "sceneEnd":"0:14:41",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:41",
+               "sceneEnd":"0:14:28",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Max Mayfield"},
+                  {"name":"Dustin Henderson"},
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:28",
+               "sceneEnd":"0:14:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:14:18",
+               "sceneEnd":"0:14:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:14:12",
+               "sceneEnd":"0:13:44",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:13:44",
+               "sceneEnd":"0:13:15",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Max Mayfield"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:13:15",
+               "sceneEnd":"0:13:04",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:13:04",
+               "sceneEnd":"0:10:44",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:42",
+               "sceneEnd":"0:10:30",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:30",
+               "sceneEnd":"0:10:28",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:28",
+               "sceneEnd":"0:10:23",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:10:23",
+               "sceneEnd":"0:10:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:21",
+               "sceneEnd":"0:10:20",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:20",
+               "sceneEnd":"0:10:18",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:10:18",
+               "sceneEnd":"0:10:14",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:14",
+               "sceneEnd":"0:10:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:10:12",
+               "sceneEnd":"0:10:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:10:09",
+               "sceneEnd":"0:10:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:10:06",
+               "sceneEnd":"0:09:40",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:40",
+               "sceneEnd":"0:09:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:19",
+               "sceneEnd":"0:09:17",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:17",
+               "sceneEnd":"0:09:08",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:08",
+               "sceneEnd":"0:09:04",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:09:04",
+               "sceneEnd":"0:08:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:51",
+               "sceneEnd":"0:08:47",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"},
+                  {"name":"Max Mayfield"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:47",
+               "sceneEnd":"0:08:28",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:28",
+               "sceneEnd":"0:08:24",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:24",
+               "sceneEnd":"0:08:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:21",
+               "sceneEnd":"0:08:19",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:19",
+               "sceneEnd":"0:08:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:16",
+               "sceneEnd":"0:08:11",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:11",
+               "sceneEnd":"0:08:10",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:10",
+               "sceneEnd":"0:08:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:09",
+               "sceneEnd":"0:08:01",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:01",
+               "sceneEnd":"0:08:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:08:00",
+               "sceneEnd":"0:06:47",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:47",
+               "sceneEnd":"0:06:21",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Junkyard",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Steve Harrington"},
+                  {"name":"Lucas Sinclair"},
+                  {"name":"Max Mayfield"},
+                  {"name":"Dustin Henderson"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:21",
+               "sceneEnd":"0:06:06",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:06",
+               "sceneEnd":"0:06:02",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"}
+               ]
+            },
+            {
+               "sceneStart":"0:06:02",
+               "sceneEnd":"0:05:39",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:39",
+               "sceneEnd":"0:05:32",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Dr. Sam Owens"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:32",
+               "sceneEnd":"0:05:16",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:16",
+               "sceneEnd":"0:05:08",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jim Hopper"},
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Nerdy Tech"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:08",
+               "sceneEnd":"0:05:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:05:00",
+               "sceneEnd":"0:04:58",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:58",
+               "sceneEnd":"0:04:26",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Will Byers"},
+                  {"name":"Mike Wheeler"},
+                  {"name":"Bob Newby"},
+                  {"name":"Joyce Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:26",
+               "sceneEnd":"0:04:20",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Radar Tech"},
+                  {"name":"Nerdy Tech"},
+                  {"name":"Dr. Sam Owens"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:40",
+               "sceneEnd":"0:04:15",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Mike Wheeler"},
+                  {"name":"M.P. Guard #1"},
+                  {"name":"M.P. Guard #2"},
+                  {"name":"Bob Newby"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:15",
+               "sceneEnd":"0:04:09",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:09",
+               "sceneEnd":"0:04:07",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+               ]
+            },
+            {
+               "sceneStart":"0:04:07",
+               "sceneEnd":"0:04:03",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Lead Rift Soldier"},
+                  {"name":"Rift Soldier #2"}
+               ]
+            },
+            {
+               "sceneStart":"0:04:03",
+               "sceneEnd":"0:03:58",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Jim Hopper"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:58",
+               "sceneEnd":"0:03:52",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:52",
+               "sceneEnd":"0:03:41",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Underground",
+               "date":"1984-11-04",
+               "characters":[
+                  {
+                     "name":"Lead Rift Soldier",
+                     "alive":false,
+                     "mannerOfDeath":"Demodogs"
+                  },
+                  {
+                     "name":"Rift Soldier #2",
+                     "alive":false,
+                     "mannerOfDeath":"Demodogs"
+                  }
+               ]
+            },
+            {
+               "sceneStart":"0:03:41",
+               "sceneEnd":"0:03:25",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Jim Hopper"},
+                  {"name":"Radar Tech"},
+                  {"name":"Nerdy Tech"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:25",
+               "sceneEnd":"0:03:22",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:22",
+               "sceneEnd":"0:03:12",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Jim Hopper"},
+                  {"name":"Radar Tech"},
+                  {"name":"Nerdy Tech"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:12",
+               "sceneEnd":"0:03:08",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Joyce Byers"},
+                  {"name":"Will Byers"}
+               ]
+            },
+            {
+               "sceneStart":"0:03:08",
+               "sceneEnd":"0:02:51",
+               "location":"Hawkins, Indiana",
+               "subLocation":"Hawkins National Lab",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":"Dr. Sam Owens"},
+                  {"name":"Jim Hopper"},
+                  {"name":"Nerdy Tech"}
                ]
             }
          ]
@@ -17641,7 +19744,28 @@
          "episodeAirDate":"2017-10-27",
          "episodeDescription":"Psychic visions draw Eleven to a band of violent outcasts and an angry girl with a shadowy past.",
          "scenes":[
-            
+            {
+               "sceneStart":"0:00:00",
+               "sceneEnd":"0:00:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":""},
+                  {"name":""}
+               ]
+            },
+            {
+               "sceneStart":"0:00:00",
+               "sceneEnd":"0:00:00",
+               "location":"Hawkins, Indiana",
+               "subLocation":"",
+               "date":"1984-11-04",
+               "characters":[
+                  {"name":""},
+                  {"name":""}
+               ]
+            }
          ]
       },
       {
