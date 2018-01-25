@@ -256,7 +256,7 @@ $.getJSON("../data/"+keyValuesFile, function( data ) {
             .text(d.name.replace("#",""))
             .style("font-size", function(){
             	var threshold = 50;
-            	if(2*d.max > threshold){
+            	if(2*d.max*config.yscale > threshold){
             		return threshold;
             	} else {
             		return 2*d.max*config.yscale;
@@ -271,7 +271,7 @@ $.getJSON("../data/"+keyValuesFile, function( data ) {
             .text(d.name.replace("#",""))
             .style("font-size", function(){
             	var threshold = 50;
-            	if(2*d.max > threshold){
+            	if(2*d.max*config.yscale > threshold){
             		return threshold;
             	} else {
             		return 2*d.max*config.yscale;

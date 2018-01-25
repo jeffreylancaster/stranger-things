@@ -182,7 +182,7 @@ $.when(
 
     // deduplicate the list of opening locations
     var uniqueOpeningLocations = allOpeningLocations.filter(onlyUnique);
-    // console.log('uniqueOpeningLocations:', uniqueOpeningLocations);
+    //console.log('uniqueOpeningLocations:', uniqueOpeningLocations);
 
     // deduplicate the list of scene locations
     sceneLocations = sceneLocations.filter(onlyUnique).sort();

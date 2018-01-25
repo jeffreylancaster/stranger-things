@@ -5844,7 +5844,7 @@
                "sceneStart":"0:14:44",
                "sceneEnd":"0:13:11",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-11",
                "characters":[
                   {"name":"Eleven"},
@@ -5868,7 +5868,7 @@
                "sceneStart":"0:11:54",
                "sceneEnd":"0:10:29",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-11",
                "characters":[
                   {"name":"Eleven"},
@@ -5960,7 +5960,7 @@
                "sceneStart":"0:08:51",
                "sceneEnd":"0:08:20",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-11",
                "characters":[
                   {"name":"Eleven"},
@@ -5973,7 +5973,7 @@
                "sceneStart":"0:08:20",
                "sceneEnd":"0:07:58",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-11",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -6808,7 +6808,7 @@
                "sceneStart":"0:19:30",
                "sceneEnd":"0:19:28",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "flashback":true,
                "characters":[
                   {"name":"Eleven"},
@@ -7554,7 +7554,7 @@
                "sceneStart":"0:37:27",
                "sceneEnd":"0:36:12",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -7714,7 +7714,7 @@
                "sceneStart":"0:31:11",
                "sceneEnd":"0:29:58",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -7906,7 +7906,7 @@
                "sceneStart":"0:24:42",
                "sceneEnd":"0:24:18",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -7932,7 +7932,7 @@
                "sceneStart":"0:24:12",
                "sceneEnd":"0:23:57",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -7958,7 +7958,7 @@
                "sceneStart":"0:23:51",
                "sceneEnd":"0:23:39",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -7984,7 +7984,7 @@
                "sceneStart":"0:23:25",
                "sceneEnd":"0:23:20",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -8051,7 +8051,7 @@
                "sceneStart":"0:22:11",
                "sceneEnd":"0:21:31",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -8064,7 +8064,7 @@
                "sceneStart":"0:21:31",
                "sceneEnd":"0:21:26",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                ]
@@ -8073,7 +8073,7 @@
                "sceneStart":"0:21:26",
                "sceneEnd":"0:21:17",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -8086,7 +8086,7 @@
                "sceneStart":"0:21:17",
                "sceneEnd":"0:20:38",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                ]
@@ -8095,7 +8095,7 @@
                "sceneStart":"0:20:38",
                "sceneEnd":"0:20:24",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -8108,7 +8108,7 @@
                "sceneStart":"0:20:24",
                "sceneEnd":"0:20:15",
                "location":"Hawkins, Indiana",
-               "subLocation":"Car Junkyard",
+               "subLocation":"Junkyard",
                "date":"1983-11-12",
                "characters":[
                   {"name":"Mike Wheeler"},
@@ -20409,7 +20409,7 @@
             {
                "sceneStart":"0:26:58",
                "sceneEnd":"0:26:56",
-               "location":"Hawkins, Illinois",
+               "location":"Hawkins, Indiana",
                "subLocation":"Hawkins Middle School",
                "flashback":true,
                "characters":[
@@ -20437,7 +20437,7 @@
             {
                "sceneStart":"0:26:49",
                "sceneEnd":"0:26:48",
-               "location":"Hawkins, Illinois",
+               "location":"Hawkins, Indiana",
                "subLocation":"Hawkins National Lab",
                "flashback":true,
                "characters":[

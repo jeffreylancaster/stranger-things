@@ -8,6 +8,47 @@
 			]
 		},
 		{
+			"location": "Chicago, Illinois",
+			"subLocation": [
+				"Kali's Hideout",
+				"Alley",
+				"Chicago Streets",
+				"Bus Station"
+			]
+		},
+		{
+			"location": "outside Chicago, Illinois",
+			"subLocation": [
+				"Road",
+				"Oscar's Gas n' Go",
+				"Ray's Apartment",
+				"Bus"
+			]
+		},
+		{
+			"location": "Pittsburgh, Pennsylvania",
+			"subLocation": [
+				"Alley",
+				"Back Street",
+				"Main Street",
+				"Poplar Street",
+				"Seventh Street",
+				"Tunnel"
+			]
+		},
+		{
+			"location": "Sesser, Illinois",
+			"subLocation": [
+				"Bauman Home"
+			]
+		},
+		{
+			"location": "to Sesser, Illinois",
+			"subLocation": [
+				"Motel"
+			]
+		},
+		{
 			"location": "Indianapolis, Indiana",
 			"subLocation": [
 				"Lonnie's Home"
@@ -23,23 +64,39 @@
 			"location": "Hawkins, Indiana",
 			"subLocation": [
 				"Leaving Hawkins",
-				"Car Junkyard",
+				"Hopper Cabin",
+				"Junkyard",
+				"Woods - Railroad Tracks",
 				"Hopper Home",
+				"Underground",
+				"Eugene's Farm",
+				"Farm",
+				"Merrill's Farm",
 				"Quarry",
 				"Fair Mart",
 				"Hideaway",
 				"Cemetery",
+				"Park",
 				"Clarke Home",
+				"Hargrove Home",
 				"Funeral Home",
 				"Road",
 				"Holland Home",
+				"Henderson Home",
+				"Ives Home",
+				"Loch Nora",
+				"Party Home",
 				"Sinclair Home",
 				"Steve's Car",
 				"Wheeler Home",
+				"Neighborhood",
 				"Hospital",
 				"Hunting Store",
 				"Roane County Coroner",
 				"Grocery Store",
+				"Radio Shack",
+				"Arcade",
+				"Melvald's General Store",
 				"Downtown Hawkins",
 				"Police Station",
 				"Hawkins High School",
@@ -63,7 +120,8 @@
 				"Harrington Home",
 				"Woods",
 				"Hawkins Library",
-				"Downtown Hawkins"
+				"Downtown Hawkins",
+				"Hawkins Middle School"
 			]
 		}
 	]
