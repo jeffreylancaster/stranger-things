@@ -1,0 +1,49 @@
+{
+	"house":[
+		{
+			"name":"Party",
+			"characters":[
+				"Eleven",
+				"Mike Wheeler",
+				"Dustin Henderson",
+				"Lucas Sinclair",
+				"Will Byers",
+				"Max Mayfield"
+			]
+		},
+		{
+			"name":"Main",
+			"characters":[
+				"Jim Hopper",
+				"Joyce Byers",
+				"Nancy Wheeler",
+				"Jonathan Byers",
+				"Steve Harrington",
+				"Bob Newby"
+			]
+		},
+		{
+			"name":"Upside Down",
+			"characters":[
+				"The Monster",
+				"The Mind Flayer",
+				"D'Artagnan"
+			]
+		},
+		{
+			"name":"Include",
+			"characters":[
+				"Dr. Sam Owens",
+				"Kali",
+				"Karen Wheeler",
+				"Dr. Martin Brenner",
+				"Officer Callahan",
+				"Officer Powell",
+				"Billy Hargrove",
+				"Mr. Clarke",
+				"Murray Bauman",
+				"Terry Ives"
+			]
+		}
+	]
+}

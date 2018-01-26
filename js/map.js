@@ -18,6 +18,32 @@ function toTitleCase(str){
     });
 }
 
+// to dedpulicate an array
+function onlyUnique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
+
+// from: http://bl.ocks.org/eesur/4e0a69d57d3bfc8a82c2
+d3.selection.prototype.moveToFront = function() {  
+  return this.each(function(){
+    this.parentNode.appendChild(this);
+  });
+};
+d3.selection.prototype.moveToBack = function() {  
+    return this.each(function() { 
+        var firstChild = this.parentNode.firstChild; 
+        if (firstChild) { 
+            this.parentNode.insertBefore(this, firstChild); 
+        } 
+    });
+};
+
+
+/* STARTUP */
+
+// hide the UI box until everything is loaded
+$("#ui, footer").toggle();
+
 
 /* VARIABLES AND CONFIGURATION */
 
@@ -39,7 +65,9 @@ var charactersData,
   keyValuesFile,
   episodeLengths,
   locations,
-  subLocations;
+  subLocations,
+  house,
+  colors;
 
 
 /* IMPORT DATA */
@@ -51,11 +79,11 @@ if(config.subLocation){
 }
 
 $.when(
-  // $.getJSON("../data/characters.json", function(data) {
-  //   charactersData = data.characters;
-  //   console.log("characters.json loaded");
-  // })
-  // .fail(function() {console.error("characters.json not loaded");}),
+  $.getJSON("../data/characters.json", function(data) {
+    charactersData = data.characters;
+    console.log("characters.json loaded");
+  })
+  .fail(function() {console.error("characters.json not loaded");}),
       
   // $.getJSON("../data/locations.json", function(data) {
   //   locationsData = data.regions;
@@ -81,11 +109,11 @@ $.when(
   // })
   // .fail(function() {console.error("characters-include.json not loaded");}),
 
-  // $.getJSON("../data/characters-gender.json", function(data) {
-  //   charactersGenderData = data.gender;
-  //   console.log("characters-gender.json loaded");
-  // })
-  // .fail(function() {console.error("characters-gender.json not loaded");}),
+  $.getJSON("../data/characters-gender.json", function(data) {
+    charactersGenderData = data.gender;
+    console.log("characters-gender.json loaded");
+  })
+  .fail(function() {console.error("characters-gender.json not loaded");}),
 
   $.getJSON("../data/keyValues.json", function(data) {
     keyValues = data.keyValues;
@@ -94,29 +122,26 @@ $.when(
     subLocations = data.sceneSubLocSorted;
     console.log("keyValues.json loaded");
   })
-  .fail(function() {console.error("keyValues.json not loaded");})
+  .fail(function() {console.error("keyValues.json not loaded");}),
+
+  $.getJSON("../data/characters-houses.json", function(data) {
+    house = data.house;
+    console.log("characters-houses.json loaded");
+  })
+  .fail(function() {console.error("characters-houses.json not loaded");}),
+
+  $.getJSON("../data/colors.json", function(data) {
+    colors = data.colors;
+    console.log("colors.json loaded");
+  })
+  .fail(function() {console.error("colors.json not loaded");}),
 
 
 /* DO STUFF WITH THE DATA */
 
 ).then(function() {
     console.log("now that the files are loaded... do magic.");
-});
 
-
-/* START TO MOVE CODE BELOW INTO .then() and uncomment data files as needed */
-
-// hide the UI box until everything is loaded
-$("#ui, footer").toggle();
-
-$.getJSON("../data/"+keyValuesFile, function( data ) {
-
-	var keyValues = data.keyValues;
-	var episodeLengths = data.episodeLengths;
-	var locations = data.sceneLocSorted;
-	if(config.subLocation){
-		var subLocations = data.sceneSubLocSorted;
-	}
 	const width = episodeLengths[episodeLengths.length-1].episodes[episodeLengths[episodeLengths.length-1].episodes.length-1].shift/config.xscale;
 	const height = config.yscale*(2*locations[locations.length-1].middle + locations[locations.length-1].max);
 
@@ -129,26 +154,6 @@ $.getJSON("../data/"+keyValuesFile, function( data ) {
 
 	// an array to keep titles
 	var titles = [];
-
-	// from: http://bl.ocks.org/eesur/4e0a69d57d3bfc8a82c2
-	d3.selection.prototype.moveToFront = function() {  
-      return this.each(function(){
-        this.parentNode.appendChild(this);
-      });
-    };
-    d3.selection.prototype.moveToBack = function() {  
-        return this.each(function() { 
-            var firstChild = this.parentNode.firstChild; 
-            if (firstChild) { 
-                this.parentNode.insertBefore(this, firstChild); 
-            } 
-        });
-    };
-
-    // to dedpulicate an array
-	function onlyUnique(value, index, self) { 
-	    return self.indexOf(value) === index;
-	}
 
     // build the array of points from keyValues
 	keyValues.forEach(function(d,i){
@@ -487,258 +492,210 @@ $.getJSON("../data/"+keyValuesFile, function( data ) {
         	$(".characterThumb").hide();
         	$(".subLocation").hide();
         });
-})
 
-// add house-specific styling to lines
-.done(function(){
-	$("#loading").hide();
-	$.getJSON( "../data/characters-houses.json", function( data ) {
-		var house = data.house;
-		var charactersArray = [];
-		for(i=0; i<house.length; i++){
-			for(j=0; j<house[i].characters.length; j++){
-				var className = house[i].characters[j].toLowerCase().replace(/([^A-Z0-9])/gi,"");
-				var houseName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
-				$("."+className).addClass(houseName);
-				if(houseName !== "include"){
-					$("."+className).addClass("include");
+
+    // add house-specific styling to lines
+
+    $("#loading").hide();
+
+    var charactersArray = [];
+	for(i=0; i<house.length; i++){
+		for(j=0; j<house[i].characters.length; j++){
+			var className = house[i].characters[j].toLowerCase().replace(/([^A-Z0-9])/gi,"");
+			var groupName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
+			$("."+className).addClass(groupName);
+			if(groupName !== "include"){
+				$("."+className).addClass("include");
+			}
+			// only include characters from characters-houses in select
+			charactersArray.push(house[i].characters[j]);
+			
+			// charactersArrayForIMDBImages.push({"name":house[i].characters[j]}); // remove
+		}
+		if(house[i].name == "Include"){
+			$("#group-select > select").append("<option disabled></option><option value='include'>All Main Characters</option><option value='characters'>All Characters</option>");
+		} else {
+			$("#group-select > select").append("<option>"+house[i].name+"</option>");
+		}
+	}
+	
+	// sort charactersArray and add to character-select
+	charactersArray = charactersArray.sort();
+	for(i=0; i<charactersArray.length; i++){
+		$("#character-select > select").append("<option>"+charactersArray[i]+"</option>");
+	}
+	$("#character-select > select").append("<option disabled></option><option value='characters'>All Characters</option>");
+
+	// build the key - include: houses, hand/khal/khaleesi/king, dead, in scene
+
+	const keyScale = 410;
+
+	const key = d3.select("#key").append("svg")
+		.attr("width", keyScale)
+		.attr("height", (9/16)*keyScale);
+
+	const selectKey = d3.select("#key").select("svg");
+
+	// to draw the lines
+	var lineFunction = d3.line()
+		.x(function(d) { return d.x; })
+		.y(function(d) { return d.y; })
+		.curve(d3.curveLinear);
+
+	// add key title
+	selectKey.append("text")
+		.attr("class", "region")
+        .text("Key")
+        .style("font-size", 30)
+        .attr("x", 0)
+        .attr("y", -5)
+        .attr("dominant-baseline", "hanging")
+        .attr("text-anchor", "start");
+	
+	// add a group for each house
+	for(i=0; i<house.length; i++){
+		var groupName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
+		selectKey.append("g")
+			.attr("class", groupName);
+
+		// add house line
+		selectKey.select("g."+groupName).selectAll("paths")
+			.data(function(){
+				// different lengths for dead lines
+				if(groupName == "tyrell" || groupName == "frey"){
+					return [[{"x":0,"y":16*i+35},{"x":150,"y":16*i+35}]]
+				} else {
+					return [[{"x":0,"y":16*i+35},{"x":200,"y":16*i+35}]]
 				}
-				// only include characters from characters-houses in select
-				charactersArray.push(house[i].characters[j]);
-				
-				// charactersArrayForIMDBImages.push({"name":house[i].characters[j]}); // remove
-			}
-			if(house[i].name == "Include"){
-				$("#house-select > select").append("<option disabled></option><option value='include'>All Main Characters</option><option value='characters'>All Characters</option>");
-			} else {
-				$("#house-select > select").append("<option>"+house[i].name+"</option>");
-			}
-		}
-		
-		// sort charactersArray and add to character-select
-		charactersArray = charactersArray.sort();
-		for(i=0; i<charactersArray.length; i++){
-			$("#character-select > select").append("<option>"+charactersArray[i]+"</option>");
-		}
-		$("#character-select > select").append("<option disabled></option><option value='characters'>All Characters</option>");
+			})
+			.enter()
+			.append("path")
+			.attr("class", "line")
+			.attr("d", lineFunction);
 
-		// build the key - include: houses, hand/khal/khaleesi/king, dead, in scene
-
-		const keyScale = 410;
-
-		const key = d3.select("#key").append("svg")
-			.attr("width", keyScale)
-			.attr("height", (9/16)*keyScale);
-
-		const selectKey = d3.select("#key").select("svg");
-
-		// to draw the lines
-		var lineFunction = d3.line()
-			.x(function(d) { return d.x; })
-			.y(function(d) { return d.y; })
-			.curve(d3.curveLinear);
-
-		// add key title
-		selectKey.append("text")
-			.attr("class", "region")
-            .text("Key")
-            .style("font-size", 30)
-            .attr("x", 0)
-            .attr("y", -5)
-            .attr("dominant-baseline", "hanging")
+		// add line label
+		selectKey.select("g."+groupName).append("text")
+            .text(house[i].name)
+            .attr("class", "keyLabel")
+            .attr("x", 215)
+            .attr("y", 16*i+35)
+            .attr("dominant-baseline", "middle")
             .attr("text-anchor", "start");
-		
-		// add a group for each house
-		for(i=0; i<house.length; i++){
-			var houseName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
-			selectKey.append("g")
-				.attr("class", houseName);
-			// add special lines and points (King, Khaleesi, Khal, Hand, Dead)
-			if(houseName == "stark"){
-				selectKey.select("g."+houseName).selectAll("paths")
-					.data([[{"x":100*Math.random()+50,"y":16*i+35},{"x":200,"y":16*i+35}]])
-					.enter()
-					.append("path")
-					.attr("class", "king")
-					.attr("d", lineFunction);
-			} else if(houseName == "targaryen"){
-				selectKey.select("g."+houseName).selectAll("paths")
-					.data([[{"x":100*Math.random()+50,"y":16*i+35},{"x":200,"y":16*i+35}]])
-					.enter()
-					.append("path")
-					.attr("class", "khaleesi")
-					.attr("d", lineFunction);
-			} else if(houseName == "dothraki"){
-				selectKey.select("g."+houseName).selectAll("paths")
-					.data([[{"x":100*Math.random()+50,"y":16*i+35},{"x":200,"y":16*i+35}]])
-					.enter()
-					.append("path")
-					.attr("class", "khal")
-					.attr("d", lineFunction);
-			} else if(houseName == "lannister"){
-				selectKey.select("g."+houseName).selectAll("paths")
-					.data([[{"x":100*Math.random()+50,"y":16*i+35},{"x":200,"y":16*i+35}]])
-					.enter()
-					.append("path")
-					.attr("class", "hand")
-					.attr("d", lineFunction);
-			} else if(houseName == "tyrell" || houseName == "frey"){
-				selectKey.select("g."+houseName)
-					.append("circle")
-					.attr("cx", 150)
-					.attr("cy", 16*i+35)
-					.attr("class", "dead");
-			}
+	}	
 
-			// add house line
-			selectKey.select("g."+houseName).selectAll("paths")
-				.data(function(){
-					// different lengths for dead lines
-					if(houseName == "tyrell" || houseName == "frey"){
-						return [[{"x":0,"y":16*i+35},{"x":150,"y":16*i+35}]]
-					} else {
-						return [[{"x":0,"y":16*i+35},{"x":200,"y":16*i+35}]]
-					}
-				})
-				.enter()
-				.append("path")
-				.attr("class", "line")
-				.attr("d", lineFunction);
-
-			// add line label
-			selectKey.select("g."+houseName).append("text")
-	            .text(house[i].name)
-	            .attr("class", "keyLabel")
-	            .attr("x", 215)
-	            .attr("y", 16*i+35)
-	            .attr("dominant-baseline", "middle")
-	            .attr("text-anchor", "start");
+	// add .include to all lines
+	for(i=0; i<house.length; i++){
+		var groupName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
+		if(groupName !== "include"){
+			$("."+groupName).addClass("include");
 		}
+	}
 
-		// modify special key labels
-		$(".stark .keyLabel").html("Stark + King");
-		$(".targaryen .keyLabel").html("Targaryen + Khaleesi");
-		$(".lannister .keyLabel").html("Lannister + Hand");
-		$(".dothraki .keyLabel").html("Dothraki + Khal");
-		$(".tyrell .keyLabel").html("Tyrell + Dead");
-		$(".frey .keyLabel").html("Frey + Dead");
-		$(".include .keyLabel").html("Other");
 
-		// add .include to all lines
-		for(i=0; i<house.length; i++){
-			var houseName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
-			if(houseName !== "include"){
-				$("."+houseName).addClass("include");
-			}
+	// add gender as class to lines, add UI select behavior
+
+	for(i in charactersGenderData){
+		for(j=0; j<charactersGenderData[i].characters.length; j++){
+			var className = charactersGenderData[i].characters[j].toLowerCase().replace(/([^A-Z0-9])/gi,"");
+			$("."+className).addClass(charactersGenderData[i].gender);
 		}
+		// add gender select
+		$("#gender-select").append("<input type='radio' name='gender' value='"+charactersGenderData[i].gender+"'>"+toTitleCase(charactersGenderData[i].gender));
+	}
+	$("#gender-select").append("<input type='radio' name='gender' value='characters'>All Characters");
+
+	// on change in gender select, show only that gender
+	$("#gender-select input").change(function(){
+		// reset other selects
+		$("#life-select input").prop("checked", false);
+		$('#character-select option, #group-select option, #title-select option').prop('selected', function() {
+	        return this.defaultSelected;
+	    });
+		// show only that gender
+		isolate($("#gender-select input[type='radio']:checked").val());
 	});
-// add gender as class to lines, add UI select behavior
-}).done(function(){
-	$.getJSON("../data/characters-gender.json", function( data ) {
-		for(i in data.gender){
-			for(j=0; j<data.gender[i].characters.length; j++){
-				var className = data.gender[i].characters[j].toLowerCase().replace(/([^A-Z0-9])/gi,"");
-				$("."+className).addClass(data.gender[i].gender);
-			}
-			// add gender select
-			$("#gender-select").append("<input type='radio' name='gender' value='"+data.gender[i].gender+"'>"+toTitleCase(data.gender[i].gender));
-		}
-		$("#gender-select").append("<input type='radio' name='gender' value='characters'>All Characters");
-
-		// on change in gender select, show only that gender
-		$("#gender-select input").change(function(){
-			// reset other selects
-			$("#life-select input").prop("checked", false);
-			$('#character-select option, #house-select option, #title-select option').prop('selected', function() {
-		        return this.defaultSelected;
-		    });
-			// show only that gender
-			isolate($("#gender-select input[type='radio']:checked").val());
-		});
-		// on change in house select, show only that house
-		$("#house-select select").change(function(){
-			// reset other selects
-			$("#gender-select input, #life-select input").prop("checked", false);
-			$('#character-select option, #title-select option').prop('selected', function() {
-		        return this.defaultSelected;
-		    });
-			// show only that house
-			isolate($("#house-select select option:selected").val());
-		});
-		// on change in character select, show only that character
-		$("#character-select select").change(function(){
-			// reset other selects
-			$("#gender-select input, #life-select input").prop("checked", false);
-			$('#house-select option, #title-select option').prop('selected', function() {
-		        return this.defaultSelected;
-		    });
-			// show only that house
-			isolate($("#character-select select option:selected").val());
-		});
-		// on change in title select, show only that title
-		$("#title-select select").change(function(){
-			// reset other selects
-			$("#gender-select input, #life-select input").prop("checked", false);
-			$('#house-select option, #character-select option').prop('selected', function() {
-		        return this.defaultSelected;
-		    });
-			// show only that title
-			isolate($("#title-select select option:selected").val());
-		});
-		// on change in alive select, show only that life
-		$("#life-select input").change(function(){
-			// reset other selects
-			$("#gender-select input").prop("checked", false);
-			$('#character-select option, #house-select option, #title-select option').prop('selected', function() {
-		        return this.defaultSelected;
-		    });
-			// show only that life
-			isolate($("#life-select input[type='radio']:checked").val());
-		});
+	// on change in house select, show only that house
+	$("#group-select select").change(function(){
+		// reset other selects
+		$("#gender-select input, #life-select input").prop("checked", false);
+		$('#character-select option, #title-select option').prop('selected', function() {
+	        return this.defaultSelected;
+	    });
+		// show only that house
+		isolate($("#group-select select option:selected").val());
 	});
-// add color data to styles
-}).done(function(){
-	$.getJSON("../data/colors.json", function( data ) {
-		for(i in data.colors){
-			if(data.colors[i].class){
-				for(j=0; j<data.colors[i].class.length; j++){
-					$("."+data.colors[i].class[j]+" .line, ."+data.colors[i].class[j]+" .rect").css({
-						"stroke": data.colors[i].hexadecimal
-					});
-					$("."+data.colors[i].class[j]+" .rect").css({
-						"fill": data.colors[i].hexadecimal
-					});
+	// on change in character select, show only that character
+	$("#character-select select").change(function(){
+		// reset other selects
+		$("#gender-select input, #life-select input").prop("checked", false);
+		$('#group-select option, #title-select option').prop('selected', function() {
+	        return this.defaultSelected;
+	    });
+		// show only that house
+		isolate($("#character-select select option:selected").val());
+	});
+	// on change in title select, show only that title
+	$("#title-select select").change(function(){
+		// reset other selects
+		$("#gender-select input, #life-select input").prop("checked", false);
+		$('#group-select option, #character-select option').prop('selected', function() {
+	        return this.defaultSelected;
+	    });
+		// show only that title
+		isolate($("#title-select select option:selected").val());
+	});
+	// on change in alive select, show only that life
+	$("#life-select input").change(function(){
+		// reset other selects
+		$("#gender-select input").prop("checked", false);
+		$('#character-select option, #group-select option, #title-select option').prop('selected', function() {
+	        return this.defaultSelected;
+	    });
+		// show only that life
+		isolate($("#life-select input[type='radio']:checked").val());
+	});
+
+
+	// add color data to styles
+
+	for(i in colors){
+		if(colors[i].class){
+			for(j=0; j<colors[i].class.length; j++){
+				$("."+colors[i].class[j]+" .line, ."+colors[i].class[j]+" .rect").css({
+					"stroke": colors[i].hexadecimal
+				});
+				$("."+colors[i].class[j]+" .rect").css({
+					"fill": colors[i].hexadecimal
+				});
+			}
+		}
+		// add additional css via jquery - doesn't work yet
+		/*if(data.colors[i].css){
+			for(j=0; j<data.colors[i].class.length; j++){
+				for(k in data.colors[i].css){
+					$("."+data.colors[i].class[j]).css({k: data.colors[i].css[k]});
+					console.log(k, data.colors[i].css[k]);
 				}
 			}
-			// add additional css via jquery - doesn't work yet
-			/*if(data.colors[i].css){
-				for(j=0; j<data.colors[i].class.length; j++){
-					for(k in data.colors[i].css){
-						$("."+data.colors[i].class[j]).css({k: data.colors[i].css[k]});
-						console.log(k, data.colors[i].css[k]);
-					}
-				}
-			}*/
-		}
-	});
+		}*/
+	}
+
 	// show the UI box
 	$("#ui, footer").toggle();
-}).done(function(){
-	$.getJSON("../data/characters.json", function( data ) {
-		// append the character thumbnail to the body
-		for(i=0; i<data.characters.length; i++){
-			if(data.characters[i].characterImageThumb){
-				$("body").append("<div class='characterThumb "+data.characters[i].characterName.toLowerCase().replace(/([^A-Z0-9])/gi,"")+"-image' style='background-image: url("+data.characters[i].characterImageThumb+");'></div>")
-			}
-		}
-		// for(i=0; i<charactersArrayForIMDBImages.length; i++){
-		// 	for(j=0; j<data.characters.length; j++){
-		// 		if(charactersArrayForIMDBImages[i].name == data.characters[j].characterName){
-		// 			charactersArrayForIMDBImages[i].characterLink = "http://imdb.com"+data.characters[j].characterLink;
-		// 		}
-		// 	}
-		// 	$("body").append("<a href='"+charactersArrayForIMDBImages[i].characterLink+"' target='_blank'>"+charactersArrayForIMDBImages[i].name+"</a><br>");
-		// }
 
-	});
+	// append the character thumbnail to the body
+	for(i=0; i<charactersData.length; i++){
+		if(charactersData[i].characterImageThumb){
+			$("body").append("<div class='characterThumb "+charactersData[i].characterName.toLowerCase().replace(/([^A-Z0-9])/gi,"")+"-image' style='background-image: url("+charactersData[i].characterImageThumb+");'></div>")
+		}
+	}
+	// for(i=0; i<charactersArrayForIMDBImages.length; i++){
+	// 	for(j=0; j<data.characters.length; j++){
+	// 		if(charactersArrayForIMDBImages[i].name == data.characters[j].characterName){
+	// 			charactersArrayForIMDBImages[i].characterLink = "http://imdb.com"+data.characters[j].characterLink;
+	// 		}
+	// 	}
+	// 	$("body").append("<a href='"+charactersArrayForIMDBImages[i].characterLink+"' target='_blank'>"+charactersArrayForIMDBImages[i].name+"</a><br>");
+	// }
+
 });

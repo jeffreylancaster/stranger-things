@@ -372,8 +372,8 @@
          "characterLink": "/title/tt4574334/characters/nm7140802",
          "actorName": "Gaten Matarazzo",
          "actorLink": "/name/nm7140802/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWY4NTlhYzAtMGIwNy00ZDAzLTg0ZWMtNzYwNzZmNDI4MTgyXkEyXkFqcGdeQXVyNjI4MDU4OTQ@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWY4NTlhYzAtMGIwNy00ZDAzLTg0ZWMtNzYwNzZmNDI4MTgyXkEyXkFqcGdeQXVyNjI4MDU4OTQ@._V1.jpg",
+         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTkyNDIyMzQ5OF5BMl5BanBnXkFtZTgwNDUwMDM2NDM@._V1._SX100_SY140_.jpg",
+         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTkyNDIyMzQ5OF5BMl5BanBnXkFtZTgwNDUwMDM2NDM@._V1.jpg",
          "parents": [
             "Claudia Henderson",
             "Mr. Henderson"
@@ -1163,9 +1163,7 @@
          "characterName": "Middle School Student",
          "credited": false,
          "actorName": "Lindsey Heilman",
-         "actorLink": "/name/nm7075523/",
-         "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BOWQ0YzY5OTItMDM2Ni00ZWViLWE5MzItYzgwNjkwZTdiOTIxXkEyXkFqcGdeQXVyNTgxMTg4MTA@._V1._SX100_SY140_.jpg",
-         "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BOWQ0YzY5OTItMDM2Ni00ZWViLWE5MzItYzgwNjkwZTdiOTIxXkEyXkFqcGdeQXVyNTgxMTg4MTA@._V1.jpg"
+         "actorLink": "/name/nm7075523/"
       },
       {
          "characterName": "Middle School Student",
