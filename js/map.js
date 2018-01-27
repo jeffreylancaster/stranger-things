@@ -66,7 +66,7 @@ var charactersData,
   episodeLengths,
   locations,
   subLocations,
-  house,
+  group,
   colors;
 
 
@@ -124,11 +124,11 @@ $.when(
   })
   .fail(function() {console.error("keyValues.json not loaded");}),
 
-  $.getJSON("../data/characters-houses.json", function(data) {
-    house = data.house;
-    console.log("characters-houses.json loaded");
+  $.getJSON("../data/characters-groups.json", function(data) {
+    group = data.groups;
+    console.log("characters-groups.json loaded");
   })
-  .fail(function() {console.error("characters-houses.json not loaded");}),
+  .fail(function() {console.error("characters-groups.json not loaded");}),
 
   $.getJSON("../data/colors.json", function(data) {
     colors = data.colors;
@@ -149,11 +149,10 @@ $.when(
 		.attr("width", width)
 		.attr("height", height);
 
-	var titlePoints = [];
-	var points = [];
-
-	// an array to keep titles
-	var titles = [];
+	var titlePoints = []; // an array for points for characters with titles
+	var titlePointsAdj = []; // array to help modify titlePoints
+	var points = []; // an array for points for characters
+	var titles = []; // an array to keep titles
 
     // build the array of points from keyValues
 	keyValues.forEach(function(d,i){
@@ -169,6 +168,7 @@ $.when(
 			
 			// ignore flashbacks, greensight, warging, not yet born, mindpalace
 			if(keyValues[i].values[j].f || keyValues[i].values[j].g || keyValues[i].values[j].w || keyValues[i].values[j].m || keyValues[i].values[j].b == false){}
+			
 			// for everything else
 			else {
 				var objStart = {};
@@ -202,9 +202,6 @@ $.when(
 		});
 	});
 	
-	// modify titlePoints
-	var titlePointsAdj = [];
-	
 	// dedpulicate the titles array and add values to select
 	titles = titles.filter(onlyUnique).sort();
 	for(i=0; i<titles.length; i++){
@@ -221,6 +218,7 @@ $.when(
 		}
 	}
 	titlePoints = titlePointsAdj;
+
 	// remove initial null values
 	for(i=0; i<titlePoints.length; i++){
 		var toSplice = 0;
@@ -494,28 +492,26 @@ $.when(
         });
 
 
-    // add house-specific styling to lines
-
-    $("#loading").hide();
+    // add group-specific styling to lines
 
     var charactersArray = [];
-	for(i=0; i<house.length; i++){
-		for(j=0; j<house[i].characters.length; j++){
-			var className = house[i].characters[j].toLowerCase().replace(/([^A-Z0-9])/gi,"");
-			var groupName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
+	for(i=0; i<group.length; i++){
+		for(j=0; j<group[i].characters.length; j++){
+			var className = group[i].characters[j].toLowerCase().replace(/([^A-Z0-9])/gi,"");
+			var groupName = group[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
 			$("."+className).addClass(groupName);
 			if(groupName !== "include"){
 				$("."+className).addClass("include");
 			}
-			// only include characters from characters-houses in select
-			charactersArray.push(house[i].characters[j]);
+			// only include characters from characters-groups in select
+			charactersArray.push(group[i].characters[j]);
 			
-			// charactersArrayForIMDBImages.push({"name":house[i].characters[j]}); // remove
+			// charactersArrayForIMDBImages.push({"name":group[i].characters[j]}); // remove
 		}
-		if(house[i].name == "Include"){
+		if(group[i].name == "Include"){
 			$("#group-select > select").append("<option disabled></option><option value='include'>All Main Characters</option><option value='characters'>All Characters</option>");
 		} else {
-			$("#group-select > select").append("<option>"+house[i].name+"</option>");
+			$("#group-select > select").append("<option>"+group[i].name+"</option>");
 		}
 	}
 	
@@ -526,7 +522,7 @@ $.when(
 	}
 	$("#character-select > select").append("<option disabled></option><option value='characters'>All Characters</option>");
 
-	// build the key - include: houses, hand/khal/khaleesi/king, dead, in scene
+	// build the key - include: groups, titles, dead, in scene
 
 	const keyScale = 410;
 
@@ -552,17 +548,25 @@ $.when(
         .attr("dominant-baseline", "hanging")
         .attr("text-anchor", "start");
 	
-	// add a group for each house
-	for(i=0; i<house.length; i++){
-		var groupName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
+	// add a group for each group
+	for(i=0; i<group.length; i++){
+		var groupName = group[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
 		selectKey.append("g")
 			.attr("class", groupName);
 
-		// add house line
+		if(groupName == "main"){
+			selectKey.select("g."+groupName)
+				.append("circle")
+				.attr("cx", 150)
+				.attr("cy", 16*i+35)
+				.attr("class", "dead");
+		}
+
+		// add group line
 		selectKey.select("g."+groupName).selectAll("paths")
 			.data(function(){
 				// different lengths for dead lines
-				if(groupName == "tyrell" || groupName == "frey"){
+				if(groupName == "main"){
 					return [[{"x":0,"y":16*i+35},{"x":150,"y":16*i+35}]]
 				} else {
 					return [[{"x":0,"y":16*i+35},{"x":200,"y":16*i+35}]]
@@ -575,7 +579,7 @@ $.when(
 
 		// add line label
 		selectKey.select("g."+groupName).append("text")
-            .text(house[i].name)
+            .text(group[i].name)
             .attr("class", "keyLabel")
             .attr("x", 215)
             .attr("y", 16*i+35)
@@ -584,8 +588,8 @@ $.when(
 	}	
 
 	// add .include to all lines
-	for(i=0; i<house.length; i++){
-		var groupName = house[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
+	for(i=0; i<group.length; i++){
+		var groupName = group[i].name.toLowerCase().replace(/([^A-Z0-9])/gi,"");
 		if(groupName !== "include"){
 			$("."+groupName).addClass("include");
 		}
@@ -593,7 +597,6 @@ $.when(
 
 
 	// add gender as class to lines, add UI select behavior
-
 	for(i in charactersGenderData){
 		for(j=0; j<charactersGenderData[i].characters.length; j++){
 			var className = charactersGenderData[i].characters[j].toLowerCase().replace(/([^A-Z0-9])/gi,"");
@@ -614,16 +617,18 @@ $.when(
 		// show only that gender
 		isolate($("#gender-select input[type='radio']:checked").val());
 	});
-	// on change in house select, show only that house
+
+	// on change in group select, show only that group
 	$("#group-select select").change(function(){
 		// reset other selects
 		$("#gender-select input, #life-select input").prop("checked", false);
 		$('#character-select option, #title-select option').prop('selected', function() {
 	        return this.defaultSelected;
 	    });
-		// show only that house
+		// show only that group
 		isolate($("#group-select select option:selected").val());
 	});
+
 	// on change in character select, show only that character
 	$("#character-select select").change(function(){
 		// reset other selects
@@ -631,9 +636,10 @@ $.when(
 		$('#group-select option, #title-select option').prop('selected', function() {
 	        return this.defaultSelected;
 	    });
-		// show only that house
+		// show only that character
 		isolate($("#character-select select option:selected").val());
 	});
+
 	// on change in title select, show only that title
 	$("#title-select select").change(function(){
 		// reset other selects
@@ -644,6 +650,7 @@ $.when(
 		// show only that title
 		isolate($("#title-select select option:selected").val());
 	});
+
 	// on change in alive select, show only that life
 	$("#life-select input").change(function(){
 		// reset other selects
@@ -657,7 +664,6 @@ $.when(
 
 
 	// add color data to styles
-
 	for(i in colors){
 		if(colors[i].class){
 			for(j=0; j<colors[i].class.length; j++){
@@ -680,9 +686,6 @@ $.when(
 		}*/
 	}
 
-	// show the UI box
-	$("#ui, footer").toggle();
-
 	// append the character thumbnail to the body
 	for(i=0; i<charactersData.length; i++){
 		if(charactersData[i].characterImageThumb){
@@ -697,5 +700,8 @@ $.when(
 	// 	}
 	// 	$("body").append("<a href='"+charactersArrayForIMDBImages[i].characterLink+"' target='_blank'>"+charactersArrayForIMDBImages[i].name+"</a><br>");
 	// }
+
+	$("#loading").hide(); // hide the loading box
+	$("#ui, footer").toggle(); // show the UI box
 
 });
