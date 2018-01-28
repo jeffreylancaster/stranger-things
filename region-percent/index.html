@@ -59,7 +59,7 @@
     <div id="description">
       <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
     </div>
-    <svg width="960" height="3050"></svg>
+    <svg width="960" height="550"></svg>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -257,47 +257,20 @@ $.when(
       .rangeRound([0, width]);
 
   //var z = d3.scaleOrdinal(d3.schemeCategory20c);
-  var z = d3.scaleOrdinal()
-      .range([
-        "#0E2F6E", // Big City
-        "#0E3386", // Chicago, Illinois
-        "#1656e5", // outside Chicago, Illinois
-        "#FDB827", // Pittsburgh, Pennsylvania
-        "#C41E3A", // Sesser, Illinois
-        "#f27489", // to Sesser, Illinois
-        "#C6011F", // Indianapolis, Indiana
-        "#238b45", // 515 Larrabee Road, Indiana
-        "#006d2c", // Hawkins, Indiana
-        "#141e30", // Upside Down
-
-
-        "#f7fbff", // North of the Wall
-        "#deebf7", // The Wall
-        "#c6dbef", // The North
-        "#9ecae1", // The Shivering Sea
-        "#6baed6", // The Vale
-        "#4292c6", // The Iron Islands
-        "#2171b5", // The Sunset Sea
-        "#084594", // The Westerlands
-        "#00441b", // The Riverlands
-        "#006d2c", // The Narrow Sea
-        "#238b45", // The Crownlands
-        "#41ae76", // The Stormlands
-        "#66c2a4", // The Reach
-        "#99d8c9", // Dorne
-        "#ccece6", // Pentos
-        "#e5f5f9", // Braavos
-        "#f7fcfd", // The Summer Sea
-        "#ffffe5", // Volantis
-        "#fff7bc", // Valyria
-        "#fee391", // The Dothraki Sea
-        "#fec44f", // Meereen
-        "#fe9929", // Yunkai
-        "#ec7014", // Astapor
-        "#cc4c02", // Vaes Dothrak
-        "#993404", // The Red Waste
-        "#662506" // Qarth
-      ]);
+  
+  /* CUSTOM FOR STRANGER THINGS */
+  var z = d3.scaleOrdinal().range([
+    "#393b79", // Big City
+    "#5254a3", // Chicago, Illinois
+    "#6b6ecf", // outside Chicago, Illinois
+    "#9c9ede", // Pittsburgh, Pennsylvania
+    "#CCCCCC", // Sesser, Illinois
+    "#cedb9c", // to Sesser, Illinois
+    "#b5cf6b", // Indianapolis, Indiana
+    "#8ca252", // 515 Larrabee Road, Indiana
+    "#637939", // Hawkins, Indiana
+    "#141e30" // Upside Down
+  ]); // based on d3.schemeCategory20b
 
   var stack = d3.stack()
     .offset(d3.stackOffsetExpand);
@@ -386,7 +359,7 @@ $.when(
     .attr("y", 9.5)
     .attr("dy", "0.32em")
     .text(function(d) {
-      return d.replace("Pennsylvania","PA").replace("Illinois","IL").replace(", Indiana",", IN"); // custom .replace() to update labels in keys - was return d
+      return d.replace("Pennsylvania","PA").replace("Illinois","IL").replace(", Indiana",", IN"); // CUSTOM FOR STRANGER THINGS: was return d - added .replace() to update labels in keys
     });
 });
 
