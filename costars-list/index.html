@@ -108,12 +108,12 @@ async function stall(stallTime = 3000) {
 /* VARIABLES AND CONFIGURATION */
 
 var config = {
-  getAPI: true,
+  getAPI: false,
   cutoff: 2
 }
 var films = {};
 var filmsArray = [];
-var themoviedb = {};
+var costars = {};
 
 // variable containers for imported data
 var charactersData,
@@ -129,7 +129,8 @@ var charactersData,
   subLocations,
   group,
   colors,
-  env;
+  env,
+  costarsData;
 
 
 /* IMPORT DATA */
@@ -195,7 +196,13 @@ $.when(
     env = data.env;
     console.log("env.json loaded");
   })
-  .fail(function() {console.error("env.json not loaded");})
+  .fail(function() {console.error("env.json not loaded");}),
+
+  $.getJSON("../data/costars.json", function(data) {
+    costarsData = data;
+    console.log("costars.json loaded");
+  })
+  .fail(function() {console.error("costars.json not loaded");})
 
 
 /* DO STUFF WITH THE DATA */
@@ -234,7 +241,8 @@ $.when(
           console.log(id);
         });
         console.log('Done');
-        $("#list").html(JSON.stringify(themoviedb));
+        $("#list").html(JSON.stringify(costars));
+
       } catch(err){
         console.log(err);
       }
@@ -250,9 +258,9 @@ $.when(
             external_source: "imdb_id"
           }
       });
-      // add to themoviedb
+      // add to costars
       if(actorData.person_results.length > 0 && actorData.person_results[0].id){
-        themoviedb[actorData.person_results[0].id] = {
+        costars[actorData.person_results[0].id] = {
           name: actorData.person_results[0].name
         };
         const moreData = await themoviedbGetFilms(actorData.person_results[0].id);
@@ -273,11 +281,11 @@ $.when(
           }
         });
       if (filmsResult.cast.length > 0) {
-        // add to themoviedb
+        // add to costars
         $.each(filmsResult.cast, function(j,val){
           // if film entry exists, add to actors
-          if(themoviedb[val.id]){
-            themoviedb[val.id].actors[filmsResult.id] = {
+          if(costars[val.id]){
+            costars[val.id].actors[filmsResult.id] = {
               //id: filmsResult.id,
               character: val.character
             };
@@ -288,13 +296,13 @@ $.when(
             if(val.release_date){
               release_date = val.release_date.split("-")[0];
             }
-            themoviedb[val.id] = {
+            costars[val.id] = {
               actors: {},
               title: val.title,
               //id: val.id,
               release_date: release_date
             };
-            themoviedb[val.id].actors[filmsResult.id] = {
+            costars[val.id].actors[filmsResult.id] = {
               //id: filmsResult.id,
               character: val.character
             }
@@ -311,7 +319,13 @@ $.when(
     themoviedbLookup();
 
   } else {
-    $.getJSON( "../data/costars.json", function( data ) {
+    costars = costarsData;
+  }
+
+  console.log(costars);
+
+
+  /*  $.getJSON( "../data/costars.json", function( data ) {
       // console.log("costars.json loaded.");
       // console.log(data);
       // console.log(characters);
@@ -350,7 +364,7 @@ $.when(
         }
       }
     });
-  }
+  }*/
 });
 
     </script>
