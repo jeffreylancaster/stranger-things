@@ -211,6 +211,7 @@ $.when(
   console.log("now that the files are loaded... do magic.");
 
   var characters = {};
+  var charactersObj = {};
 
   // parse actorLink to just nm####### into array of objects with characterName and actorName.
   for(var i in charactersData){
@@ -322,49 +323,47 @@ $.when(
     costars = costarsData;
   }
 
-  console.log(costars);
-
-
-  /*  $.getJSON( "../data/costars.json", function( data ) {
-      // console.log("costars.json loaded.");
-      // console.log(data);
-      // console.log(characters);
-      films = data;
-    })
-    .done(function(){
-      // match names from characters.json back to films
-      $.each(films, function(i, val){
-        $.each(val.actors, function(j, value){
-          value.actorName = characters[value.personID].actorName;
-        });
-      });
-    })
-    .done(function(){
-      for(var i in films){
-        filmsArray.push(films[i]);
+  for(var i in costars){
+    if(costars[i].actors && Object.keys(costars[i].actors).length >= config.cutoff){
+      filmsArray.push(costars[i]);
+      for(var j in costars[i].actors){
+        costars[i].actors[j].actor = costars[j].name;
+        costars[i].actors[j].id = j;
       }
+    }
+  }
 
-      filmsArray = filmsArray.sort(function(a, b) {
-        return b.actors.length - a.actors.length;
-      });
-
-      //$("#list").html(JSON.stringify(filmsArray));
-
-      $("#list").html("");
-      for(i=0; i<filmsArray.length; i++){
-        if(filmsArray[i].actors.length >= config.cutoff){
-          var yearToAdd = "";
-          if(filmsArray[i].year){
-            yearToAdd = " ("+filmsArray[i].year+")";
-          }
-          $("#list").append("<h2><a href='http://www.imdb.com/title/"+filmsArray[i].imdb_id+"' target='_blank'>"+filmsArray[i].title+"</a>"+yearToAdd+"</h2>");
-          $.each(filmsArray[i].actors, function(j, value){
-            $("#list").append("<li><a href='http://www.imdb.com/name/"+value.personID+"' target='_blank'>"+value.actorName+"</a> ("+value.characterName+")</li>");
-          });
+  // align costars with characters to add Stranger Things characterName
+  for(var i in costars){
+    for(var j in costars[i].actors){
+      for(var k in characters){
+        if(costars[i].actors[j].actor == characters[k].actorName){
+          costars[i].actors[j].strangerThingsCharacter = characters[k].characterName;
+          costars[i].actors[j].id = k;
         }
       }
+    }
+  }
+
+  filmsArray = filmsArray.sort(function(a, b) {
+    return Object.keys(b.actors).length - Object.keys(a.actors).length;
+  });
+
+  console.log(filmsArray);
+
+  $("#list").html("");
+  for(i=0; i<filmsArray.length; i++){
+    var yearToAdd = "";
+    if(filmsArray[i].release_date){
+      yearToAdd = " ("+filmsArray[i].release_date+")";
+    }
+    //$("#list").append("<h2><a href='#' target='_blank'>"+filmsArray[i].title+"</a>"+yearToAdd+"</h2>");
+    $("#list").append("<h2>"+filmsArray[i].title+yearToAdd+"</h2>");
+    $.each(filmsArray[i].actors, function(j, value){
+      $("#list").append("<li><a href='http://www.imdb.com/name/"+value.id+"' target='_blank'>"+value.actor+"</a> ("+value.strangerThingsCharacter+")</li>");
     });
-  }*/
+  }
+
 });
 
     </script>
