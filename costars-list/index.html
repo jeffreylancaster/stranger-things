@@ -243,7 +243,6 @@ $.when(
         });
         console.log('Done');
         $("#list").html(JSON.stringify(costars));
-
       } catch(err){
         console.log(err);
       }
@@ -274,6 +273,7 @@ $.when(
     }
     
     const themoviedbGetFilms = async (actorID) => {
+      await stall(100); // stalls for 1/10 a second
       const filmsResult = await $.ajax({
           url: "https://api.themoviedb.org/3/person/"+actorID+"/movie_credits",
           data: {
@@ -283,6 +283,7 @@ $.when(
         });
       if (filmsResult.cast.length > 0) {
         // add to costars
+        console.log(filmsResult.cast);
         $.each(filmsResult.cast, function(j,val){
           // if film entry exists, add to actors
           if(costars[val.id]){
@@ -309,11 +310,36 @@ $.when(
             }
           }
         });
+        await asyncForEach(filmsResult.cast, async (id) => {
+          await imdbFilmData(id);
+          //console.log(id);
+        });
+        console.log('Done');
         // console.log(filmsResult);
-        return filmsResult;
+        return imdbFilmData;
       } else {
         // console.log(filmsResult);
         return filmsResult;
+      }
+    }
+
+    const imdbFilmData = async (themoviedbID) => {
+      if(themoviedbID.id){
+        await stall(200); // stalls for 1/5 a second
+        const idResult = await $.ajax({
+            url: "https://api.themoviedb.org/3/movie/"+themoviedbID.id+"/external_ids",
+            data: {
+              api_key: env.themoviedb
+            }
+          });
+        if (idResult.imdb_id) {
+          costars[idResult.id].imdb_id = idResult.imdb_id
+          // console.log(idResult);
+          return idResult;
+        } else {
+          // console.log(idResult);
+          return idResult;
+        }
       }
     }
 
@@ -357,13 +383,12 @@ $.when(
     if(filmsArray[i].release_date){
       yearToAdd = " ("+filmsArray[i].release_date+")";
     }
-    //$("#list").append("<h2><a href='#' target='_blank'>"+filmsArray[i].title+"</a>"+yearToAdd+"</h2>");
-    $("#list").append("<h2>"+filmsArray[i].title+yearToAdd+"</h2>");
+    $("#list").append("<h2><a href='http://www.imdb.com/title/"+filmsArray[i].imdb_id+"' target='_blank'>"+filmsArray[i].title+"</a>"+yearToAdd+"</h2>");
     $.each(filmsArray[i].actors, function(j, value){
       $("#list").append("<li><a href='http://www.imdb.com/name/"+value.id+"' target='_blank'>"+value.actor+"</a> ("+value.strangerThingsCharacter+")</li>");
     });
   }
-
+  
 });
 
     </script>
