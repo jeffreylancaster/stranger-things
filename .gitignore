@@ -1,3 +1,5 @@
 **/.DS_Store
 env.json
+js/d3.min.js
+js/jquery.min.js
 Stranger Things Notes.txt
