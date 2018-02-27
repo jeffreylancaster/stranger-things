@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<!-- from: https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458 -->
+  <head>
+    <title>Stranger Things: Relations</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Stranger Things: Relations">
+    <meta name="keywords" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
+    <meta name="author" content="Jeffrey Lancaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <style>
+      .axis .domain {
+        display: none;
+      }
+      .timestamp{
+        fill: black;
+      }
+      body{
+        font-family: "Helvetica Neue";
+        padding-top: 35px;
+      }
+      header{
+        margin: 15px;
+      }
+      header img{
+        height: 120px;
+        vertical-align: middle;
+        margin-top: -50px;
+      }
+      header span{
+        font-weight: 300;
+        font-size: 50px;
+      }
+      #cta{
+        color: #999;
+        font-style: italic;
+        font-size: 0.8em;
+      }
+      #description{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 15px;
+        color: #999;
+        font-size: 0.8em;
+      }
+      #description a{
+        text-decoration: none;
+      }
+
+      .link {
+        fill: none;
+        stroke: #999;
+        stroke-opacity: 0.6;
+      }
+      .nodes circle {
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+
+      .killedBy { /* needs direction arrows */
+        stroke: #000;
+        stroke-width: 2px;
+        stroke-opacity: 1;
+      }
+      .siblings, .parentOf, .marriedEngaged { /* no direction */
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="../img/Stranger-Things_logo.png">
+        <span> - Relations</span>
+      </h1>
+    </header>
+    <div id="description">
+      <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
+    </div>
+    <!-- <svg width="960" height="3080"></svg> -->
+    <svg width="960" height="600" viewBox="-480 -300 960 600">
+      <circle r="250" stroke="steelblue" stroke-opacity="0.5" fill="none"></circle>
+    </svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="../js/jquery.min.js"></script>
+    <script src="../js/d3.min.js"></script> -->
+    <script>
+
+/* HELPFUL FUNCTIONS */
+
+// to convert scene start/end times into seconds
+function sec(timeString){
+  var sec = 0;
+  if (timeString.length == 0) return sec;
+  var splitArray = timeString.split(":");
+  sec = 3600*parseFloat(splitArray[0])+60*parseFloat(splitArray[1])+parseFloat(splitArray[2]);
+  return sec;
+}
+
+// to convert seconds into hh:mm:ss
+function secondsToHMS(d) {
+  var date = new Date(null);
+  date.setSeconds(d); // specify value for SECONDS here
+  return date.toISOString().substr(11, 8);
+}
+
+// to dedpulicate an array
+function onlyUnique(value, index, self) { 
+  return self.indexOf(value) === index;
+}
+
+
+/* VARIABLES AND CONFIGURATION */
+
+var config = {
+  countUp: false, // config for timer count up vs. timer count down
+  barHeight: 20
+}
+
+// variable containers for imported data
+var charactersData,
+  locationsData,
+  locationsAltData,
+  episodesData,
+  charactersIncludeData,
+  charactersGenderData,
+  keyValue,
+  keyValuesFile,
+  episodeLengths,
+  locations,
+  subLocations,
+  group,
+  colors;
+
+var relationships = [
+  // "characterName",
+  // "credited",
+  // "actors",
+  // "actorName",
+  // "actorLink",
+  // "characterImageThumb",
+  // "characterImageFull",
+  // "characterNameAlt",
+  // "characterLink",
+  // "nickname",
+  // "parents",
+  "killedBy",
+  "siblings", // need to deduplicate
+  "parentOf",
+  "marriedEngaged", // need to deduplicate
+  // "killed" // covered by killedBy
+  ];
+
+
+/* IMPORT DATA */
+$.when(
+  $.getJSON("../data/characters.json", function(data) {
+    charactersData = data.characters;
+    console.log("characters.json loaded");
+  })
+  .fail(function() {console.error("characters.json not loaded");})
+      
+  // $.getJSON("../data/locations.json", function(data) {
+  //   locationsData = data.regions;
+  //   console.log("locations.json loaded");
+  // })
+  // .fail(function() {console.error("locations.json not loaded");}),
+
+  // $.getJSON("../data/locations-alt.json", function(data) {
+  //   locationsAltData = data.sceneLocSorted;
+  //   console.log("locations-alt.json loaded");
+  // })
+  // .fail(function() {console.error("locations-alt.json not loaded");}),
+
+  // $.getJSON("../data/episodes.json", function(data) {
+  //   episodesData = data.episodes;
+  //   console.log("episodes.json loaded");
+  // })
+  // .fail(function() {console.error("episodes.json not loaded");}),
+
+  // $.getJSON("../data/characters-include.json", function(data) {
+  //   charactersIncludeData = data.include;
+  //   console.log("characters-include.json loaded");
+  // })
+  // .fail(function() {console.error("characters-include.json not loaded");}),
+
+  // $.getJSON("../data/characters-gender.json", function(data) {
+  //   charactersGenderData = data.gender;
+  //   console.log("characters-gender.json loaded");
+  // })
+  // .fail(function() {console.error("characters-gender.json not loaded");}),
+
+  // $.getJSON("../data/keyValues.json", function(data) {
+  //   keyValues = data.keyValues;
+  // episodeLengths = data.episodeLengths;
+  //   locations = data.sceneLocSorted;
+  //   subLocations = data.sceneSubLocSorted;
+  //   console.log("keyValues.json loaded");
+  // })
+  // .fail(function() {console.error("keyValues.json not loaded");}),
+
+  // $.getJSON("../data/characters-groups.json", function(data) {
+  //   group = data.groups;
+  //   console.log("characters-groups.json loaded");
+  // })
+  // .fail(function() {console.error("characters-groups.json not loaded");}),
+
+  // $.getJSON("../data/colors.json", function(data) {
+  //   colors = data.colors;
+  //   console.log("colors.json loaded");
+  // })
+  // .fail(function() {console.error("colors.json not loaded");}),
+
+
+/* DO STUFF WITH THE DATA */
+
+).then(function() {
+  console.log("now that the files are loaded... do magic.");
+  console.log(charactersData, relationships);
+
+  /* KEEP THIS FOR FUTURE USE */
+  // make a list of keys for characters to use for relationships array above
+  /*
+  var relations = [];
+  for(var i in charactersData){
+    Object.keys(charactersData[i]).forEach(function(j,val){
+      relations.push(j);
+    })
+  }
+  relations = relations.filter(onlyUnique);
+  console.log(relations);
+  */
+
+  var charactersArray = [];
+  var matrix = {
+    "nodes":[],
+    "links":[]
+  }
+
+  // build an array of characters involved
+  relationships.forEach(function(val, i){
+    charactersData.forEach(function(value, j){
+      if(charactersData[j].hasOwnProperty(val)){
+        charactersArray.push(value.characterName);
+        charactersData[j][val].forEach(function(valu, k){
+          charactersArray.push(valu);
+        });
+      }
+    })
+  });
+
+  // deduplicate array
+  charactersArray = charactersArray.filter(onlyUnique).sort();
+  
+  // add nodes to matrix
+  charactersArray.forEach(function(val, i){
+    matrix.nodes.push({"id":val, "group":1});
+  });
+
+  // build list of nodes and links based on position in array of characters
+  relationships.forEach(function(val, i){
+    charactersData.forEach(function(value, j){
+      if(charactersData[j].hasOwnProperty(val)){
+        charactersData[j][val].forEach(function(valu, k){
+          // link valu to value, add the type of link
+          matrix.links.push({
+            "source":valu,
+            "target":value.characterName,
+            "value":1,
+            "type":val
+          });
+        });
+      }
+    })
+  });
+
+  // deduplicate links
+   for(i=0; i<matrix.links.length; i++){
+    for(j=i+1; j<matrix.links.length; j++){
+      if(matrix.links[i].source == matrix.links[j].target &&
+        matrix.links[i].target == matrix.links[j].source &&
+        matrix.links[i].type == matrix.links[j].type){
+        matrix.links.splice(j, 1);
+      }
+    }
+  } 
+  
+  /* BUILD THE VISUALIZATION */
+  
+  var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height")
+    radius = 250;
+
+  var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+  var simulation = d3.forceSimulation()
+     .force("link", d3.forceLink())
+    // .force("charge", d3.forceManyBody())
+    // .force("center", d3.forceCenter(width / 2, height / 2));
+    //.force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("r", d3.forceRadial(function(d) { return radius; }))
+    //.force('collision', d3.forceCollide().radius(5))
+    .force("charge", d3.forceCollide());
+    //.force("charge", d3.forceManyBody());
+    //.force("center", d3.forceCenter(width / 2, height / 2));
+
+  var nodes = matrix.nodes,
+      nodeById = d3.map(nodes, function(d) { return d.id; }),
+      links = matrix.links,
+      bilinks = [];
+
+  links.forEach(function(link) {
+    var s = link.source = nodeById.get(link.source),
+        t = link.target = nodeById.get(link.target),
+        i = {}, // intermediate node
+        type = link.type; 
+    //nodes.push(i);
+    links.push({source: s, target: i, type: type}, {source: i, target: t, type: type});
+    bilinks.push([s, i, t, type]);
+  });
+
+  console.log(bilinks);
+
+  var link = svg.selectAll(".link")
+    .data(bilinks)
+    .enter().append("path")
+      //.attr("class", "link")
+      .attr("class", function(d){ return "link " + d[3]});
+
+  var node = svg.selectAll(".node")
+    .data(nodes.filter(function(d) { return d.id; }))
+    .enter().append("circle")
+      .attr("class", "node")
+      .attr("r", 5)
+      .attr("fill", function(d) { return color(d.group); })
+      .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+
+  node.append("title")
+      .text(function(d) { return d.id; });
+
+  simulation
+      .nodes(nodes)
+      .on("tick", ticked);
+
+  simulation.force("link")
+      .strength(0)
+      .links(links);
+
+  simulation.force("r")
+      .strength(1);
+
+  var chargeRadius = radius*Math.sin((radius*2*Math.PI/matrix.nodes.length)/(2*radius)); //d = 2•r•sin(a/2r)
+
+  simulation.force("charge")
+      .radius(chargeRadius);
+
+  function ticked() {
+    link.attr("d", positionLink);
+    node.attr("transform", positionNode);
+  }
+
+  function positionLink(d) {
+    return "M" + d[0].x + "," + d[0].y
+         + "S" + 0 + "," + 0
+         + " " + d[2].x + "," + d[2].y;
+  }
+
+  function positionNode(d) {
+    return "translate(" + d.x + "," + d.y + ")";
+  }
+
+  function dragstarted(d) {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x, d.fy = d.y;
+  }
+
+  function dragged(d) {
+    d.fx = d3.event.x, d.fy = d3.event.y;
+  }
+
+  function dragended(d) {
+    if (!d3.event.active) simulation.alphaTarget(0);
+    d.fx = null, d.fy = null;
+  }
+  
+});
+
+    </script>
+  </body>
+</html>

@@ -118,7 +118,7 @@
             "Mr. Holland"
          ],
          "killedBy": [
-            ""
+            "The Monster"
          ]
       },
       {
@@ -340,9 +340,6 @@
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3MzQyOTM5MF5BMl5BanBnXkFtZTgwNDg2Njk2OTE@._V1.jpg",
          "parentOf": [
             "Eleven"
-         ],
-         "killedBy": [
-            ""
          ]
       },
       {
@@ -1878,7 +1875,12 @@
          "actorLink": "/name/nm0825209/",
          "characterImageThumb": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjIwMTcwNl5BMl5BanBnXkFtZTgwMjQ5MjE5NTE@._V1._SX100_SY140_.jpg",
          "characterImageFull": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjIwMTcwNl5BMl5BanBnXkFtZTgwMjQ5MjE5NTE@._V1.jpg",
-         "killedBy":"Eleven"
+         "killedBy":[
+            "Eleven"
+         ],
+         "killed":[
+            "Barbara Holland"
+         ]
       },
       {
          "characterName": "Tina",
