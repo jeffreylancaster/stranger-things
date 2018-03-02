@@ -59,7 +59,7 @@
     <div id="description">
       <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
     </div>
-    <svg width="2500" height="3080"></svg>
+    <svg width="2000" height="3080"></svg>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -94,7 +94,7 @@ function onlyUnique(value, index, self) {
 var config = {
   countUp: false, // config for timer count up vs. timer count down
   barHeight: 20,
-  xscale: 4
+  xscale: 4.25
 }
 
 // variable containers for imported data
@@ -182,6 +182,7 @@ $.when(
   var uniqueCharacters = []; // array for uniqueCharacters
   var totalTime = 0;
   var charactersArray = [];
+  var seasons = [];
         
   for (var i in episodesData) {
     // act on scenes
@@ -226,17 +227,24 @@ $.when(
       for(var j in episodesData[i].scenes){
         if(episodesData[i].scenes[j].characters.length > 0){
           for(var k in episodesData[i].scenes[j].characters){
+            var location = (episodesData[i].scenes[j].location) ? episodesData[i].scenes[j].location + " - " + episodesData[i].scenes[j].subLocation : episodesData[i].scenes[j].location
             uniqueCharactersObject[episodesData[i].scenes[j].characters[k].name].scenes.push({
               "absStartSec":episodesData[i].scenes[j].absStartSec,
               "absEndSec":episodesData[i].scenes[j].absEndSec,
-              "season":episodesData[i].seasonNum
+              "season":episodesData[i].seasonNum,
+              "location":location
             });
             uniqueCharactersObject[episodesData[i].scenes[j].characters[k].name].total += episodesData[i].scenes[j].absEndSec - episodesData[i].scenes[j].absStartSec
           }
         }
       }
     }
+    if(episodesData[i].scenes.length > 0){
+      seasons.push(episodesData[i].seasonNum);
+    }
   }
+
+  seasons = seasons.filter(onlyUnique).sort();
 
   // calculate midpoint of start/end values
   for(var i in uniqueCharactersObject){
@@ -283,7 +291,7 @@ $.when(
 
   y.domain(data.map(function(d) { return d.name; }));
   x.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
-  // z.domain(keys);
+  // z.domain(["1", "2"]);
 
   for(i=0; i<data.length; i++){
     g.append("g")
@@ -294,71 +302,37 @@ $.when(
       .attr("x", function(d){return x(d.absStartSec/config.xscale)})
       .attr("width", function(d){return x(d.absEndSec/config.xscale) - x(d.absStartSec/config.xscale)})
       .attr("height", y.bandwidth())
-      .attr("fill", function(d){return z(d.season)});
+      .attr("fill", function(d){return z(d.season)})
+      .append("svg:title")
+        .text(function(d) {return d.location});
   }
-
-  /* g.append("g")
-    .selectAll("g")
-    // .data(d3.stack().keys(keys)(data))
-    .data(data)
-    .enter().append("g")
-      // .attr("fill", function(d) { return z(d.key); })
-    .selectAll("rect")
-    .data(function(d) { return d.scenes; })
-    .enter().append("rect")
-      .attr("y", function(d) { return y(d.data.name); })
-      .attr("x", function(d) { return x(d.data.absStartSec); })
-      .attr("width", function(d) { return x(d[1]) - x(d[0]); })
-      .attr("height", y.bandwidth()); */
-
-  // g.selectAll("g")
-  //   // .data(d3.stack().keys(keys)(data))
-  //   .append("svg:title")
-  //     .text(function(d,i) {
-  //       // not sure why this shift needs to happen...
-  //       // if(i == 0){
-  //       //   return "Season "+keys[keys.length-1]
-  //       // } else {
-  //       //   return "Season "+keys[i-1]
-  //       // };
-  //     });
 
   g.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0,0)")
     .call(d3.axisLeft(y));
 
-  // g.selectAll(".axis")
-  //   .selectAll(".tick")
-  //   .data(data)
-  //   .append("text")
-  //   .attr("class", "timestamp")
-  //   .attr("dy", "0.35em")
-  //   .attr("dx", function(d){ return x(d.total) + 5; })
-  //   .attr("text-anchor", "start")
-  //   .text(function(d){ return secondsToHMS(d.total); });
+  var legend = g.append("g")
+    .attr("font-family", "sans-serif")
+    .attr("font-size", 10)
+    .attr("text-anchor", "end")
+    .attr("transform", function(d, i) { return "translate(0, 20)" })
+    .selectAll("g")
+    .data(seasons)
+    .enter().append("g")
+    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-  // var legend = g.append("g")
-  //   .attr("font-family", "sans-serif")
-  //   .attr("font-size", 10)
-  //   .attr("text-anchor", "end")
-  //   .attr("transform", function(d, i) { return "translate(20, 90)" })
-  //   .selectAll("g")
-  //   .data(keys.slice())
-  //   .enter().append("g")
-  //   .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+  legend.append("rect")
+    .attr("x", width - 19)
+    .attr("width", 19)
+    .attr("height", 19)
+    .attr("fill", z);
 
-  // legend.append("rect")
-  //   .attr("x", width - 19)
-  //   .attr("width", 19)
-  //   .attr("height", 19)
-  //   .attr("fill", z);
-
-  // legend.append("text")
-  //   .attr("x", width - 24)
-  //   .attr("y", 9.5)
-  //   .attr("dy", "0.32em")
-  //   .text(function(d) { return "Season " + d; });
+  legend.append("text")
+    .attr("x", width - 24)
+    .attr("y", 9.5)
+    .attr("dy", "0.32em")
+    .text(function(d) { return "Season " + d; });
   
 });
 
