@@ -2,9 +2,9 @@
 <html>
 <!-- from: https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458 -->
   <head>
-    <title>Stranger Things: Scenes by Location</title>
+    <title>Stranger Things: Time Per Sublocation</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Stranger Things: Scenes">
+    <meta name="description" content="Stranger Things: Time Per Sublocation">
     <meta name="keywords" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
     <meta name="author" content="Jeffrey Lancaster">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,16 +53,18 @@
     <header>
       <h1>
         <img src="../img/Stranger-Things_logo.png">
-        <span> - Scenes by Location</span>
+        <span> - Time Per Sublocation</span>
       </h1>
     </header>
     <div id="description">
       <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
     </div>
-    <svg width="2000" height="500"></svg>
+    <svg width="960" height="1600"></svg>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="../js/jquery.min.js"></script>
+    <script src="../js/d3.min.js"></script> -->
     <script>
 
 /* HELPFUL FUNCTIONS */
@@ -94,7 +96,7 @@ function onlyUnique(value, index, self) {
 var config = {
   countUp: false, // config for timer count up vs. timer count down
   barHeight: 20,
-  useSubLocation: false
+  useSubLocation: true
 }
 
 // variable containers for imported data
@@ -137,7 +139,7 @@ $.when(
     episodesData = data.episodes;
     console.log("episodes.json loaded");
   })
-  .fail(function() {console.error("episodes.json not loaded");})
+  .fail(function() {console.error("episodes.json not loaded");}),
 
   // $.getJSON("../data/characters-include.json", function(data) {
   //   charactersIncludeData = data.include;
@@ -178,16 +180,12 @@ $.when(
 ).then(function() {
   console.log("now that the files are loaded... do magic.");
 
-  // var allCharacters = []; // array for all characters
-  // var uniqueCharacters = []; // array for uniqueCharacters
   var totalTime = 0;
-  // var charactersArray = [];
   var seasons = [];
   var allLocations = [];
   var uniqueLocations = [];
   var locationsArray = [];
   var location;
-  var end = 0;
         
   for (var i in episodesData) {
     // act on scenes
@@ -201,14 +199,7 @@ $.when(
         sceneLength = sec(scenes[j].sceneStart) - sec(scenes[j].sceneEnd);
       }
       
-      // append absolute value of scene start in seconds
-      scenes[j].absStartSec = totalTime;
-      // append absolute value of scene end in seconds
-      scenes[j].absEndSec = totalTime + sceneLength;
-      // store the last absEndSec as end
-      end = scenes[j].absEndSec;
-      // add scene length to total time
-      totalTime += sceneLength;
+      scenes[j].length = sceneLength;
 
       // add location of scene to allLocations array
       location = (scenes[j].subLocation && config.useSubLocation) ? scenes[j].location + " - " + scenes[j].subLocation : scenes[j].location;
@@ -222,57 +213,39 @@ $.when(
   // modify uniqueLocations
   var uniqueLocationsObject = {};
   for(i=0; i<allLocations.length; i++){
-    uniqueLocationsObject[allLocations[i]] = {"name":allLocations[i], "scenes":[], "total":0}
+    uniqueLocationsObject[allLocations[i]] = {"name":allLocations[i], "total":0, "1":0, "2":0, "3":0, "4":0}
   }
 
-  // sum scene lengths for characters in scenes
+  // sum scene lengths for locations of scenes
   for(var i in episodesData){
     if(episodesData[i].scenes){
       for(var j in episodesData[i].scenes){
         location = (episodesData[i].scenes[j].subLocation && config.useSubLocation) ? episodesData[i].scenes[j].location + " - " + episodesData[i].scenes[j].subLocation : episodesData[i].scenes[j].location;
-        uniqueLocationsObject[location].scenes.push({
-          "absStartSec":episodesData[i].scenes[j].absStartSec,
-          "absEndSec":episodesData[i].scenes[j].absEndSec,
-          "season":episodesData[i].seasonNum,
-          "location":location
-        });
-        uniqueLocationsObject[location].total += episodesData[i].scenes[j].absEndSec - episodesData[i].scenes[j].absStartSec;
+        uniqueLocationsObject[location].total += episodesData[i].scenes[j].length;
+        uniqueLocationsObject[location][episodesData[i].seasonNum] += episodesData[i].scenes[j].length;
+
       }
     }
     if(episodesData[i].scenes.length > 0){
       seasons.push(episodesData[i].seasonNum);
     }
   }
-
-  seasons = seasons.filter(onlyUnique).sort();
-
-  // calculate midpoint of start/end values
-  for(var i in uniqueLocationsObject){
-    var mid = 0;
-    for(j=0; j<uniqueLocationsObject[i].scenes.length; j++){
-      mid += uniqueLocationsObject[i].scenes[j].absStartSec;
-      mid += uniqueLocationsObject[i].scenes[j].absEndSec
-    }
-    mid = mid/(2 * uniqueLocationsObject[i].scenes.length);
-    uniqueLocationsObject[i].mid = Math.round(mid);
-  }
+  console.log(uniqueLocationsObject);
 
   for(var i in uniqueLocationsObject){
     locationsArray.push(uniqueLocationsObject[i]);
   }
 
-  locationsArray.sort(function(a, b) { return a.total - b.total; }).reverse();
+  seasons = seasons.filter(onlyUnique).sort();
+  console.log(seasons);
 
-
-  console.log(locationsArray);
-  
 
   // build the visualization
   var data = locationsArray;
   var barHeight = config.barHeight;
 
   var svg = d3.select("svg"),
-      margin = {top: 20, right: 40, bottom: 30, left: 180},
+      margin = {top: 20, right: 40, bottom: 30, left: 220},
       width = +svg.attr("width") - margin.left - margin.right,
       height = barHeight*data.length + margin.top + margin.bottom,
       g = svg.append("g")
@@ -289,36 +262,68 @@ $.when(
   var z = d3.scaleOrdinal() //  or d3.schemeCategory20c between () and no .range
       .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#FEC574"]);
 
-  y.domain(data.map(function(d) { return d.name; }));
-  x.domain([0, end]).nice();
-  // z.domain(["1", "2"]);
+  var keys = d3.keys(data[0]).slice(0,2);
 
-  for(i=0; i<data.length; i++){
-    g.append("g")
+  for (i=0; i<data.length; i++){
+    var t=0;
+    for(j=0; j<keys.length; j++){
+      t += data[i][keys[j]];
+    }
+    data[i].total = t;
+  } 
+
+  data.sort(function(a, b) { return a.total - b.total; }).reverse();
+  y.domain(data.map(function(d) { return d.name; }));
+  x.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
+  z.domain(keys);
+
+  g.append("g")
     .selectAll("g")
-    .data(data[i].scenes)
+    .data(d3.stack().keys(keys)(data))
+    .enter().append("g")
+      .attr("fill", function(d) { return z(d.key); })
+    .selectAll("rect")
+    .data(function(d) { return d; })
     .enter().append("rect")
-      .attr("y", function(d){return y(data[i].name)})
-      .attr("x", function(d){return x(d.absStartSec)})
-      .attr("width", function(d){return x(d.absEndSec) - x(d.absStartSec)})
-      .attr("height", y.bandwidth())
-      .attr("fill", function(d){return z(d.season)})
-      .append("svg:title")
-        .text(function(d) {return d.location});
-  }
+      .attr("y", function(d) { return y(d.data.name); })
+      .attr("x", function(d) { return x(d[0]); })
+      .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+      .attr("height", y.bandwidth());
+
+  g.selectAll("g")
+    .data(d3.stack().keys(keys)(data))
+    .append("svg:title")
+      .text(function(d,i) {
+        // not sure why this shift needs to happen...
+        if(i == 0){
+          return "Season "+keys[keys.length-1]
+        } else {
+          return "Season "+keys[i-1]
+        };
+      });
 
   g.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0,0)")
     .call(d3.axisLeft(y));
 
+  g.selectAll(".axis")
+    .selectAll(".tick")
+    .data(data)
+    .append("text")
+    .attr("class", "timestamp")
+    .attr("dy", "0.35em")
+    .attr("dx", function(d){ return x(d.total) + 5; })
+    .attr("text-anchor", "start")
+    .text(function(d){ return secondsToHMS(d.total); });
+
   var legend = g.append("g")
     .attr("font-family", "sans-serif")
     .attr("font-size", 10)
     .attr("text-anchor", "end")
-    .attr("transform", function(d, i) { return "translate(20, 20)" })
+    .attr("transform", function(d, i) { return "translate(20, 90)" })
     .selectAll("g")
-    .data(seasons)
+    .data(keys.slice())
     .enter().append("g")
     .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
@@ -333,7 +338,7 @@ $.when(
     .attr("y", 9.5)
     .attr("dy", "0.32em")
     .text(function(d) { return "Season " + d; });
-  
+
 });
 
     </script>
