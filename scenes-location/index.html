@@ -59,7 +59,7 @@
     <div id="description">
       <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
     </div>
-    <svg width="900" height="500"></svg>
+    <svg width="2000" height="500"></svg>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -94,7 +94,6 @@ function onlyUnique(value, index, self) {
 var config = {
   countUp: false, // config for timer count up vs. timer count down
   barHeight: 20,
-  xscale: 1,
   useSubLocation: false
 }
 
@@ -188,6 +187,7 @@ $.when(
   var uniqueLocations = [];
   var locationsArray = [];
   var location;
+  var end = 0;
         
   for (var i in episodesData) {
     // act on scenes
@@ -205,6 +205,8 @@ $.when(
       scenes[j].absStartSec = totalTime;
       // append absolute value of scene end in seconds
       scenes[j].absEndSec = totalTime + sceneLength;
+      // store the last absEndSec as end
+      end = scenes[j].absEndSec;
       // add scene length to total time
       totalTime += sceneLength;
 
@@ -270,7 +272,7 @@ $.when(
   var barHeight = config.barHeight;
 
   var svg = d3.select("svg"),
-      margin = {top: 20, right: 140, bottom: 30, left: 180},
+      margin = {top: 20, right: 40, bottom: 30, left: 180},
       width = +svg.attr("width") - margin.left - margin.right,
       height = barHeight*data.length + margin.top + margin.bottom,
       g = svg.append("g")
@@ -288,7 +290,7 @@ $.when(
       .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#FEC574"]);
 
   y.domain(data.map(function(d) { return d.name; }));
-  x.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
+  x.domain([0, end]).nice();
   // z.domain(["1", "2"]);
 
   for(i=0; i<data.length; i++){
@@ -297,8 +299,8 @@ $.when(
     .data(data[i].scenes)
     .enter().append("rect")
       .attr("y", function(d){return y(data[i].name)})
-      .attr("x", function(d){return x(d.absStartSec/config.xscale)})
-      .attr("width", function(d){return x(d.absEndSec/config.xscale) - x(d.absStartSec/config.xscale)})
+      .attr("x", function(d){return x(d.absStartSec)})
+      .attr("width", function(d){return x(d.absEndSec) - x(d.absStartSec)})
       .attr("height", y.bandwidth())
       .attr("fill", function(d){return z(d.season)})
       .append("svg:title")
@@ -314,7 +316,7 @@ $.when(
     .attr("font-family", "sans-serif")
     .attr("font-size", 10)
     .attr("text-anchor", "end")
-    .attr("transform", function(d, i) { return "translate(140, 20)" })
+    .attr("transform", function(d, i) { return "translate(20, 20)" })
     .selectAll("g")
     .data(seasons)
     .enter().append("g")
