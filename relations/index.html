@@ -23,11 +23,6 @@
       header{
         margin: 15px;
       }
-      header img{
-        height: 120px;
-        vertical-align: middle;
-        margin-top: -50px;
-      }
       header span{
         font-weight: 300;
         font-size: 50px;
@@ -72,8 +67,8 @@
   <body>
     <header>
       <h1>
-        <img src="../img/Stranger-Things_logo.png">
-        <span> - Relations</span>
+        <img>
+        <span></span>
       </h1>
     </header>
     <div id="description">
@@ -86,8 +81,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <!-- <script src="../js/jquery.min.js"></script>
-    <script src="../js/d3.min.js"></script> -->
     <script>
 
 /* HELPFUL FUNCTIONS */
@@ -115,11 +108,6 @@ function onlyUnique(value, index, self) {
 
 
 /* VARIABLES AND CONFIGURATION */
-
-var config = {
-  countUp: false, // config for timer count up vs. timer count down
-  barHeight: 20
-}
 
 // variable containers for imported data
 var charactersData,
@@ -162,7 +150,7 @@ $.when(
     charactersData = data.characters;
     console.log("characters.json loaded");
   })
-  .fail(function() {console.error("characters.json not loaded");})
+  .fail(function() {console.error("characters.json not loaded");}),
       
   // $.getJSON("../data/locations.json", function(data) {
   //   locationsData = data.regions;
@@ -215,11 +203,24 @@ $.when(
   // })
   // .fail(function() {console.error("colors.json not loaded");}),
 
+  $.getJSON("../data/config.json", function(data) {
+    config = data.config;
+    console.log("config.json loaded");
+  })
+  .fail(function() {console.error("config.json not loaded");})
+
 
 /* DO STUFF WITH THE DATA */
 
 ).then(function() {
   console.log("now that the files are loaded... do magic.");
+
+  /* CONFIG SETUP */
+  $("h1 > img").css({"height": config.logo.height, "vertical-align": "middle", "margin-top": config.logo.marginTop}).attr("src", "../img/"+config.logo.src);
+  $("h1 > span").html(" - "+config.relations.title);
+  // $("svg").attr({width: config.relations.svg.width, height: config.relations.svg.height});
+  /* END CONFIG SETUP */
+
   console.log(charactersData, relationships);
 
   /* KEEP THIS FOR FUTURE USE */
@@ -296,6 +297,20 @@ $.when(
     height = +svg.attr("height")
     radius = 250;
 
+  // Per-type markers, as they don't inherit styles.
+  svg.append("defs").selectAll("marker")
+      .data(["suit"])
+    .enter().append("marker")
+      .attr("id", function(d) { return d; })
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 15)
+      .attr("refY", -1.5)
+      .attr("markerWidth", 6)
+      .attr("markerHeight", 6)
+      .attr("orient", "auto")
+    .append("path")
+      .attr("d", "M0,-5L10,0L0,5");
+
   var color = d3.scaleOrdinal(d3.schemeCategory20);
 
   var simulation = d3.forceSimulation()
@@ -330,7 +345,8 @@ $.when(
     .data(bilinks)
     .enter().append("path")
       //.attr("class", "link")
-      .attr("class", function(d){ return "link " + d[3]});
+      .attr("class", function(d){ return "link " + d[3]})
+      .attr("marker-mid", function(d) { return "url(#suit)"; });
 
   var node = svg.selectAll(".node")
     .data(nodes.filter(function(d) { return d.id; }))

@@ -17,11 +17,6 @@
       header{
         margin: 15px;
       }
-      header img{
-        height: 60px;
-        vertical-align: middle;
-        margin-top: -25px;
-      }
       header span{
         font-weight: 300;
         font-size: 50px;
@@ -77,8 +72,8 @@
   <body>
     <header>
       <h1>
-        <img src="../img/Stranger-Things_logo.png">
-        <span> - Co-stars Co-Occurrence</span>
+        <img>
+        <span></span>
       </h1>
     </header>
     <div id="description">
@@ -133,11 +128,6 @@
 
 
 /* VARIABLES AND CONFIGURATION */
-
-var config = {
-  cutoff: 2,
-  width: 800
-}
 
 var matrixObject = {"nodes":[], "links":[]};
 var actors = {};
@@ -229,13 +219,25 @@ $.when(
     costarsData = data;
     console.log("costars.json loaded");
   })
-  .fail(function() {console.error("costars.json not loaded");})
+  .fail(function() {console.error("costars.json not loaded");}),
+
+  $.getJSON("../data/config.json", function(data) {
+    config = data.config;
+    console.log("config.json loaded");
+  })
+  .fail(function() {console.error("config.json not loaded");})
 
 
 /* DO STUFF WITH THE DATA */
 
 ).then(function() {
   console.log("now that the files are loaded... do magic.");
+
+  /* CONFIG SETUP */
+  $("h1 > img").css({"height": config.logo.height, "vertical-align": "middle", "margin-top": config.logo.marginTop}).attr("src", "../img/"+config.logo.src);
+  $("h1 > span").html(" - "+config.costarsMatrix.title);
+  $("svg").attr({width: config.costarsMatrix.svg.width, height: config.costarsMatrix.svg.height});
+  /* END CONFIG SETUP */
 
   // add actors who have been in shows with multiple actors
   for(var i in costarsData){
@@ -256,7 +258,7 @@ $.when(
 
   // cycle through the costars.json and create links
   for(var i in costarsData){
-    if(costarsData[i].actors && Object.keys(costarsData[i].actors).length >= config.cutoff){
+    if(costarsData[i].actors && Object.keys(costarsData[i].actors).length >= config.costarsMatrix.cutoff){
       $.each(costarsData[i].actors, function(j, val){
         $.each(costarsData[i].actors, function(k, value){
           if(j !== k){
@@ -274,9 +276,9 @@ $.when(
 
   // Build the visualization
 
-  var margin = {top: 120, right: 60, bottom: 60, left: 120},
-    width = config.width,
-    height = config.width;
+  var margin = config.costarsMatrix.svg.margin,
+    width = config.costarsMatrix.width,
+    height = config.costarsMatrix.width;
 
   var x = d3.scale.ordinal().rangeBands([0, width]),
     z = d3.scale.linear().domain([0, 100]).clamp(true),

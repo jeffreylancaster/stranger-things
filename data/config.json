@@ -1,0 +1,222 @@
+{
+	"config": {
+		"countUp": false,
+  		"barHeight": 20,
+  		"logo":{
+  			"src": "Stranger-Things_logo.png",
+  			"height": "120px",
+  			"marginTop": "-50px"
+  		},
+  		"costarsList": {
+  			"title":"Co-stars",
+  			"getAPI": false,
+  			"cutoff": 2
+  		},
+  		"costarsMatrix": {
+  			"title":"Co-stars Co-Occurrence",
+  			"cutoff": 2,
+  			"width": 800,
+  			"svg":{
+  				"margin":{
+					"top": 120,
+					"right": 60,
+					"bottom": 60,
+					"left": 120
+				}
+  			}
+  		},
+		"duration": {
+			"title":"Supercut Duration",
+			"svg":{
+				"width":960,
+				"height":3080,
+				"margin":{
+					"top": 20,
+					"right": 40,
+					"bottom": 30,
+					"left": 180
+				},
+				"legendOffset": {
+					"x":20,
+					"y":90
+				}
+			}
+		},
+		"durationPerLocation": {
+			"title":"Time Per Location",
+			"svg":{
+				"width":960,
+				"height":500,
+				"margin":{
+					"top": 20,
+					"right": 40,
+					"bottom": 30,
+					"left": 180
+				},
+				"legendOffset": {
+					"x":20,
+					"y":90
+				}
+			},
+			"useSubLocation": false
+		},
+		"durationBySeason": {
+			"title":"Duration by Season",
+			"svg":{
+				"width":960,
+				"height":500,
+				"margin":{
+					"top": 20,
+					"right": 40,
+					"bottom": 30,
+					"left": 180
+				}
+			}
+		},
+		"durationPerSublocation": {
+			"title":"Time Per Sublocation",
+			"svg":{
+				"width":960,
+				"height":1600,
+				"margin":{
+					"top": 20,
+					"right": 40,
+					"bottom": 30,
+					"left": 220
+				},
+				"legendOffset": {
+					"x":20,
+					"y":90
+				}
+			},
+			"useSubLocation": true
+		},
+		"durationPercent": {
+			"title":"% Time Per Season",
+			"svg":{
+				"width":960,
+				"height":3080,
+				"margin":{
+					"top": 20,
+					"right": 90,
+					"bottom": 30,
+					"left": 180
+				},
+				"legendOffset": {
+					"x":20,
+					"y":90
+				}
+			}
+		},
+		"durationTreemap": {
+			"title":"Time Per Character Treemap",
+			"name": "Stranger Things",
+  			"includeOthers": true
+		},
+		"forceDirected": {
+			"scopeMain": false,
+			"all": {
+				"size": 1600,
+				"file": "matrixObject-all.json"
+			},
+			"main": {
+				"size": 800,
+				"file": "matrixObject-main.json"
+			}
+		},
+		"map": {
+			"title":"A Narrative Chart"
+		},
+		"matrix": {
+			"title":"Co-Occurrence",
+			"scopeMain": true,
+			"all": {
+				"size": 2000,
+				"file": "matrixObject-all.json"
+			},
+			"main": {
+				"size": 400,
+				"file": "matrixObject-main.json"
+			},
+			"margin": {
+				"top": 120,
+				"right": 60,
+				"bottom": 60,
+				"left": 120
+			}
+		},
+		"regionPercent": {
+			"title":"% Time Per Region",
+			"svg":{
+				"width":960,
+				"height":550,
+				"margin":{
+					"top": 20,
+					"right": 150,
+					"bottom": 30,
+					"left": 180
+				},
+				"legendOffset": {
+					"x":50,
+					"y":40
+				}
+			}
+		},
+		"relations": {
+			"title":"Relations"
+		},
+		"scenesCharacter": {
+			"title": "Scenes by Character",
+			"svg":{
+				"width":2000,
+				"height":3080,
+				"margin":{
+					"top": 20,
+					"right": 40,
+					"bottom": 30,
+					"left": 180
+				},
+				"legendOffset": {
+					"x":20,
+					"y":20
+				}
+			}
+		},
+		"scenesLocation": {
+			"title": "Scenes by Location",
+			"svg":{
+				"width":2000,
+				"height":500,
+				"margin":{
+					"top": 20,
+					"right": 40,
+					"bottom": 30,
+					"left": 180
+				},
+				"legendOffset": {
+					"x":20,
+					"y":20
+				}
+			},
+			"useSubLocation": false
+		},
+		"scenesSublocation": {
+			"title": "Scenes by Sublocation",
+			"svg":{
+				"width":2000,
+				"height":1600,
+				"margin":{
+					"top": 20,
+					"right": 40,
+					"bottom": 30,
+					"left": 220
+				},
+				"legendOffset": {
+					"x":20,
+					"y":90
+				}
+			},
+			"useSubLocation": true
+		}
+	}
+}

@@ -17,11 +17,6 @@
       header{
         margin: 15px;
       }
-      header img{
-        height: 120px;
-        vertical-align: middle;
-        margin-top: -50px;
-      }
       header span{
         font-weight: 300;
         font-size: 50px;
@@ -56,8 +51,8 @@
   <body>
     <header>
       <h1>
-        <img src="../img/Stranger-Things_logo.png">
-        <span> - Co-stars</span>
+        <img>
+        <span></span>
       </h1>
     </header>
     <div id="description">
@@ -107,10 +102,6 @@ async function stall(stallTime = 3000) {
 
 /* VARIABLES AND CONFIGURATION */
 
-var config = {
-  getAPI: false,
-  cutoff: 2
-}
 var films = {};
 var filmsArray = [];
 var costars = {};
@@ -202,13 +193,24 @@ $.when(
     costarsData = data;
     console.log("costars.json loaded");
   })
-  .fail(function() {console.error("costars.json not loaded");})
+  .fail(function() {console.error("costars.json not loaded");}),
+
+  $.getJSON("../data/config.json", function(data) {
+    config = data.config;
+    console.log("config.json loaded");
+  })
+  .fail(function() {console.error("config.json not loaded");})
 
 
 /* DO STUFF WITH THE DATA */
 
 ).then(function() {
   console.log("now that the files are loaded... do magic.");
+
+  /* CONFIG SETUP */
+  $("h1 > img").css({"height": config.logo.height, "vertical-align": "middle", "margin-top": config.logo.marginTop}).attr("src", "../img/"+config.logo.src);
+  $("h1 > span").html(" - "+config.duration.title);
+  /* END CONFIG SETUP */
 
   var characters = {};
   var charactersObj = {};
@@ -233,7 +235,7 @@ $.when(
     }
   }
 
-  if(config.getAPI){
+  if(config.costarsList.getAPI){
 
     const themoviedbLookup = async () => {
       try{
@@ -350,7 +352,7 @@ $.when(
   }
 
   for(var i in costars){
-    if(costars[i].actors && Object.keys(costars[i].actors).length >= config.cutoff){
+    if(costars[i].actors && Object.keys(costars[i].actors).length >= config.costarsList.cutoff){
       filmsArray.push(costars[i]);
       for(var j in costars[i].actors){
         costars[i].actors[j].actor = costars[j].name;

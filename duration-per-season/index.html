@@ -24,9 +24,6 @@
         margin: 15px;
       }
       header img{
-        height: 120px;
-        vertical-align: middle;
-        margin-top: -50px;
         margin-left: -15px;
       }
       header span{
@@ -57,19 +54,16 @@
   <body>
     <header>
       <h1>
-        <img src="../img/Stranger-Things_logo.png">
-        <span> - Duration by Season</span>
+        <img>
+        <span></span>
       </h1>
     </header>
     <div id="description">
       <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
     </div>
-    <!-- <svg width="960" height="3080"></svg> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <!-- <script src="../js/jquery.min.js"></script>
-    <script src="../js/d3.min.js"></script> -->
     <script>
 
 /* HELPFUL FUNCTIONS */
@@ -97,11 +91,6 @@ function onlyUnique(value, index, self) {
 
 
 /* VARIABLES AND CONFIGURATION */
-
-var config = {
-  countUp: false, // config for timer count up vs. timer count down
-  barHeight: 20
-}
 
 // variable containers for imported data
 var charactersData,
@@ -145,7 +134,7 @@ $.when(
     episodesData = data.episodes;
     console.log("episodes.json loaded");
   })
-  .fail(function() {console.error("episodes.json not loaded");})
+  .fail(function() {console.error("episodes.json not loaded");}),
 
   // $.getJSON("../data/characters-include.json", function(data) {
   //   charactersIncludeData = data.include;
@@ -180,11 +169,22 @@ $.when(
   // })
   // .fail(function() {console.error("colors.json not loaded");}),
 
+  $.getJSON("../data/config.json", function(data) {
+    config = data.config;
+    console.log("config.json loaded");
+  })
+  .fail(function() {console.error("config.json not loaded");})
+
 
 /* DO STUFF WITH THE DATA */
 
 ).then(function() {
   console.log("now that the files are loaded... do magic.");
+
+  /* CONFIG SETUP */
+  $("h1 > img").css({"height": config.logo.height, "vertical-align": "middle", "margin-top": config.logo.marginTop}).attr("src", "../img/"+config.logo.src);
+  $("h1 > span").html(" - "+config.durationBySeason.title);
+  /* END CONFIG SETUP */
 
   var bySeason = {};
         
@@ -226,7 +226,7 @@ $.when(
   for(var i in bySeason){
     if(Object.keys(bySeason[i]).length > 0){
       $("body").append("<h1>Season "+i+"</h1>");
-      $("body").append("<svg width='960' height='"+(Object.keys(bySeason[i]).length+2)*config.barHeight+"' id='s"+i+"'></svg>");
+      $("body").append("<svg width='"+config.durationBySeason.svg.width+"' height='"+(Object.keys(bySeason[i]).length+2)*config.barHeight+"' id='s"+i+"'></svg>");
 
       // rebuild bySeason[i] as an array
       var seasonArray = [];
@@ -242,7 +242,7 @@ $.when(
       var barHeight = config.barHeight;
 
       var svg = d3.select("#s"+i),
-          margin = {top: 20, right: 40, bottom: 30, left: 180},
+          margin = config.durationBySeason.svg.margin,
           width = +svg.attr("width") - margin.left - margin.right,
           height = barHeight*data.length + margin.top + margin.bottom,
           g = svg.append("g")
