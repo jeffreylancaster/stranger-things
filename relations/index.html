@@ -301,20 +301,6 @@ $.when(
     height = +svg.attr("height")
     radius = 250;
 
-  // Per-type markers, as they don't inherit styles.
-  // svg.append("defs").selectAll("marker")
-  //     .data(["suit"])
-  //   .enter().append("marker")
-  //     .attr("id", function(d) { return d; })
-  //     .attr("viewBox", "0 -5 10 10")
-  //     .attr("refX", 15)
-  //     .attr("refY", -1.5)
-  //     .attr("markerWidth", 6)
-  //     .attr("markerHeight", 6)
-  //     .attr("orient", "auto")
-  //   .append("path")
-  //     .attr("d", "M0,-5L10,0L0,5");
-
   var color = d3.scaleOrdinal(d3.schemeCategory20);
 
   var simulation = d3.forceSimulation()
@@ -349,14 +335,12 @@ $.when(
   var link = svg.selectAll(".link")
     .data(bilinks)
     .enter().append("path")
-      //.attr("class", "link")
       .attr("id", function(d){ return d[4]})
       .attr("class", function(d){ return "link " + d[3]});
-      // .attr("marker-mid", function(d) { return "url(#suit)"; });
 
+  // add arrows to lines - want to iterate through an object of classes for this
   svg.append("text")
     .attr("id", "arrows");
-
   bilinks.forEach(function(value, index){
     if(bilinks[index][3] == "killedBy"){
       svg.selectAll("#arrows")
@@ -367,24 +351,7 @@ $.when(
         .attr("startOffset", "50%")
         .text("➤");
     }
-  })
-
-  // svg.selectAll("path")
-  //   .append("text")
-  //   .data(bilinks)
-  //   .append("textPath")
-  //     .attr("xlink:xlink:href", function(d){ return "#"+d[4]})
-  //     .attr("text-anchor", "middle")
-  //     .attr("startOffset", "50%")
-  //     .text("➤");
-
-  // var arrows = svg.select(".link")
-  //   .append("text")
-  //     .append("textPath")
-  //       .attr("xlink:xlink:href", function(d){ return "#"+d[4]})
-  //       .attr("text-anchor", "middle")
-  //       .attr("startOffset", "50%")
-  //       .text("➤");
+  });
 
   var node = svg.selectAll(".node")
     .data(nodes.filter(function(d) { return d.id; }))
@@ -419,10 +386,6 @@ $.when(
   function ticked() {
     link.attr("d", positionLink);
     node.attr("transform", positionNode);
-
-    // $(".killedBy").each(function(i,val){
-    //   var midpoint = this.getPointAtLength(this.getTotalLength()*0.5);
-    // });
   }
 
   function positionLink(d) {
