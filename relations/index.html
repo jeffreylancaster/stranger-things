@@ -58,10 +58,14 @@
         stroke-width: 2px;
         stroke-opacity: 1;
       }
+      text .killedBy {
+        font-size: 1em;
+        dominant-baseline: central;
+      }
+
       .siblings, .parentOf, .marriedEngaged { /* no direction */
 
       }
-
     </style>
   </head>
   <body>
@@ -298,18 +302,18 @@ $.when(
     radius = 250;
 
   // Per-type markers, as they don't inherit styles.
-  svg.append("defs").selectAll("marker")
-      .data(["suit"])
-    .enter().append("marker")
-      .attr("id", function(d) { return d; })
-      .attr("viewBox", "0 -5 10 10")
-      .attr("refX", 15)
-      .attr("refY", -1.5)
-      .attr("markerWidth", 6)
-      .attr("markerHeight", 6)
-      .attr("orient", "auto")
-    .append("path")
-      .attr("d", "M0,-5L10,0L0,5");
+  // svg.append("defs").selectAll("marker")
+  //     .data(["suit"])
+  //   .enter().append("marker")
+  //     .attr("id", function(d) { return d; })
+  //     .attr("viewBox", "0 -5 10 10")
+  //     .attr("refX", 15)
+  //     .attr("refY", -1.5)
+  //     .attr("markerWidth", 6)
+  //     .attr("markerHeight", 6)
+  //     .attr("orient", "auto")
+  //   .append("path")
+  //     .attr("d", "M0,-5L10,0L0,5");
 
   var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -333,10 +337,11 @@ $.when(
     var s = link.source = nodeById.get(link.source),
         t = link.target = nodeById.get(link.target),
         i = {}, // intermediate node
-        type = link.type; 
+        type = link.type,
+        id = "path"+Math.floor(100000*Math.random());
     //nodes.push(i);
     links.push({source: s, target: i, type: type}, {source: i, target: t, type: type});
-    bilinks.push([s, i, t, type]);
+    bilinks.push([s, i, t, type, id]);
   });
 
   console.log(bilinks);
@@ -345,8 +350,41 @@ $.when(
     .data(bilinks)
     .enter().append("path")
       //.attr("class", "link")
-      .attr("class", function(d){ return "link " + d[3]})
-      .attr("marker-mid", function(d) { return "url(#suit)"; });
+      .attr("id", function(d){ return d[4]})
+      .attr("class", function(d){ return "link " + d[3]});
+      // .attr("marker-mid", function(d) { return "url(#suit)"; });
+
+  svg.append("text")
+    .attr("id", "arrows");
+
+  bilinks.forEach(function(value, index){
+    if(bilinks[index][3] == "killedBy"){
+      svg.selectAll("#arrows")
+        .append("textPath")
+        .attr("class", bilinks[index][3])
+        .attr("xlink:xlink:href", function(d){ return "#"+bilinks[index][4]})
+        .attr("text-anchor", "middle")
+        .attr("startOffset", "50%")
+        .text("➤");
+    }
+  })
+
+  // svg.selectAll("path")
+  //   .append("text")
+  //   .data(bilinks)
+  //   .append("textPath")
+  //     .attr("xlink:xlink:href", function(d){ return "#"+d[4]})
+  //     .attr("text-anchor", "middle")
+  //     .attr("startOffset", "50%")
+  //     .text("➤");
+
+  // var arrows = svg.select(".link")
+  //   .append("text")
+  //     .append("textPath")
+  //       .attr("xlink:xlink:href", function(d){ return "#"+d[4]})
+  //       .attr("text-anchor", "middle")
+  //       .attr("startOffset", "50%")
+  //       .text("➤");
 
   var node = svg.selectAll(".node")
     .data(nodes.filter(function(d) { return d.id; }))
@@ -381,6 +419,10 @@ $.when(
   function ticked() {
     link.attr("d", positionLink);
     node.attr("transform", positionNode);
+
+    // $(".killedBy").each(function(i,val){
+    //   var midpoint = this.getPointAtLength(this.getTotalLength()*0.5);
+    // });
   }
 
   function positionLink(d) {
