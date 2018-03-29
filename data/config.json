@@ -163,7 +163,60 @@
 			}
 		},
 		"relations": {
-			"title":"Relations"
+			"title":"Relations",
+			"directed":[
+				{
+					"type":"killedBy",
+					"style":{
+						"stroke": "#000",
+						"stroke-width": 2,
+						"stroke-opacity": 1
+					},
+					"textStyle":{
+						"font-size": "1em",
+						"dominant-baseline": "central"
+					}
+				}
+			],
+			"undirected":[
+				{
+					"type":"siblings",
+					"style":{
+						"stroke": "#999",
+						"stroke-width": 1,
+						"stroke-opacity": 0.6
+					},
+					"textStyle":{
+						"font-size": "1em",
+						"dominant-baseline": "central"
+					}
+				},
+				{
+					"type":"parentOf",
+					"style":{
+						"stroke": "#999",
+						"stroke-width": 1,
+						"stroke-opacity": 0.6
+					},
+						"textStyle":{
+						"font-size": "1em",
+						"dominant-baseline": "central"
+					}
+				},
+				{
+					"type":"marriedEngaged",
+					"style":{
+						"stroke": "blue",
+						"stroke-width": 1,
+						"stroke-opacity": 0.6,
+						"stroke-dasharray": "5,5"
+					},
+					"textStyle":{
+						"font-size": "1em",
+						"dominant-baseline": "central"
+					}
+				}
+			]
 		},
 		"scenesCharacter": {
 			"title": "Scenes by Character",

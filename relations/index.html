@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- from: https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458 -->
   <head>
     <title>Stranger Things: Relations</title>
     <meta charset="UTF-8">
@@ -42,29 +41,12 @@
       #description a{
         text-decoration: none;
       }
-
       .link {
         fill: none;
-        stroke: #999;
-        stroke-opacity: 0.6;
       }
       .nodes circle {
         stroke: #fff;
         stroke-width: 1.5px;
-      }
-
-      .killedBy { /* needs direction arrows */
-        stroke: #000;
-        stroke-width: 2px;
-        stroke-opacity: 1;
-      }
-      text .killedBy {
-        font-size: 1em;
-        dominant-baseline: central;
-      }
-
-      .siblings, .parentOf, .marriedEngaged { /* no direction */
-
       }
     </style>
   </head>
@@ -85,6 +67,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- for using style objects to apply multiple styles at once -->
+    <script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
     <script>
 
 /* HELPFUL FUNCTIONS */
@@ -128,24 +112,26 @@ var charactersData,
   group,
   colors;
 
-var relationships = [
-  // "characterName",
-  // "credited",
-  // "actors",
-  // "actorName",
-  // "actorLink",
-  // "characterImageThumb",
-  // "characterImageFull",
-  // "characterNameAlt",
-  // "characterLink",
-  // "nickname",
-  // "parents",
-  "killedBy",
-  "siblings", // need to deduplicate
-  "parentOf",
-  "marriedEngaged", // need to deduplicate
-  // "killed" // covered by killedBy
-  ];
+var relationships = [];
+
+// var relationships = [
+//   // "characterName",
+//   // "credited",
+//   // "actors",
+//   // "actorName",
+//   // "actorLink",
+//   // "characterImageThumb",
+//   // "characterImageFull",
+//   // "characterNameAlt",
+//   // "characterLink",
+//   // "nickname",
+//   // "parents",
+//   "killedBy",
+//   "siblings", // need to deduplicate?
+//   "parentOf",
+//   "marriedEngaged", // need to deduplicate?
+//   // "killed" // covered by killedBy
+//   ];
 
 
 /* IMPORT DATA */
@@ -223,6 +209,13 @@ $.when(
   $("h1 > img").css({"height": config.logo.height, "vertical-align": "middle", "margin-top": config.logo.marginTop}).attr("src", "../img/"+config.logo.src);
   $("h1 > span").html(" - "+config.relations.title);
   // $("svg").attr({width: config.relations.svg.width, height: config.relations.svg.height});
+  
+  for(var i in config.relations.directed){
+    relationships.push(config.relations.directed[i].type);
+  }
+  for(var i in config.relations.undirected){
+    relationships.push(config.relations.undirected[i].type);
+  }
   /* END CONFIG SETUP */
 
   console.log(charactersData, relationships);
@@ -341,17 +334,31 @@ $.when(
   // add arrows to lines - want to iterate through an object of classes for this
   svg.append("text")
     .attr("id", "arrows");
-  bilinks.forEach(function(value, index){
-    if(bilinks[index][3] == "killedBy"){
-      svg.selectAll("#arrows")
-        .append("textPath")
-        .attr("class", bilinks[index][3])
-        .attr("xlink:xlink:href", function(d){ return "#"+bilinks[index][4]})
-        .attr("text-anchor", "middle")
-        .attr("startOffset", "50%")
-        .text("➤");
+
+  // for directed arrays, add arrows and set styles
+  for(var i in config.relations.directed){
+    bilinks.forEach(function(value, index){
+      if(bilinks[index][3] == config.relations.directed[i].type){
+        svg.selectAll("#arrows")
+          .append("textPath")
+          .styles(config.relations.directed[i].textStyle)
+          .attr("xlink:xlink:href", function(d){ return "#"+bilinks[index][4]})
+          .attr("text-anchor", "middle")
+          .attr("startOffset", "50%")
+          .text("➤");
+      }
+    });
+  }
+
+  // check to see if the property is an array, and if so, apply the styles therein
+  for(var i in config.relations){
+    if(Array.isArray(config.relations[i])){
+      for(var j in config.relations[i]){
+        svg.selectAll("."+config.relations[i][j].type)
+        .styles(config.relations[i][j].style)
+      }
     }
-  });
+  }
 
   var node = svg.selectAll(".node")
     .data(nodes.filter(function(d) { return d.id; }))
