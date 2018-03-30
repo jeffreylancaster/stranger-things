@@ -48,6 +48,9 @@
         stroke: #fff;
         stroke-width: 1.5px;
       }
+      .node text {
+        font: 10px sans-serif;
+      }
     </style>
   </head>
   <body>
@@ -61,7 +64,7 @@
       <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
     </div>
     <!-- <svg width="960" height="3080"></svg> -->
-    <svg width="960" height="600" viewBox="-480 -300 960 600">
+    <svg width="960" height="800" viewBox="-480 -400 960 800">
       <circle r="250" stroke="steelblue" stroke-opacity="0.5" fill="none"></circle>
     </svg>
 
@@ -362,16 +365,25 @@ $.when(
 
   var node = svg.selectAll(".node")
     .data(nodes.filter(function(d) { return d.id; }))
-    .enter().append("circle")
-      .attr("class", "node")
-      .attr("r", 5)
-      .attr("fill", function(d) { return color(d.group); })
+    .enter().append("g")
+      .attr("transform", function(d) { return (d.x && d.y) ? "translate(" + radialPoint(d.x, d.y) + ")" : "translate(0,0)"; })
+      .attr("transform", function(d) { return "rotate(" + 180*Math.atan(d.y/d.x)/Math.PI + ")"; })
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
           .on("end", dragended));
 
-  node.append("title")
+  function radialPoint(x, y) {
+    return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
+  }
+
+  node.append("circle")
+      .attr("class", "node")
+      .attr("r", 5)
+      .attr("fill", function(d) { return color(d.group); });
+
+  node.append("text")
+      .attr("dy", "0.31em")
       .text(function(d) { return d.id; });
 
   simulation
@@ -392,7 +404,10 @@ $.when(
 
   function ticked() {
     link.attr("d", positionLink);
+    node.selectAll("text").attr("x", function(d) { return (d.x > 0) ? 10 : -10; })
     node.attr("transform", positionNode);
+    node.selectAll("text").attr("text-anchor", function(d) { return (d.x > 0) ? "start" : "end"});
+    
   }
 
   function positionLink(d) {
@@ -402,7 +417,9 @@ $.when(
   }
 
   function positionNode(d) {
-    return "translate(" + d.x + "," + d.y + ")";
+    var distanceToCenter = Math.sqrt(d.x * d.x + d.y * d.y);
+    return "translate(" + d.x + "," + d.y + ") rotate(" + 180*Math.atan(d.y/d.x)/Math.PI + ")";
+
   }
 
   function dragstarted(d) {
