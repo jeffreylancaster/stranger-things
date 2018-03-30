@@ -221,10 +221,9 @@ $.when(
   }
   /* END CONFIG SETUP */
 
-  console.log(charactersData, relationships);
+  // console.log("charactersData", charactersData, "relationships", relationships);
 
-  /* KEEP THIS FOR FUTURE USE */
-  // make a list of keys for characters to use for relationships array above
+  /* MAKE A LIST OF ALL RELATIONSHIPS in characters.json */
   /*
   var relations = [];
   for(var i in charactersData){
@@ -256,10 +255,24 @@ $.when(
 
   // deduplicate array
   charactersArray = charactersArray.filter(onlyUnique).sort();
+
+  // modify charactersArray to be objects with image files, other info
+  for(var i in charactersArray){
+    var image;
+    for(var j in charactersData){
+      if(charactersArray[i] == charactersData[j].characterName){
+        image = charactersData[j].characterImageThumb;
+      }
+    }
+    charactersArray[i] = {
+      "name":charactersArray[i],
+      "image":image
+    };
+  }
   
   // add nodes to matrix
   charactersArray.forEach(function(val, i){
-    matrix.nodes.push({"id":val, "group":1});
+    matrix.nodes.push({"id":val.name, "group":1, "image":val.image});
   });
 
   // build list of nodes and links based on position in array of characters
@@ -288,7 +301,9 @@ $.when(
         matrix.links.splice(j, 1);
       }
     }
-  } 
+  }
+
+  // console.log("charactersArray", charactersArray);
   
   /* BUILD THE VISUALIZATION */
   
@@ -367,7 +382,6 @@ $.when(
     .data(nodes.filter(function(d) { return d.id; }))
     .enter().append("g")
       .attr("transform", function(d) { return (d.x && d.y) ? "translate(" + radialPoint(d.x, d.y) + ")" : "translate(0,0)"; })
-      .attr("transform", function(d) { return "rotate(" + 180*Math.atan(d.y/d.x)/Math.PI + ")"; })
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
@@ -377,10 +391,35 @@ $.when(
     return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
   }
 
+  console.log(nodes);
+
+  svg.append("defs")
+    .selectAll("defs")
+    .data(nodes.filter(function(d) { return d.id; }))
+    .enter().append("pattern")
+      .attr("id", function(d){ return (d.image) ? d.id.toLowerCase().replace(/([^A-Z0-9])/gi,"") : ''; })
+      .attrs({
+        "height": "100%",
+        "width":"100%",
+        "patternContentUnits":"objectBoundingBox",
+        "viewBox":"0 0 1 1",
+        "preserveAspectRatio": "xMidYMid slice"
+      })
+      .append("image")
+        .attrs({
+          "height":"1",
+          "width":"1",
+          "preserveAspectRatio":"xMidYMid slice"
+        })
+        .attr("xlink:xlink:href", function(d){ return d.image; });
+
   node.append("circle")
       .attr("class", "node")
-      .attr("r", 5)
-      .attr("fill", function(d) { return color(d.group); });
+      .attr("fill", function(d){
+        return (d.image) ? "url(#" + d.id.toLowerCase().replace(/([^A-Z0-9])/gi,"") + ")" : color(d.group);
+      })
+      .attr("r", 15)
+      .attrs({"stroke": "#000", "stroke-width": "1"});
 
   node.append("text")
       .attr("dy", "0.31em")
@@ -404,9 +443,11 @@ $.when(
 
   function ticked() {
     link.attr("d", positionLink);
-    node.selectAll("text").attr("x", function(d) { return (d.x > 0) ? 10 : -10; })
+    node.selectAll("text").attr("x", function(d) { return (d.x > 0) ? 20 : -20; })
     node.attr("transform", positionNode);
     node.selectAll("text").attr("text-anchor", function(d) { return (d.x > 0) ? "start" : "end"});
+    svg.selectAll(".node")
+      .attr("transform", function(d) { return "rotate(" + -180*Math.atan(d.y/d.x)/Math.PI + ")"; })
     
   }
 
