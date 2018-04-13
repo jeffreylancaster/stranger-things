@@ -7,6 +7,27 @@
   			"height": "120px",
   			"marginTop": "-50px"
   		},
+  		"bubbleCharacter": {
+			"title": "Scenes by Character (Bubbles)",
+			"totalCutoff":300,
+			"minBubbleSize":10,
+			"buffer":2,
+			"fuzzyScene":10,
+			"svg":{
+				"width":4000,
+				"height":300,
+				"margin":{
+					"top": 20,
+					"right": 20,
+					"bottom": 30,
+					"left": 20
+				},
+				"legendOffset": {
+					"x":20,
+					"y":20
+				}
+			}
+		},
   		"costarsList": {
   			"title":"Co-stars",
   			"getAPI": false,
