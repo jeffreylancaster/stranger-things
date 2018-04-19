@@ -336,7 +336,9 @@ $.when(
       return x(d.absEndSec - d.absMidSec);
     })
     // make each bubble a different color based on the name - use sequential color scale based on index in array
-    .attr("fill", "blue")
+    .attr("fill", function(d){
+      return "blue";
+    })
     .append("svg:title")
       .text(function(d) {return d.name});
     ;

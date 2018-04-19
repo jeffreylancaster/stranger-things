@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stranger Things: Locations Per Episode</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Locations Per Episode">
+    <meta name="keywords" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
+    <meta name="author" content="Jeffrey Lancaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <style>
+      .axis .domain {
+        display: none;
+      }
+      .timestamp{
+        fill: black;
+      }
+      body{
+        font-family: "Helvetica Neue";
+        padding-top: 35px;
+      }
+      header{
+        margin: 15px;
+      }
+      header img {
+        height: 0;
+        margin-top: 0;
+      }
+      header span{
+        font-weight: 300;
+        font-size: 50px;
+      }
+      #cta{
+        color: #999;
+        font-style: italic;
+        font-size: 0.8em;
+      }
+      #description{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 15px;
+        color: #999;
+        font-size: 0.8em;
+      }
+      #description a{
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img>
+        <span></span>
+      </h1>
+    </header>
+    <div id="description">
+      <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
+    </div>
+    <svg></svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
+
+/* HELPFUL FUNCTIONS */
+
+// to convert scene start/end times into seconds
+function sec(timeString){
+  var sec = 0;
+  if (timeString.length == 0) return sec;
+  var splitArray = timeString.split(":");
+  sec = 3600*parseFloat(splitArray[0])+60*parseFloat(splitArray[1])+parseFloat(splitArray[2]);
+  return sec;
+}
+
+// to convert seconds into hh:mm:ss
+function secondsToHMS(d) {
+  var date = new Date(null);
+  date.setSeconds(d); // specify value for SECONDS here
+  return date.toISOString().substr(11, 8);
+}
+
+// to dedpulicate an array
+function onlyUnique(value, index, self) { 
+  return self.indexOf(value) === index;
+}
+
+
+/* VARIABLES AND CONFIGURATION */
+
+// variable containers for imported data
+var charactersData,
+  locationsData,
+  locationsAltData,
+  episodesData,
+  charactersIncludeData,
+  charactersGenderData,
+  keyValue,
+  keyValuesFile,
+  episodeLengths,
+  locations,
+  subLocations,
+  group,
+  colors;
+
+
+/* IMPORT DATA */
+$.when(
+  // $.getJSON("../data/characters.json", function(data) {
+  //   charactersData = data.characters;
+  //   console.log("characters.json loaded");
+  // })
+  // .fail(function() {console.error("characters.json not loaded");}),
+      
+  // $.getJSON("../data/locations.json", function(data) {
+  //   locationsData = data.regions;
+  //   console.log("locations.json loaded");
+  // })
+  // .fail(function() {console.error("locations.json not loaded");}),
+
+  // $.getJSON("../data/locations-alt.json", function(data) {
+  //   locationsAltData = data.sceneLocSorted;
+  //   console.log("locations-alt.json loaded");
+  // })
+  // .fail(function() {console.error("locations-alt.json not loaded");}),
+
+  $.getJSON("../data/episodes.json", function(data) {
+    episodesData = data.episodes;
+    console.log("episodes.json loaded");
+  })
+  .fail(function() {console.error("episodes.json not loaded");}),
+
+  // $.getJSON("../data/characters-include.json", function(data) {
+  //   charactersIncludeData = data.include;
+  //   console.log("characters-include.json loaded");
+  // })
+  // .fail(function() {console.error("characters-include.json not loaded");}),
+
+  // $.getJSON("../data/characters-gender.json", function(data) {
+  //   charactersGenderData = data.gender;
+  //   console.log("characters-gender.json loaded");
+  // })
+  // .fail(function() {console.error("characters-gender.json not loaded");}),
+
+  // $.getJSON("../data/keyValues.json", function(data) {
+  //   keyValues = data.keyValues;
+  // episodeLengths = data.episodeLengths;
+  //   locations = data.sceneLocSorted;
+  //   subLocations = data.sceneSubLocSorted;
+  //   console.log("keyValues.json loaded");
+  // })
+  // .fail(function() {console.error("keyValues.json not loaded");}),
+
+  // $.getJSON("../data/characters-groups.json", function(data) {
+  //   group = data.groups;
+  //   console.log("characters-groups.json loaded");
+  // })
+  // .fail(function() {console.error("characters-groups.json not loaded");}),
+
+  // $.getJSON("../data/colors.json", function(data) {
+  //   colors = data.colors;
+  //   console.log("colors.json loaded");
+  // })
+  // .fail(function() {console.error("colors.json not loaded");}),
+
+  $.getJSON("../data/config.json", function(data) {
+    config = data.config;
+    console.log("config.json loaded");
+  })
+  .fail(function() {console.error("config.json not loaded");})
+
+
+/* DO STUFF WITH THE DATA */
+
+).then(function() {
+  console.log("now that the files are loaded... do magic.");
+
+  /* CONFIG SETUP */
+  $("h1 > img").css({"height": config.logo.height, "vertical-align": "middle", "margin-top": config.logo.marginTop}).attr("src", "../img/"+config.logo.src);
+  $("h1 > span").html(" - "+config.locationPerEpisode.title);
+  $("svg").attr({width: config.locationPerEpisode.svg.width, height: config.locationPerEpisode.svg.height});
+  /* END CONFIG SETUP */
+
+  var totalTime = 0;
+  var seasons = [];
+  var episodes = {};
+  var episodesArray = [];
+  var allLocations = [];
+  var uniqueLocations = [];
+  var locationsArray = [];
+  var location;
+        
+  for (var i in episodesData) {
+    // act on scenes
+    var scenes = episodesData[i].scenes;
+    var episodesLocations = {};
+
+    for (var j in scenes){
+      // calculate length of scene in seconds
+      var sceneLength;
+      if(config.countUp == true){
+        sceneLength = sec(scenes[j].sceneEnd) - sec(scenes[j].sceneStart);
+      } else if(config.countUp == false){
+        sceneLength = sec(scenes[j].sceneStart) - sec(scenes[j].sceneEnd);
+      }
+      
+      scenes[j].length = sceneLength;
+
+      // add location of scene to allLocations array
+      location = (scenes[j].subLocation && config.locationPerEpisode.useSubLocation) ? scenes[j].location + " - " + scenes[j].subLocation : scenes[j].location;
+      allLocations.push(location);
+    }
+  }
+
+  // deduplicate the list of locations from scenes
+  allLocations = allLocations.filter(onlyUnique).sort();
+
+  for(var i in episodesData){
+    // make episodesLocations array with all 0's
+    var episodesLocations = {};
+    for(var j in allLocations){
+      episodesLocations[allLocations[j]] = 0;
+    }
+
+    var scenes = episodesData[i].scenes;
+
+    // add sceneLength to location
+    for (var j in scenes){
+      location = (scenes[j].subLocation && config.locationPerEpisode.useSubLocation) ? scenes[j].location + " - " + scenes[j].subLocation : scenes[j].location;
+      episodesLocations[location] += scenes[j].length;
+    }
+
+    // add episode info
+    if(episodesData[i].scenes.length > 0){
+      var title = `S${episodesData[i].seasonNum} E${episodesData[i].episodeNum} - ${episodesData[i].episodeTitle}`;
+      episodes[title] = episodesLocations;
+      episodes[title].name = title;
+      episodes[title].seasonNum = episodesData[i].seasonNum;
+      episodes[title].episodeNum = episodesData[i].episodeNum;
+      episodes[title].sort = parseInt(episodesData[i].seasonNum.toString()+episodesData[i].episodeNum.toString());
+    }
+  }
+
+  // convert object to an array
+  for(var i in episodes){
+    episodesArray.push(episodes[i]);
+  }
+
+  // build the visualization
+  var data = episodesArray;
+  console.log(data);
+  var barHeight = config.barHeight;
+
+  var svg = d3.select("svg"),
+      margin = config.locationPerEpisode.svg.margin,
+      width = +svg.attr("width") - margin.left - margin.right,
+      height = barHeight*data.length + margin.top + margin.bottom,
+      g = svg.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var y = d3.scaleBand() 
+      .rangeRound([0, height])
+      .paddingInner(0.15)
+      .align(0.1);
+
+  var x = d3.scaleLinear()
+      .rangeRound([0, width]);
+
+  var z = d3.scaleOrdinal() //  or d3.schemeCategory20c between () and no .range
+      .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#FEC574"]);
+
+  var keys = allLocations;
+
+  for(var i in data){
+    var t = 0;
+    for(var j in keys){
+      t += data[i][keys[j]];
+    }
+    data[i].total = t;
+  }
+
+  data.sort(function(a, b) { return a.sort - b.sort; });
+  y.domain(data.map(function(d) { return d.name; }));
+  x.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
+  z.domain(keys);
+
+  g.append("g")
+    .selectAll("g")
+    .data(d3.stack().keys(keys)(data))
+    .enter().append("g")
+      .attr("fill", function(d) { return z(d.key); })
+    .selectAll("rect")
+    .data(function(d) { return d; })
+    .enter().append("rect")
+      .attr("y", function(d) { return y(d.data.name); })
+      .attr("x", function(d) { return x(d[0]); })
+      .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+      .attr("height", y.bandwidth());
+
+  g.selectAll("g")
+    .data(d3.stack().keys(keys)(data))
+    .append("svg:title")
+      .text(function(d,i) {
+        // not sure why this shift needs to happen...
+        if(i == 0){
+          return keys[keys.length-1]
+        } else {
+          return keys[i-1]
+        };
+      });
+
+  g.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(0,0)")
+    .call(d3.axisLeft(y));
+
+  g.selectAll(".axis")
+    .selectAll(".tick")
+    .data(data)
+    .append("text")
+    .attr("class", "timestamp")
+    .attr("dy", "0.35em")
+    .attr("dx", function(d){ return x(d.total) + 5; })
+    .attr("text-anchor", "start")
+    .text(function(d){
+      var counter = 0;
+      for(var i in keys){
+        if(d[keys[i]] > 0){
+          counter++;
+        }
+      }
+      return `(${counter})`;
+      // return secondsToHMS(d.total);
+    });
+
+  var legend = g.append("g")
+    .attr("font-family", "sans-serif")
+    .attr("font-size", 10)
+    .attr("text-anchor", "end")
+    .attr("transform", function(d, i) { return `translate(${config.locationPerEpisode.svg.legendOffset.x}, ${config.locationPerEpisode.svg.legendOffset.y})` })
+    .selectAll("g")
+    .data(keys.slice())
+    .enter().append("g")
+    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+    .attr("x", width - 19)
+    .attr("width", 19)
+    .attr("height", 19)
+    .attr("fill", z);
+
+  legend.append("text")
+    .attr("x", width - 24)
+    .attr("y", 9.5)
+    .attr("dy", "0.32em")
+    .text(function(d) { return d; });
+
+});
+
+    </script>
+  </body>
+</html>

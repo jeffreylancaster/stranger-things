@@ -145,6 +145,24 @@
 				"file": "matrixObject-main.json"
 			}
 		},
+		"locationPerEpisode": {
+			"title":"Locations Per Episode",
+			"svg":{
+				"width":960,
+				"height":500,
+				"margin":{
+					"top": 20,
+					"right": 160,
+					"bottom": 30,
+					"left": 280
+				},
+				"legendOffset": {
+					"x":160,
+					"y":20
+				}
+			},
+			"useSubLocation": false
+		},
 		"map": {
 			"title":"A Narrative Chart"
 		},
