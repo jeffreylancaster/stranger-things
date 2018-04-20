@@ -4,7 +4,8 @@
 			"hexadecimal": "#CCCCCC",
 			"webSafe": "#CCCCCC",
 			"basic": "lightgray",
-			"rgb": "rgb(204,204,204)"
+			"rgb": "rgb(204,204,204)",
+			"class": ["include"]
 		},
 		{
 			"name": "Hammersmith and City",
@@ -25,8 +26,7 @@
 			"hexadecimal": "#E32017",
 			"webSafe": "#CC3333",
 			"basic": "red",
-			"rgb": "rgb(220,36,31)",
-			"class": ["party"]
+			"rgb": "rgb(220,36,31)"
 		},
 		{
 			"name": "Circle",
@@ -59,8 +59,7 @@
 			"hexadecimal": "#9B0056",
 			"webSafe": "#660066",
 			"basic": "purple",
-			"rgb": "rgb(155,0,88)",
-			"class": ["main"]
+			"rgb": "rgb(155,0,88)"
 		},
 		{
 			"name": "Northern",
@@ -103,7 +102,8 @@
 			"hexadecimal": "#EE7C0E",
 			"webSafe": "#FF6600",
 			"basic": "orange",
-			"rgb": "rgb(239,123,16)"
+			"rgb": "rgb(239,123,16)",
+			"class": ["party"]
 		},
 		{
 			"hexadecimal": "#87cefa",
@@ -131,7 +131,8 @@
 			"name": "Crossrail",
 			"hexadecimal": "#7156A5",
 			"basic": "mediumblue",
-			"rgb": "rgb(0,25,168)"
+			"rgb": "rgb(0,25,168)",
+			"class": ["main"]
 		}
 	]
 }
