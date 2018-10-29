@@ -1,4 +1,4 @@
-# Stranger Things Datasets and Visualizations
+# _Stranger Things_ Datasets and Visualizations
 
 Playing with a hand-written dataset and making d3 visualizations.
 
@@ -14,13 +14,13 @@ This is generally a playground of works in progress, but sharing regardless.
 
 ### Costars List
 
-   A list of other films in which Stranger Things costars, well, costar
+   A list of other films in which _Stranger Things_ costars, well, costar
    
    [View](https://jeffreylancaster.github.io/stranger-things/costars-list/) | [<>](https://github.com/jeffreylancaster/stranger-things/blob/master/costars-list/index.html)
 
 ### Costars Matrix
 
-   A matrix visualization of frequency of other films in which Stranger Things costars, well, costar
+   A matrix visualization of frequency of other films in which _Stranger Things_ costars, well, costar
    
    [View](https://jeffreylancaster.github.io/stranger-things/costars-matrix/) | [<>](https://github.com/jeffreylancaster/stranger-things/blob/master/costars-matrix/index.html)
 
