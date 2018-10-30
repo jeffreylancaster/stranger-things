@@ -95,6 +95,12 @@ This is generally a playground of works in progress, but sharing regardless.
    A force-directed visualization characters' relationships
    
    [View](https://jeffreylancaster.github.io/stranger-things/relations-force/) | [<>](https://github.com/jeffreylancaster/stranger-things/blob/master/relations-force/index.html)
+
+### Scenes by Character
+
+   A visualization of when each character is on-screen throughout the show
+   
+   [View](https://jeffreylancaster.github.io/stranger-things/scenes-character/) | [<>](https://github.com/jeffreylancaster/stranger-things/blob/master/scenes-character/index.html)
    
 ### Time Spent in Each Location
 
