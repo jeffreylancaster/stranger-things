@@ -183,11 +183,12 @@ $.when(
   // })
   // .fail(function() {console.error("colors.json not loaded");}),
 
+/* UNCOMMENT THIS TO USE API
   $.getJSON("../env.json", function(data) {
     env = data.env;
     console.log("env.json loaded");
   })
-  .fail(function() {console.error("env.json not loaded");}),
+  .fail(function() {console.error("env.json not loaded");}), */
 
   $.getJSON("../data/costars.json", function(data) {
     costarsData = data;
