@@ -292,6 +292,8 @@ $.when(
 
   // transition to center baseline
   $("button.center").click(function(){
+    $(".center").attr("disabled", "disabled");
+    $(".baseline").removeAttr("disabled");
     d3.selectAll("rect")
       .interrupt()
       .transition(t)
@@ -300,6 +302,8 @@ $.when(
   })
 
   $("button.baseline").click(function(){
+    $(".baseline").attr("disabled", "disabled");
+    $(".center").removeAttr("disabled");
     d3.selectAll("rect")
       .interrupt()
       .transition(t)
