@@ -28,6 +28,19 @@
 				}
 			}
 		},
+		"charactersPerScene": {
+			"title": "Characters Per Scene",
+			"svg":{
+				"width":2000,
+				"height":3080,
+				"margin":{
+					"top": 20,
+					"right": 40,
+					"bottom": 30,
+					"left": 40
+				}
+			}
+		},
   		"costarsList": {
   			"title":"Co-stars",
   			"getAPI": false,
