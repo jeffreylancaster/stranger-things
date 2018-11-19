@@ -293,6 +293,7 @@ $.when(
   // transition to center baseline
   $("button.center").click(function(){
     d3.selectAll("rect")
+      .interrupt()
       .transition(t)
       .delay(function(d, i) { return i * 5; })
       .attr("y", function(d){return height/2 - (barHeight * d.index) + (barHeight * d.total)/2}) // center baseline
@@ -300,6 +301,7 @@ $.when(
 
   $("button.baseline").click(function(){
     d3.selectAll("rect")
+      .interrupt()
       .transition(t)
       .attr("y", function(d){return height - (barHeight * d.index)}) // bottom baseline
   })
