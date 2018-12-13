@@ -19,7 +19,7 @@
 				"margin":{
 					"top": 20,
 					"right": 20,
-					"bottom": 30,
+					"bottom": 20,
 					"left": 20
 				},
 				"legendOffset": {
@@ -36,7 +36,7 @@
 				"margin":{
 					"top": 20,
 					"right": 40,
-					"bottom": 30,
+					"bottom": 20,
 					"left": 40
 				}
 			}
@@ -67,7 +67,7 @@
 				"margin":{
 					"top": 20,
 					"right": 40,
-					"bottom": 30,
+					"bottom": 20,
 					"left": 180
 				},
 				"legendOffset": {
@@ -84,7 +84,7 @@
 				"margin":{
 					"top": 20,
 					"right": 40,
-					"bottom": 30,
+					"bottom": 20,
 					"left": 180
 				},
 				"legendOffset": {
@@ -102,7 +102,7 @@
 				"margin":{
 					"top": 20,
 					"right": 40,
-					"bottom": 30,
+					"bottom": 20,
 					"left": 180
 				}
 			}
@@ -115,7 +115,7 @@
 				"margin":{
 					"top": 20,
 					"right": 40,
-					"bottom": 30,
+					"bottom": 20,
 					"left": 220
 				},
 				"legendOffset": {
@@ -133,7 +133,7 @@
 				"margin":{
 					"top": 20,
 					"right": 90,
-					"bottom": 30,
+					"bottom": 20,
 					"left": 180
 				},
 				"legendOffset": {
@@ -150,11 +150,11 @@
 		"forceDirected": {
 			"scopeMain": false,
 			"all": {
-				"size": 1600,
+				"size": 700,
 				"file": "matrixObject-all.json"
 			},
 			"main": {
-				"size": 800,
+				"size": 400,
 				"file": "matrixObject-main.json"
 			}
 		},

@@ -9,150 +9,40 @@
     <meta name="author" content="Jeffrey Lancaster">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../style.css" />
     <style>
-      .axis .domain {
-        display: none;
-      }
-      .timestamp{
-        fill: black;
-      }
-      body{
-        font-family: "Helvetica Neue", Helvetica;
-        padding-top: 35px;
-        overflow: hidden;
-        margin: 0;
-      }
-      header{
-        margin: 15px;
-      }
-      header span{
-        font-weight: 300;
-        font-size: 50px;
-      }
-      #cta{
-        color: #999;
-        font-style: italic;
-        font-size: 0.8em;
-      }
-      #description{
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 15px;
-        color: #999;
-        font-size: 0.8em;
-      }
-      #description a{
-        text-decoration: none;
-      }
-      
-      /* treemap styling */
-
-      #chart, #header, #footer {
-        position: absolute;
-        top: 0;
-      }
-
-      #header, #footer {
-        z-index: 1;
-        display: block;
-        font-size: 36px;
-        font-weight: 300;
-        text-shadow: 0 1px 0 #fff;
-      }
-
-      #header.inverted, #footer.inverted {
-        color: #fff;
-        text-shadow: 0 1px 4px #000;
-      }
-
-      #header {
-        top: 80px;
-        left: 140px;
-        width: 1000px;
-      }
-
-      #footer {
-        top: 680px;
-        right: 140px;
-        text-align: right;
-      }
-
-      rect {
-        fill: none;
-        pointer-events: all;
-      }
-
-      pre {
-        font-size: 18px;
-      }
-
-      line {
-        stroke: #000;
-        stroke-width: 1.5px;
-      }
-
-      .string, .regexp {
-        color: #f39;
-      }
-
-      .keyword {
-        color: #00c;
-      }
-
-      .comment {
-        color: #777;
-        font-style: oblique;
-      }
-
-      .number {
-        color: #369;
-      }
-
-      .class, .special {
-        color: #1181B8;
-      }
-
-      .hint {
-        position: absolute;
-        right: 0;
-        width: 1280px;
-        font-size: 12px;
-        color: #999;
-      }
-
-      .chart {
-        display: block;
-        margin: auto;
-        margin-top: 40px;
-      }
-
-      text {
-        font-size: 11px;
-      }
-
-      rect {
-        fill: none;
-      }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: auto;
+      position: relative;
+    }
+    .node {
+      border: solid 1px white;
+      font: 10px sans-serif;
+      line-height: 12px;
+      overflow: hidden;
+      position: absolute;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content:center;
+      align-content:center;
+      flex-direction:column;
+    }
     </style>
   </head>
   <body>
-    <header>
-      <h1>
-        <img>
-        <span></span>
-      </h1>
-    </header>
-    <div id="description">
+    <!--
       <p>Code for this chart is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
       <p>This visualization is based on Mike Bostock's <a href="http://mbostock.github.io/d3/talk/20111018/treemap.html" target="_blank">Zoomable Treemap</a>.
-    </div>
-    <div id="body">
+    -->
+    <div class="treemap">
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
-    <script type="text/javascript" src="../js/d3.v2.js"></script>
-    <script type="text/javascript" src="../js/d3.layout.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    
     <script>
 
 /* HELPFUL FUNCTIONS */
@@ -179,99 +69,22 @@ function onlyUnique(value, index, self) {
 }
 
 
-/* VARIABLES AND CONFIGURATION */
-
-// variable containers for imported data
-var charactersData,
-  locationsData,
-  locationsAltData,
-  episodesData,
-  charactersIncludeData,
-  charactersGenderData,
-  keyValue,
-  keyValuesFile,
-  episodeLengths,
-  locations,
-  subLocations,
-  group,
-  colors;
-
-
 /* IMPORT DATA */
-$.when(
-  // $.getJSON("../data/characters.json", function(data) {
-  //   charactersData = data.characters;
-  //   console.log("characters.json loaded");
-  // })
-  // .fail(function() {console.error("characters.json not loaded");}),
-      
-  // $.getJSON("../data/locations.json", function(data) {
-  //   locationsData = data.regions;
-  //   console.log("locations.json loaded");
-  // })
-  // .fail(function() {console.error("locations.json not loaded");}),
+d3.queue()
+  .defer(d3.json, '../data/episodes.json')
+  .defer(d3.json, '../data/characters-groups.json')
+  .defer(d3.json, '../data/episodes.json')
+  .defer(d3.json, '../data/config.json')
+  .await(ready);
 
-  // $.getJSON("../data/locations-alt.json", function(data) {
-  //   locationsAltData = data.sceneLocSorted;
-  //   console.log("locations-alt.json loaded");
-  // })
-  // .fail(function() {console.error("locations-alt.json not loaded");}),
-
-  $.getJSON("../data/episodes.json", function(data) {
-    episodesData = data.episodes;
-    console.log("episodes.json loaded");
-  })
-  .fail(function() {console.error("episodes.json not loaded");}),
-
-  // $.getJSON("../data/characters-include.json", function(data) {
-  //   charactersIncludeData = data.include;
-  //   console.log("characters-include.json loaded");
-  // })
-  // .fail(function() {console.error("characters-include.json not loaded");}),
-
-  // $.getJSON("../data/characters-gender.json", function(data) {
-  //   charactersGenderData = data.gender;
-  //   console.log("characters-gender.json loaded");
-  // })
-  // .fail(function() {console.error("characters-gender.json not loaded");}),
-
-  // $.getJSON("../data/keyValues.json", function(data) {
-  //   keyValues = data.keyValues;
-  // episodeLengths = data.episodeLengths;
-  //   locations = data.sceneLocSorted;
-  //   subLocations = data.sceneSubLocSorted;
-  //   console.log("keyValues.json loaded");
-  // })
-  // .fail(function() {console.error("keyValues.json not loaded");}),
-
-  $.getJSON("../data/characters-groups.json", function(data) {
-    group = data.groups;
-    console.log("characters-groups.json loaded");
-  })
-  .fail(function() {console.error("characters-groups.json not loaded");}),
-
-  $.getJSON("../data/colors.json", function(data) {
-    colors = data.colors;
-    console.log("colors.json loaded");
-  })
-  .fail(function() {console.error("colors.json not loaded");}),
-
-  $.getJSON("../data/config.json", function(data) {
-    config = data.config;
-    console.log("config.json loaded");
-  })
-  .fail(function() {console.error("config.json not loaded");})
-
-
-/* DO STUFF WITH THE DATA */
-
-).then(function() {
+function ready(error, e, cg, l, c) {
+  if (error) throw error;
   console.log("now that the files are loaded... do magic.");
 
-  /* CONFIG SETUP */
-  $("h1 > img").css({"height": config.logo.height, "vertical-align": "middle", "margin-top": config.logo.marginTop}).attr("src", "../img/"+config.logo.src);
-  $("h1 > span").html(" - "+config.durationTreemap.title);
-  /* END CONFIG SETUP */
+  episodesData = e.episodes;
+  group = cg.groups;
+  colors = l.colors;
+  config = c.config;
 
   var allCharacters = {}; // an object with total times for each character
   var flare = {"name":config.name, "children":[]};
@@ -325,94 +138,58 @@ $.when(
 
   // build the visualization
 
-  var w = window.innerWidth - 80,
-    h = window.innerHeight - 240,
-    x = d3.scale.linear().range([0, w]),
-    y = d3.scale.linear().range([0, h]),
-    color = d3.scale.category20c(),
-    root,
-    node;
+  // adapted from https://bl.ocks.org/ganezasan/52fced34d2182483995f0ca3960fe228
+  'use strict';
 
-  var treemap = d3.layout.treemap()
-      .round(false)
-      .size([w, h])
-      .sticky(true)
-      .value(function(d) { return d.size; });
+  const margin = {top: 20, right: 30, bottom: 20, left: 20},
+    width = window.innerWidth - margin.right - margin.left - 20,
+    height = window.innerHeight - margin.top - margin.bottom - 40,
+    color = d3.scaleOrdinal().range(d3.schemeCategory20c);
 
-  var svg = d3.select("#body").append("div")
-      .attr("class", "chart")
-      .style("width", w + "px")
-      .style("height", h + "px")
-    .append("svg:svg")
-      .attr("width", w)
-      .attr("height", h)
-    .append("svg:g")
-      .attr("transform", "translate(.5,.5)");
+  const treemap = d3.treemap().size([width, height]);
 
-  node = root = flare;
+  const div = d3.select(".treemap")
+      .style("position", "relative")
+      .style("width", (width + margin.left + margin.right) + "px")
+      .style("height", (height + margin.top + margin.bottom) + "px")
+      .style("left", margin.left + "px")
+      .style("top", margin.top + "px");
 
-  var nodes = treemap.nodes(root)
-      .filter(function(d) { return !d.children; });
+  const root = d3.hierarchy(flare, (d) => d.children)
+    .sum((d) => d.size);
 
-  var cell = svg.selectAll("g")
-      .data(nodes)
-    .enter().append("svg:g")
-      .attr("class", "cell")
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-      .on("click", function(d) { return zoom(node == d.parent ? root : d.parent); });
+  const tree = treemap(root);
 
-  cell.append("svg:rect")
-      .attr("width", function(d) { return d.dx - 1; })
-      .attr("height", function(d) { return d.dy - 1; })
-      .attr("class", function(d) { return d.parent.name.toLowerCase(); })
-      .style("fill", function(d) { return color(d.parent.name); });
+  const node = div.datum(root).selectAll(".node")
+      .data(tree.leaves())
+    .enter().append("div")
+      .attr("class", "node")
+      .attr("title", (d) => d.data.name)
+      .style("left", (d) => d.x0 + "px")
+      .style("top", (d) => d.y0 + "px")
+      .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
+      .style("height", (d) => Math.max(0, d.y1 - d.y0  - 1) + "px")
+      .style("background", (d) => color(d.parent.data.name))
+      .text((d) => d.data.name);
 
-  cell.append("svg:text")
-      .attr("x", function(d) { return d.dx / 2; })
-      .attr("y", function(d) { return d.dy / 2; })
-      .attr("dy", ".35em")
-      .attr("text-anchor", "middle")
-      .text(function(d) { return d.name; })
-      .style("opacity", function(d) { d.w = this.getComputedTextLength(); return d.dx > d.w ? 1 : 0; });
+  d3.selectAll("input").on("change", function change() {
+    const value = this.value === "count"
+        ? (d) => { return d.size ? 1 : 0;}
+        : (d) => { return d.size; };
 
-  d3.select(window).on("click", function() { zoom(root); });
+    const newRoot = d3.hierarchy(data, (d) => d.children)
+      .sum(value);
 
-  d3.select("select").on("change", function() {
-    treemap.value(this.value == "size" ? size : count).nodes(root);
-    zoom(node);
+    node.data(treemap(newRoot).leaves())
+      .transition()
+        .duration(1500)
+        .style("left", (d) => d.x0 + "px")
+        .style("top", (d) => d.y0 + "px")
+        .style("width", (d) => Math.max(0, d.x1 - d.x0 - 1) + "px")
+        .style("height", (d) => Math.max(0, d.y1 - d.y0  - 1) + "px")
   });
-
-  function size(d) {
-    return d.size;
-  }
-
-  function count(d) {
-    return 1;
-  }
-
-  function zoom(d) {
-    var kx = w / d.dx, ky = h / d.dy;
-    x.domain([d.x, d.x + d.dx]);
-    y.domain([d.y, d.y + d.dy]);
-
-    var t = svg.selectAll("g.cell").transition()
-        .duration(d3.event.altKey ? 7500 : 750)
-        .attr("transform", function(d) { return "translate(" + x(d.x) + "," + y(d.y) + ")"; });
-
-    t.select("rect")
-        .attr("width", function(d) { return kx * d.dx - 1; })
-        .attr("height", function(d) { return ky * d.dy - 1; })
-
-    t.select("text")
-        .attr("x", function(d) { return kx * d.dx / 2; })
-        .attr("y", function(d) { return ky * d.dy / 2; })
-        .style("opacity", function(d) { return kx * d.dx > d.w ? 1 : 0; });
-
-    node = d;
-    d3.event.stopPropagation();
-  }
   
-});
+};
 
     </script>
   </body>

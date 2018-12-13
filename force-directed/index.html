@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style>
+<html>
+  <head>
+    <title>Stranger Things: Force-Directed</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Stranger Things: Force-Directed">
+    <meta name="keywords" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
+    <meta name="author" content="Jeffrey Lancaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
 
-.link {
-  stroke: #ccc;
-}
+    <svg class="force"></svg>
 
-.node text {
-  pointer-events: none;
-  font: 10px sans-serif;
-}
-
-</style>
-<body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
 
 /* HELPFUL FUNCTIONS */
 
@@ -40,98 +41,18 @@ function onlyUnique(value, index, self) {
   return self.indexOf(value) === index;
 }
 
-
-/* VARIABLES AND CONFIGURATION */
-
-// variable containers for imported data
-var charactersData,
-  locationsData,
-  locationsAltData,
-  episodesData,
-  charactersIncludeData,
-  charactersGenderData,
-  keyValue,
-  keyValuesFile,
-  episodeLengths,
-  locations,
-  subLocations,
-  group,
-  colors;
-
-
 /* IMPORT DATA */
-$.when(
-  // $.getJSON("../data/characters.json", function(data) {
-  //   charactersData = data.characters;
-  //   console.log("characters.json loaded");
-  // })
-  // .fail(function() {console.error("characters.json not loaded");}),
-      
-  // $.getJSON("../data/locations.json", function(data) {
-  //   locationsData = data.regions;
-  //   console.log("locations.json loaded");
-  // })
-  // .fail(function() {console.error("locations.json not loaded");}),
+d3.queue()
+  .defer(d3.json, '../data/episodes.json')
+  .defer(d3.json, '../data/config.json')
+  .await(ready);
 
-  // $.getJSON("../data/locations-alt.json", function(data) {
-  //   locationsAltData = data.sceneLocSorted;
-  //   console.log("locations-alt.json loaded");
-  // })
-  // .fail(function() {console.error("locations-alt.json not loaded");}),
-
-  $.getJSON("../data/episodes.json", function(data) {
-    episodesData = data.episodes;
-    console.log("episodes.json loaded");
-  })
-  .fail(function() {console.error("episodes.json not loaded");}),
-
-  // $.getJSON("../data/characters-include.json", function(data) {
-  //   charactersIncludeData = data.include;
-  //   console.log("characters-include.json loaded");
-  // })
-  // .fail(function() {console.error("characters-include.json not loaded");}),
-
-  // $.getJSON("../data/characters-gender.json", function(data) {
-  //   charactersGenderData = data.gender;
-  //   console.log("characters-gender.json loaded");
-  // })
-  // .fail(function() {console.error("characters-gender.json not loaded");}),
-
-  // $.getJSON("../data/keyValues.json", function(data) {
-  //   keyValues = data.keyValues;
-  // episodeLengths = data.episodeLengths;
-  //   locations = data.sceneLocSorted;
-  //   subLocations = data.sceneSubLocSorted;
-  //   console.log("keyValues.json loaded");
-  // })
-  // .fail(function() {console.error("keyValues.json not loaded");}),
-
-  // $.getJSON("../data/characters-groups.json", function(data) {
-  //   group = data.groups;
-  //   console.log("characters-groups.json loaded");
-  // })
-  // .fail(function() {console.error("characters-groups.json not loaded");}),
-
-  // $.getJSON("../data/colors.json", function(data) {
-  //   colors = data.colors;
-  //   console.log("colors.json loaded");
-  // })
-  // .fail(function() {console.error("colors.json not loaded");}),
-
-  $.getJSON("../data/config.json", function(data) {
-    config = data.config;
-    console.log("config.json loaded");
-  })
-  .fail(function() {console.error("config.json not loaded");})
-
-
-/* DO STUFF WITH THE DATA */
-
-).then(function() {
+function ready(error, e, c) {
+  if (error) throw error;
   console.log("now that the files are loaded... do magic.");
 
-  /* CONFIG SETUP */
-  /* END CONFIG SETUP */
+  episodesData = e.episodes;
+  config = c.config;
 
   var file, width, height;
 
@@ -145,56 +66,94 @@ $.when(
     file = config.forceDirected.all.file;
   }
 
-  var svg = d3.select("body").append("svg")
-      .attr("width", width)
-      .attr("height", height);
+  var svg = d3.select("svg")
+    .attr("width", width)
+    .attr("height", height);
 
-  var force = d3.layout.force()
-      .gravity(0.5)
-      .distance(30)
-      .charge(-5000)
-      .size([width, height]);
+  var radius = 5;
 
-  d3.json("../data/"+file, function(error, json) {
+  var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+  var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink())
+      .force("charge", d3.forceManyBody())
+      .force("center", d3.forceCenter(width / 2, height / 2));
+
+  d3.json("../data/"+file, function(error, graph) {
+    console.log(graph);
     if (error) throw error;
 
-    force
-        .nodes(json.nodes)
-        .links(json.links)
-        .start();
-
-    var link = svg.selectAll(".link")
-        .data(json.links)
+    var link = svg.append("g")
+        .attr("class", "links")
+      .selectAll("line")
+      .data(graph.links)
       .enter().append("line")
-        .attr("class", "link");
+        // .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+        .attr("stroke-width", "1px");
 
-    var node = svg.selectAll(".node")
-        .data(json.nodes)
+    var node = svg.append("g")
+        .attr("class", "nodes")
+      .selectAll("g")
+      .data(graph.nodes)
       .enter().append("g")
-        .attr("class", "node")
-        .call(force.drag);
+      
+    var circles = node.append("circle")
+        .attr("r", radius)
+        .attr("fill", function(d) { return color(d.group); })
+        .call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
 
-    node.append("image")
-        .attr("xlink:href", "https://github.com/favicon.ico")
-        .attr("x", -8)
-        .attr("y", -8)
-        .attr("width", 16)
-        .attr("height", 16);
+    var lables = node.append("text")
+        .text(function(d) {
+          return d.name;
+        })
+        .attr('x', 6)
+        .attr('y', 3);
 
-    node.append("text")
-        .attr("dx", 12)
-        .attr("dy", ".35em")
-        .text(function(d) { return d.name });
+    node.append("title")
+        .text(function(d) { return d.name; });
 
-    force.on("tick", function() {
-      link.attr("x1", function(d) { return d.source.x; })
+    simulation
+        .nodes(graph.nodes)
+        .on("tick", ticked);
+
+    simulation.force("link")
+        .links(graph.links);
+
+    function ticked() {
+      link
+          .attr("x1", function(d) { return d.source.x; })
           .attr("y1", function(d) { return d.source.y; })
           .attr("x2", function(d) { return d.target.x; })
           .attr("y2", function(d) { return d.target.y; });
 
-      node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-    });
+      node
+          .attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
+          .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); })
+          .attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+          });
+    }
   });
-});
+
+  function dragstarted(d) {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+
+  function dragged(d) {
+    d.fx = d3.event.x;
+    d.fy = d3.event.y;
+  }
+
+  function dragended(d) {
+    if (!d3.event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+  }
+};
 
 </script>
