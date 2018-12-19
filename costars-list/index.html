@@ -4,16 +4,11 @@
     <title>Stranger Things: Co-stars</title>
     <meta charset="UTF-8">
     <meta name="description" content="Stranger Things: Co-stars">
-    <meta name="keywords" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
     <meta name="author" content="Jeffrey Lancaster">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <!--
-      <p>Code for this list is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
-    -->
     <div id="list" class="wrapper"></div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -96,11 +91,6 @@ $.when(
 
 ).then(function() {
   console.log("now that the files are loaded... do magic.");
-
-  /* CONFIG SETUP */
-  $("h1 > img").css({"height": config.logo.height, "vertical-align": "middle", "margin-top": config.logo.marginTop}).attr("src", "../img/"+config.logo.src);
-  $("h1 > span").html(" - "+config.costarsList.title);
-  /* END CONFIG SETUP */
 
   var characters = {};
   var charactersObj = {};

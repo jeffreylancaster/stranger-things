@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,13 +6,12 @@
     <meta name="keywords" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
     <meta name="author" content="Jeffrey Lancaster">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <meta property="og:title" content="Stranger Things">
-    <meta property="og:description" content="Stranger Things, data visualization, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
+    <meta property="og:description" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
     <title>Stranger Things</title>
     <link href="style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="main">
     <p class="breadcrumbs">
       <a href="https://jeffreylancaster.github.io/">jeffreylancaster.github.io</a> → Stranger Things
     </p>
@@ -22,168 +20,214 @@
 
     <h1>Welcome to Hawkins</h1>
 
-    <div class="mobile">
-      <a href="https://jeffreylancaster.github.io/stranger-things/m/">On a mobile device? Click here.</a>
+    <div class="wrapper">
+      <p>This work on Netflix's <i>Stranger Things</i> began after similar work on HBO's <a href="https://jeffreylancaster.github.io/game-of-thrones/"><i>Game of Thrones</i></a>. I was curious how well the visualizations I made for <i>Game of Thrones</i> would translate to a different show. So I rewatched <i>Stranger Things</i>, made new datasets, and even sparked new ideas about additional visualizations that would apply to <i>Game of Thrones</i>.</p>
+      <p>This is a playground for those ideas. Note: the page may take a moment to load since it's loading each visualization.</p>
     </div>
 
-    <div class="desktop">
+    <h1>Screen Time</h1>
 
-      <div class="wrapper">
-        <p>This work on Netflix's <i>Stranger Things</i> began after similar work on HBO's <a href="https://jeffreylancaster.github.io/game-of-thrones/"><i>Game of Thrones</i></a>. I was curious how well the visualizations I made for <i>Game of Thrones</i> would translate to a different show. So I rewatched <i>Stranger Things</i>, made new datasets, and even sparked new ideas about additional visualizations that would apply to <i>Game of Thrones</i>.</p>
-        <p>This is a playground for those ideas. Note: the page may take a moment to load since it's loading each visualization.</p>
-      </div>
-
-      <h1>Screen Time</h1>
-
-      <div class="wrapper">
-        <p>Some of the easiest things to visualize are representations of when characters are on screen and where those characters are.</p>
-      </div>
-
-      <h2>When are characters are on screen?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/scenes-character/"></iframe>
-      <p class="caption">
-        Scroll down and right and hover. <a href="https://jeffreylancaster.github.io/stranger-things/scenes-character/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>Where do scenes take place?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/scenes-location/" style="height: 275px!important;"></iframe>
-      <p class="caption">
-        Scroll right and hover. <a href="https://jeffreylancaster.github.io/stranger-things/scenes-location/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>More specifically, where do scenes take place?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/scenes-sublocation/"></iframe>
-      <p class="caption">
-        Scroll down and right and hover. <a href="https://jeffreylancaster.github.io/stranger-things/scenes-sublocation/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>How many characters are on screen?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/characters-per-scene/"></iframe>
-      <p class="caption">
-        Scroll right or hover over a bar. <a href="https://jeffreylancaster.github.io/stranger-things/characters-per-scene/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>What about continuous on screen time?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/bubble-character/"></iframe>
-      <p class="caption">
-        Scroll right or hover over a circle. Circles are color-coded by group. <a href="https://jeffreylancaster.github.io/stranger-things/bubble-character/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h1>Cumulative Time</h1>
-
-      <div class="wrapper">
-        <p>It's also fairly trivial to count how long characters are on screen (in total or by season), how long they spend in certain locations, or the number of locations and time spent in each per episode.</p>
-      </div>
-
-      <h2>How long are characters on screen?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/duration-character/"></iframe>
-      <p class="caption">
-        Scroll down and right or hover. <a href="https://jeffreylancaster.github.io/stranger-things/duration-character/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>How long are characters in each season?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/duration-per-season/"></iframe>
-      <p class="caption">
-        Scroll down and right or hover. <a href="https://jeffreylancaster.github.io/stranger-things/duration-per-season/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>How long is spent in each location?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/duration-per-location/" style="height: 275px!important;"></iframe>
-      <p class="caption">
-        Scroll down and right or hover. <a href="https://jeffreylancaster.github.io/stranger-things/duration-per-location/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>How long is spent in each more-specific location?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/duration-per-sublocation/"></iframe>
-      <p class="caption">
-        Scroll down and right or hover. <a href="https://jeffreylancaster.github.io/stranger-things/duration-per-sublocation/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>What percentage of characters' time is in each season?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/duration-percent/"></iframe>
-      <p class="caption">
-        Scroll down and right or hover. <a href="https://jeffreylancaster.github.io/stranger-things/duration-percent/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>How long are characters on screen relative to all time?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/duration-treemap/"></iframe>
-      <p class="caption">
-        Hover. <a href="https://jeffreylancaster.github.io/stranger-things/duration-treemap/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>How many locations are in each episode?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/location-per-episode/"></iframe>
-      <p class="caption">
-        Scroll down and right or hover. <a href="https://jeffreylancaster.github.io/stranger-things/location-per-episode/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>What percentage of time do characters spend in various locations?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/region-percent/"></iframe>
-      <p class="caption">
-        Scroll down and right or hover. <a href="https://jeffreylancaster.github.io/stranger-things/region-percent/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h1>Co-Occurrence</h1>
-
-      <h2>Which characters are on screen together?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/matrix/"></iframe>
-      <p class="caption">
-        Hover. <a href="https://jeffreylancaster.github.io/stranger-things/matrix/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>... or as a force-directed network?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/force-directed/"></iframe>
-      <p class="caption">
-        Hover and drag. <a href="https://jeffreylancaster.github.io/stranger-things/force-directed/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h1>Relationships</h1>
-
-      <h2>Which characters are connected?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/relations-force/"></iframe>
-      <p class="caption">
-        Hover and drag. Parent-child (solid gray), spouse (dashed blue), and killed by (solid black arrow) relationships shown. <a href="https://jeffreylancaster.github.io/stranger-things/relations-force/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>Which characters are connected?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/relations-circle/"></iframe>
-      <p class="caption">
-        Hover and drag. Parent-child (solid gray), spouse (dashed blue), and killed by (solid black arrow) relationships shown. Based on an <a href="http://i.imgur.com/PG0963W.png" target="_blank">HBO infographic</a>. <a href="https://jeffreylancaster.github.io/stranger-things/relations-circle/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h1>Actor Relationships</h1>
-
-      <h2>Which actors have been in movies with other <i>Stranger Things</i> actors?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/costars-list/"></iframe>
-      <p class="caption">
-        Scroll down. Data last following Season 2. <a href="https://jeffreylancaster.github.io/stranger-things/costars-list/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h2>... or as a matrix?</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/costars-matrix/"></iframe>
-      <p class="caption">
-        Scroll down and right. Data last pulled following Season 2. <a href="https://jeffreylancaster.github.io/stranger-things/costars-matrix/" target="_blank">View in a new tab.</a>
-      </p>
-
-      <h1>What about that map?</h1>
-
-      <div class="wrapper">
-        <p>The narrative chart that started this project for <i>Game of Thrones</i>, well, it doesn't make as much sense for <i>Stranger Things</i>. There are still some interesting patterns (like when everyone is together for the end of "The Mind Flayer" (S2E8), but otherwise it's messy...
-      </div>
-
-      <h2>Narrative chart</h2>
-      <iframe src="https://jeffreylancaster.github.io/stranger-things/map/"></iframe>
-      <p class="caption">
-        Scroll down and right. Hover over the map to view character journeys, episode names, and more. <i>Note: map contains spoilers.</i> <a href="https://jeffreylancaster.github.io/stranger-things/map/" target="_blank">View in a new tab.</a>
-      </p>
-
+    <div class="wrapper">
+      <p>Some of the easiest things to visualize are representations of when characters are on screen and where those characters are.</p>
     </div>
+
+    <h2>When are characters are on screen?</h2>
+    <div class="image wide-11 tall" data-src="https://jeffreylancaster.github.io/stranger-things/scenes-character/" style="background-image: url('scenes-character/stranger-things-scenes-character.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right and hover.</span>
+      <a href="https://jeffreylancaster.github.io/stranger-things/scenes-character/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>Where do scenes take place?</h2>
+    <div class="image wide-11 medium" data-src="https://jeffreylancaster.github.io/stranger-things/scenes-location/" style="background-image: url('scenes-location/stranger-things-scenes-location.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll right and hover.</span>
+      <a href="https://jeffreylancaster.github.io/stranger-things/scenes-location/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>More specifically, where do scenes take place?</h2>
+    <div class="image wide-11 tall" data-src="https://jeffreylancaster.github.io/stranger-things/scenes-sublocation/" style="background-image: url('scenes-sublocation/stranger-things-scenes-sublocation.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right and hover.</span>
+      <a href="https://jeffreylancaster.github.io/stranger-things/scenes-sublocation/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>How many characters are on screen?</h2>
+    <div class="image wide-11 medium" data-src="https://jeffreylancaster.github.io/stranger-things/characters-per-scene/" style="background-image: url('characters-per-scene/stranger-things-characters-per-scene.png'); background-position: bottom left;">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll right or hover over a bar.</span>
+      <a href="https://jeffreylancaster.github.io/stranger-things/characters-per-scene/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>What about continuous on screen time?</h2>
+    <div class="image wide-11 medium" data-src="https://jeffreylancaster.github.io/stranger-things/bubble-character/" style="background-image: url('bubble-character/stranger-things-bubble-character.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll right or hover over a circle. </span>Circles are color-coded by house.
+      <a href="https://jeffreylancaster.github.io/stranger-things/bubble-character/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h1>Cumulative Time</h1>
+
+    <div class="wrapper">
+      <p>It's also fairly trivial to count how long characters are on screen (in total or by season), how long they spend in certain locations, or the number of locations and time spent in each per episode.</p>
+    </div>
+
+    <h2>How long are characters on screen?</h2>
+    <div class="image wide-9 tall" data-src="https://jeffreylancaster.github.io/stranger-things/duration-character/" style="background-image: url('duration-character/stranger-things-duration-character.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right or hover.</span> Based on <a href="https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458" target="_blank">Andrew Reid's Horizontal Stacked Bar Chart</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/duration-character/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>How long are characters in each season?</h2>
+    <div class="image wide-9 tall" data-src="https://jeffreylancaster.github.io/stranger-things/duration-per-season/" style="background-image: url('duration-per-season/stranger-things-duration-per-season.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right or hover.</span> Based on <a href="https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458" target="_blank">Andrew Reid's Horizontal Stacked Bar Chart</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/duration-per-season/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>How long is spent in each location?</h2>
+    <div class="image wide-9 medium" data-src="https://jeffreylancaster.github.io/stranger-things/duration-per-location/" style="background-image: url('duration-per-location/stranger-things-duration-per-location.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right or hover.</span> Based on <a href="https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458" target="_blank">Andrew Reid's Horizontal Stacked Bar Chart</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/duration-per-location/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>How long is spent in each more-specific location?</h2>
+    <div class="image wide-10 medium" data-src="https://jeffreylancaster.github.io/stranger-things/duration-per-sublocation/" style="background-image: url('duration-per-sublocation/stranger-things-duration-per-sublocation.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right or hover.</span> Based on <a href="https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458" target="_blank">Andrew Reid's Horizontal Stacked Bar Chart</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/duration-per-sublocation/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>What percentage of characters' time is in each season?</h2>
+    <div class="image wide-10 medium" data-src="https://jeffreylancaster.github.io/stranger-things/duration-percent/" style="background-image: url('duration-percent/stranger-things-duration-percent.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right or hover.</span> Based on <a href="https://gist.github.com/mbostock/3886394" target="_blank">Mike Bostock's Normalized Stacked Bar Chart</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/duration-percent/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>How long are characters on screen relative to all time?</h2>
+    <div class="image wide-9 tall" data-src="https://jeffreylancaster.github.io/stranger-things/duration-treemap/" style="background-image: url('duration-treemap/stranger-things-duration-treemap.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Hover.</span> Based on <a href="https://bl.ocks.org/ganezasan/52fced34d2182483995f0ca3960fe228" target="_blank">takayuki's Treemap in d3 v4</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/duration-treemap/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>How many locations are in each episode?</h2>
+    <div class="image wide-10 tall" data-src="https://jeffreylancaster.github.io/stranger-things/location-per-episode/" style="background-image: url('location-per-episode/stranger-things-location-per-episode.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right or hover.</span> Based on <a href="https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458" target="_blank">Andrew Reid's Horizontal Stacked Bar Chart</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/location-per-episode/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>What percentage of time do characters spend in various locations?</h2>
+    <div class="image wide-10 tall" data-src="https://jeffreylancaster.github.io/stranger-things/region-percent/" style="background-image: url('region-percent/stranger-things-region-percent.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right or hover.</span> Based on <a href="https://gist.github.com/mbostock/3886394" target="_blank">Mike Bostock's Normalized Stacked Bar Chart</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/region-percent/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h1>Co-Occurrence</h1>
+
+    <h2>Which characters are on screen together?</h2>
+    <div class="image wide-10 tall" data-src="https://jeffreylancaster.github.io/stranger-things/matrix/" style="background-image: url('matrix/stranger-things-matrix.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Hover.</span> Based on <a href="https://bost.ocks.org/mike/miserables/" target="_blank">Mike Bostock's <i>Les Misérables</i> Co-occurrence</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/matrix/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>... or as a force-directed network?</h2>
+    <div class="image wide-10 tall" data-src="https://jeffreylancaster.github.io/stranger-things/force-directed/" style="background-image: url('force-directed/stranger-things-force-directed.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Hover and drag.</span> Based on <a href="https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8" target="_blank">heybignick's d3 v4 force-directed graph</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/force-directed/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h1>Relationships</h1>
+
+    <h2>Which characters are connected?</h2>
+    <div class="image wide-10 tall" data-src="https://jeffreylancaster.github.io/stranger-things/relations-force/" style="background-image: url('relations-force/stranger-things-relations-force.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Hover and drag. </span>Parent-child (solid gray), spouse (dashed blue), and killed by (solid black arrow) relationships shown. Based on <a href="https://bl.ocks.org/mbostock/950642" target="_blank">Mike Bostock's Labeled Force Layout</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/relations-force/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>Which characters are connected?</h2>
+    <div class="image wide-10 tall" data-src="https://jeffreylancaster.github.io/stranger-things/relations-circle/" style="background-image: url('relations-circle/stranger-things-relations-circle.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Hover and drag. </span>Parent-child (solid gray), spouse (dashed blue), and killed by (solid black arrow) relationships shown. Based on an <a href="http://i.imgur.com/PG0963W.png" target="_blank">HBO infographic</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/relations-circle/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h1>Actor Relationships</h1>
+
+    <h2>Which actors have been in movies with other <i>Stranger Things</i> actors?</h2>
+    <div class="image wide-7 tall" data-src="https://jeffreylancaster.github.io/stranger-things/costars-list/" style="background-image: url('costars-list/stranger-things-costars-list.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down. </span>Data last pulled following Season 7.
+      <a href="https://jeffreylancaster.github.io/stranger-things/costars-list/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h2>... or as a matrix?</h2>
+    <div class="image wide-10 tall" data-src="https://jeffreylancaster.github.io/stranger-things/costars-matrix/" style="background-image: url('costars-matrix/stranger-things-costars-matrix.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right. </span>Data last pulled following Season 7. Based on <a href="https://bost.ocks.org/mike/miserables/" target="_blank">Mike Bostock's <i>Les Misérables</i> Co-occurrence</a>.
+      <a href="https://jeffreylancaster.github.io/stranger-things/costars-matrix/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
+
+    <h1>So that map?</h1>
+
+    <div class="wrapper">
+      <p>The narrative chart that started this project for <i>Game of Thrones</i>, well, it doesn't make as much sense for <i>Stranger Things</i>. There are still some interesting patterns (like when everyone is together for the end of "The Mind Flayer" (S2E8), but otherwise it's messy...
+    </div>
+
+    <h2>Narrative chart</h2>
+    <div class="image wide-11 tall" data-src="https://jeffreylancaster.github.io/stranger-things/map/" style="background-image: url('map/stranger-things-map.png');">
+    </div>
+    <p class="caption">
+      <span class="hidden">Scroll down and right. Hover over the map to view character journeys, episode names, and more. </span>Note: map contains spoilers.
+      <a href="https://jeffreylancaster.github.io/stranger-things/map/" target="_blank">View in a new tab</a><span> or click to view live version</span>.
+    </p>
 
     <div class="wrapper">
       <h2>Notes</h2>
-      <p>The <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">GitHub repository for this project</a> has the data files used to make these visualizations. Code for each is also on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">GitHub</a>, and a <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">description of the project</a> is on Medium. Comments and suggestions are welcome on GitHub, Medium, or <a href="mailto:jeffrey@jeffreylancaster.com">here</a>.</p>
+      <p>The <a href="https://github.com/jeffreylancaster/game-of-thrones" target="_blank">GitHub repository for this project</a> has the data files used to make these visualizations. Code for each is also on <a href="https://github.com/jeffreylancaster/game-of-thrones" target="_blank">GitHub</a>, and a <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">description of the project</a> is on Medium. Comments and suggestions are welcome on GitHub, Medium, or <a href="mailto:jeffrey@jeffreylancaster.com">here</a>.</p>
 
       <p class="caption">h/t to <a href="https://www.jasondavies.com/maps/" target="_blank">Jason Davies</a> for the clean style of this page.</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    // to replace the background image with the live visualization
+    $(".image").click(function(){
+      var src = $(this).attr("data-src"),
+        width = $(this).width(),
+        height = $(this).height();
+      $(this).css("background-image", "none");
+      $(this).html('<iframe src="'+src+'" width="100%" height="'+height+'">');
+      $(this).next().find('span').removeClass('hidden');
+      $(this).next().find('span').eq(1).addClass('hidden');
+    })
+    </script>
+
   </body>
 </html>

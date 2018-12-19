@@ -4,25 +4,21 @@
     <title>Stranger Things: Co-stars Co-occurrence</title>
     <meta charset="UTF-8">
     <meta name="description" content="Stranger Things: Co-stars">
-    <meta name="keywords" content="Stranger Things, data visualization, narrative chart, Eleven, Jim Hopper, Mike Wheeler, Dustin Henderson, Lucas Sinclair, Will Byers, Jonathan Byers, Nancy Wheeler">
     <meta name="author" content="Jeffrey Lancaster">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <link rel="stylesheet" href="../style.css" />
     <script src="https://d3js.org/d3.v2.min.js" charset="utf-8"></script>
     <!-- for d3.queue() -->
     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
   </head>
   <body>
-    <!--
-      <p>Code for this list is on <a href="https://github.com/jeffreylancaster/stranger-things" target="_blank">github</a>, and a description of the project is on <a href="https://medium.com/@jeffrey.lancaster/the-ultimate-game-of-thrones-dataset-a100c0cf35fb" target="_blank">Medium</a>. Comments and suggestions are welcome on github, Medium, or <a href="mailto: jeffrey@jeffreylancaster.com" target="_blank">here</a>.</p>
-      <p>This visualization is based on Mike Bostock's <a href="https://bost.ocks.org/mike/miserables/" target="_blank"><i>Les Mis&eacute;rables</i> co-occurrence matrix diagram</a>.
-    -->
-    <p style="margin-left: 20px;">Order: <select id="order">
-      <option value="name">by Name</option>
-      <option value="count">by Frequency</option>
-      <!-- <option value="group">by Cluster</option> -->
-    </select></p>
+    <p>
+      <select id="order">
+        <option value="name">Order by Name</option>
+        <option value="count">Order by Frequency</option>
+        <!-- <option value="group">by Cluster</option> -->
+      </select>
+    </p>
     <svg class="matrix"></svg>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -40,26 +36,36 @@
 var matrixObject = {"nodes":[], "links":[]};
 var actors = {};
 
+var config = {
+  "title":"Co-stars Co-Occurrence",
+  "width": 800,
+  "height": 800,
+  "margin": {
+    "top": 120,
+    "right": 60,
+    "bottom": 60,
+    "left": 120
+  },
+  "cutoff":2
+}
+
 /* IMPORT DATA */
 d3.queue()
   .defer(d3.json, '../data/characters.json')
   .defer(d3.json, '../data/costars.json')
-  .defer(d3.json, '../data/config.json')
   .await(ready);
 
-function ready(error, ch, co, c) {
+function ready(error, ch, co) {
   if (error) throw error;
   console.log("now that the files are loaded... do magic.");
 
   charactersData = ch.characters;
   costarsData = co;
-  config = c.config;
 
   /* CONFIG SETUP */
-  $("svg").attr({
-    width: config.costarsMatrix.svg.width,
-    height: config.costarsMatrix.svg.height
-  });
+  d3.select("svg")
+    .attr("width", config.width)
+    .attr("height", config.height);
   /* END CONFIG SETUP */
 
   // add actors who have been in shows with multiple actors
@@ -81,7 +87,7 @@ function ready(error, ch, co, c) {
 
   // cycle through the costars.json and create links
   for(var i in costarsData){
-    if(costarsData[i].actors && Object.keys(costarsData[i].actors).length >= config.costarsMatrix.cutoff){
+    if(costarsData[i].actors && Object.keys(costarsData[i].actors).length >= config.cutoff){
       $.each(costarsData[i].actors, function(j, val){
         $.each(costarsData[i].actors, function(k, value){
           if(j !== k){
@@ -99,9 +105,9 @@ function ready(error, ch, co, c) {
 
   // Build the visualization
 
-  var margin = config.costarsMatrix.svg.margin,
-    width = config.costarsMatrix.width,
-    height = config.costarsMatrix.width;
+  var margin = config.margin,
+    width = config.width,
+    height = config.width;
 
   var x = d3.scale.ordinal().rangeBands([0, width]),
     z = d3.scale.linear().domain([0, 100]).clamp(true),
