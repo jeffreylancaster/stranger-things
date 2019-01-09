@@ -7,8 +7,6 @@
     <meta name="author" content="Jeffrey Lancaster">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css" />
-    <script src="https://d3js.org/d3.v2.min.js" charset="utf-8"></script>
-    <!-- for d3.queue() -->
     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
   </head>
   <body>
@@ -20,9 +18,7 @@
       </select>
     </p>
     <svg class="matrix"></svg>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
+
 <script>
 /* HELPFUL FUNCTIONS */
 
@@ -60,7 +56,6 @@ function ready(error, ch, co) {
   console.log("now that the files are loaded... do magic.");
 
   charactersData = ch.characters;
-  costarsData = co;
 
   /* CONFIG SETUP */
   d3.select("svg")
@@ -69,11 +64,11 @@ function ready(error, ch, co) {
   /* END CONFIG SETUP */
 
   // add actors who have been in shows with multiple actors
-  for(var i in costarsData){
-    if(costarsData[i].actors && Object.keys(costarsData[i].actors).length > 1){
-      $.each(costarsData[i].actors, function(j, val){
-        actors[costarsData[j].name] = {"actorName":costarsData[j].name, "personID":j}
-      });
+  for(var i in co){
+    if(co[i].actors && Object.keys(co[i].actors).length > 1){
+      for(var j in co[i].actors){
+        actors[co[j].name] = {"actorName":co[j].name, "personID":j}
+      }
     }
   }
 
@@ -86,18 +81,18 @@ function ready(error, ch, co) {
   }
 
   // cycle through the costars.json and create links
-  for(var i in costarsData){
-    if(costarsData[i].actors && Object.keys(costarsData[i].actors).length >= config.cutoff){
-      $.each(costarsData[i].actors, function(j, val){
-        $.each(costarsData[i].actors, function(k, value){
+  for(var i in co){
+    if(co[i].actors && Object.keys(co[i].actors).length >= config.cutoff){
+      for(var j in co[i].actors){
+        for(var k in co[i].actors){
           if(j !== k){
             matrixObject.links.push({
-              "source":actors[costarsData[j].name].id,
-              "target":actors[costarsData[k].name].id,
+              "source":actors[co[j].name].id,
+              "target":actors[co[k].name].id,
               "value":1});
           }
-        });
-      });
+        }
+      }
     }
   }
 
@@ -109,10 +104,10 @@ function ready(error, ch, co) {
     width = config.width,
     height = config.width;
 
-  var x = d3.scale.ordinal().rangeBands([0, width]),
-    z = d3.scale.linear().domain([0, 100]).clamp(true),
+  var x = d3.scaleBand().range([0, width]),
+    z = d3.scaleLinear().domain([0, 100]).clamp(true),
     //c = d3.scale.category10().domain(d3.range(10));
-    c = d3.scale.ordinal().range(["#3366cc", "#dc3912", "#ff9900", "#109618", "#990099", "#0099c6", "#dd4477", "#66aa00", "#b82e2e", "#316395", "#994499", "#22aa99", "#aaaa11", "#6633cc", "#e67300", "#8b0707", "#651067", "#329262", "#5574a6", "#3b3eac"]);
+    c = d3.scaleOrdinal().range(["#3366cc", "#dc3912", "#ff9900", "#109618", "#990099", "#0099c6", "#dd4477", "#66aa00", "#b82e2e", "#316395", "#994499", "#22aa99", "#aaaa11", "#6633cc", "#e67300", "#8b0707", "#651067", "#329262", "#5574a6", "#3b3eac"]);
 
   var svg = d3.select("svg")
       .attr("width", width + margin.left + margin.right)
@@ -169,7 +164,7 @@ function ready(error, ch, co) {
 
   row.append("text")
       .attr("x", -6)
-      .attr("y", x.rangeBand() / 2)
+      .attr("y", x.bandwidth() / 2)
       .attr("dy", ".32em")
       .attr("text-anchor", "end")
       .text(function(d, i) { return nodes[i].name; });
@@ -185,7 +180,7 @@ function ready(error, ch, co) {
 
   column.append("text")
       .attr("x", 6)
-      .attr("y", x.rangeBand() / 2)
+      .attr("y", x.bandwidth() / 2)
       .attr("dy", ".32em")
       .attr("text-anchor", "start")
       .text(function(d, i) { return nodes[i].name; });
@@ -196,12 +191,21 @@ function ready(error, ch, co) {
       .enter().append("rect")
         .attr("class", "cell")
         .attr("x", function(d) { return x(d.x); })
-        .attr("width", x.rangeBand())
-        .attr("height", x.rangeBand())
+        .attr("width", x.bandwidth())
+        .attr("height", x.bandwidth())
         .style("fill-opacity", function(d) { return 8 * z(d.z); })
         .style("fill", function(d) { return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; })
         .on("mouseover", mouseover)
-        .on("mouseout", mouseout);
+        .on("mouseout", mouseout)
+        .append("svg:title")
+          .text(function(d,i) {
+            var suffix = (d.z > 1) ? "s" : "";
+            if(d.x == d.y){
+              return `${matrixObject.nodes[d.x].name} has been in ${d.z} movie${suffix} with other actors`;
+            } else {
+              return `${matrixObject.nodes[d.x].name} and ${matrixObject.nodes[d.y].name} have been in ${d.z} movie${suffix} together`;
+            }
+          });
   }
 
   function mouseover(p) {
