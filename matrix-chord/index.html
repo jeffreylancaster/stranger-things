@@ -87,8 +87,6 @@ function ready(error, e) {
  		matrix[i] = d3.range(characters.length).map(function(j) { return 0});
 	});
 
-	console.log(scenes, characters, matrix);
-
 	// populate the matrix with times
 	scenes.forEach(function(val, ind){
 		val.characters.forEach(function(v, i){
@@ -109,8 +107,6 @@ function ready(error, e) {
   var labels = characters.reduce(function(acc, val, ind){
     return [...acc, val.name]
   }, []);
-
-  console.log(labels)
 
 	// based on https://jsfiddle.net/kLe38tff/
 
